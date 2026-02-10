@@ -2,7 +2,7 @@
 
 Modern redesign of [bcgaragedoors.ca](https://bcgaragedoors.ca) using Apple Liquid Glass aesthetic.
 
-**Live:** [nulljosh.github.io/bcgd](https://nulljosh.github.io/bcgd)
+**Live:** [heyitsmejosh.com/bcgd](https://heyitsmejosh.com/bcgd/)
 
 ## About the Business
 
