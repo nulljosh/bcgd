@@ -77,11 +77,19 @@
         }
 
         .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 18px;
             font-weight: 600;
             color: var(--text-primary);
             text-decoration: none;
             letter-spacing: -0.02em;
+        }
+
+        .nav-brand img {
+            height: 32px;
+            width: auto;
         }
 
         .nav-links {
@@ -172,11 +180,41 @@
 
         /* ========== HERO ========== */
         .hero {
-            padding: 140px 24px 100px;
-            text-align: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(180deg, #e8e8ed 0%, var(--page-bg) 100%);
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 24px 100px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(245, 245, 247, 0.55) 0%,
+                rgba(245, 245, 247, 0.70) 40%,
+                rgba(245, 245, 247, 0.90) 80%,
+                var(--page-bg) 100%
+            );
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
         }
 
         .hero-inner {
@@ -184,13 +222,14 @@
             margin: 0 auto;
             position: relative;
             z-index: 1;
+            text-align: center;
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--glass-bg);
+            background: var(--glass-bg-heavy);
             backdrop-filter: var(--blur);
             -webkit-backdrop-filter: var(--blur);
             border: 1px solid var(--glass-border);
@@ -452,12 +491,37 @@
             border-radius: 6px;
         }
 
+        /* ========== SERVICE CALL IMAGE ========== */
+        .service-call-banner {
+            max-width: 1080px;
+            margin: 40px auto 0;
+            text-align: center;
+        }
+
+        .service-call-banner .glass-img-card {
+            display: inline-block;
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 16px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .service-call-banner img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            border-radius: var(--small-radius);
+        }
+
         /* ========== ABOUT ========== */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 48px;
-            align-items: center;
+            align-items: start;
         }
 
         .about-text h3 {
@@ -482,6 +546,32 @@
             border-left: 3px solid var(--apple-blue);
             padding-left: 20px;
             margin: 24px 0;
+        }
+
+        .about-portrait {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 12px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .about-portrait img {
+            width: 100%;
+            height: auto;
+            border-radius: calc(var(--card-radius) - 4px);
+            display: block;
+            object-fit: cover;
+            max-height: 520px;
+        }
+
+        .about-row-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 48px;
         }
 
         .about-card {
@@ -517,6 +607,26 @@
             font-size: 13px;
             color: var(--text-tertiary);
             margin-top: 4px;
+        }
+
+        .about-team-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 12px;
+            box-shadow: var(--glass-shadow);
+            overflow: hidden;
+        }
+
+        .about-team-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: calc(var(--card-radius) - 4px);
+            display: block;
+            min-height: 240px;
         }
 
         /* ========== PROCESS ========== */
@@ -599,6 +709,91 @@
             color: var(--text-primary);
         }
 
+        .reviews-badge-wrap {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .reviews-badge-wrap img {
+            height: 80px;
+            width: auto;
+            border-radius: var(--small-radius);
+            box-shadow: var(--glass-shadow);
+        }
+
+        /* ========== SPECIALS ========== */
+        .specials-section {
+            background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 50%, var(--page-bg) 100%);
+        }
+
+        .specials-content {
+            max-width: 720px;
+            margin: 0 auto;
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .specials-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 32px;
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .specials-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .specials-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .specials-badge-img {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 16px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 160px;
+        }
+
+        .specials-badge-img img {
+            max-height: 140px;
+            width: auto;
+            border-radius: var(--small-radius);
+        }
+
+        .special-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(52, 199, 89, 0.08);
+            color: #248a3d;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 980px;
+            margin-bottom: 16px;
+        }
+
         /* ========== TIPS ========== */
         .tips-grid {
             display: grid;
@@ -643,6 +838,53 @@
             font-size: 14px;
             color: var(--text-secondary);
             line-height: 1.45;
+        }
+
+        /* ========== BLOG ========== */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .blog-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 28px;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .blog-card:hover {
+            box-shadow: var(--glass-shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .blog-card h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            line-height: 1.35;
+        }
+
+        .blog-card .blog-date {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+
+        .blog-card .blog-tag {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--apple-blue);
+            background: rgba(0, 113, 227, 0.08);
+            padding: 4px 10px;
+            border-radius: 6px;
         }
 
         /* ========== SERVICE AREAS ========== */
@@ -878,11 +1120,27 @@
             margin-bottom: 32px;
         }
 
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-brand .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-brand .footer-logo img {
+            height: 28px;
+            width: auto;
+        }
+
         .footer-brand p {
             font-size: 14px;
             color: var(--text-secondary);
             line-height: 1.5;
-            margin-top: 8px;
         }
 
         .footer h4 {
@@ -934,20 +1192,6 @@
             padding: 0;
         }
 
-        /* ========== SPECIALS ========== */
-        .special-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(52, 199, 89, 0.08);
-            color: #248a3d;
-            font-size: 13px;
-            font-weight: 600;
-            padding: 6px 14px;
-            border-radius: 980px;
-            margin-bottom: 16px;
-        }
-
         /* ========== RESPONSIVE ========== */
         @media (max-width: 1024px) {
             .services-grid {
@@ -955,6 +1199,10 @@
             }
 
             .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blog-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -974,6 +1222,7 @@
 
             .hero {
                 padding: 120px 20px 72px;
+                min-height: 480px;
             }
 
             .hero h1 {
@@ -1000,6 +1249,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .about-row-two {
+                grid-template-columns: 1fr;
+            }
+
             .process-steps {
                 grid-template-columns: 1fr;
                 gap: 32px;
@@ -1010,6 +1263,10 @@
             }
 
             .tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1038,6 +1295,11 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .specials-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1065,11 +1327,15 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="nav-inner">
-            <a href="#" class="nav-brand">BC Garage Doors</a>
+            <a href="#" class="nav-brand">
+                <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/06/bcgd-logo.png" alt="BC Garage Doors Logo">
+                BC Garage Doors
+            </a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#specials">Specials</a></li>
                 <li><a href="#tips">Tips</a></li>
                 <li><a href="#areas">Areas</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -1087,6 +1353,7 @@
         <a href="#services" onclick="closeMobileMenu()">Services</a>
         <a href="#about" onclick="closeMobileMenu()">About</a>
         <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+        <a href="#specials" onclick="closeMobileMenu()">Specials</a>
         <a href="#tips" onclick="closeMobileMenu()">Tips</a>
         <a href="#areas" onclick="closeMobileMenu()">Areas</a>
         <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
@@ -1094,8 +1361,11 @@
         <a href="tel:6042400180" class="mobile-phone">(604) 240-0180</a>
     </div>
 
-    <!-- HERO -->
+    <!-- HERO (truck background) -->
     <section class="hero">
+        <div class="hero-bg">
+            <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/07/bcgaragedoors-image-truck-1-1024x503.png" alt="Best Choice Garage Doors service truck">
+        </div>
         <div class="hero-inner">
             <div class="hero-badge">
                 <span class="hero-badge-dot"></span>
@@ -1189,52 +1459,59 @@
             <div class="services-grid">
                 <div class="service-card">
                     <h3>Garage Door Repair</h3>
-                    <p>Complete diagnostic and repair for all garage door types. From broken springs to malfunctioning openers, we handle everything.</p>
+                    <p>Complete diagnostic and repair for all garage door types. From broken springs to malfunctioning openers, we handle everything. Our technicians arrive with a fully stocked truck so most jobs are completed in a single visit.</p>
                     <span class="service-tag">Most Common</span>
                 </div>
                 <div class="service-card">
                     <h3>Springs</h3>
-                    <p>Torsion and extension spring replacement. Springs fail after roughly 10,000 cycles. Signs include door slamming shut, sagging, or feeling unusually heavy.</p>
+                    <p>Torsion and extension spring replacement. Springs fail after roughly 10,000 cycles. Signs include door slamming shut, sagging, opener straining, visible gaps in coils, frayed cables nearby, door feeling unusually heavy, or a loud snapping sound. DIY is strongly discouraged due to serious injury risk.</p>
                     <span class="service-tag">Do Not DIY</span>
                 </div>
                 <div class="service-card">
                     <h3>Cables</h3>
-                    <p>High-tension cable repair and replacement. Look for sagging on one side, jerky movement, snapping noises, or the door stopping halfway.</p>
+                    <p>High-tension cable repair and replacement. Look for sagging on one side, snapping or popping noises, jerky movement, frayed cables visible near the bottom bracket, or the door stopping halfway. This is a high-tension system -- professional repair only.</p>
                 </div>
                 <div class="service-card">
                     <h3>Maintenance</h3>
-                    <p>Preventive maintenance to keep your door running smoothly and safely. Extends the life of springs, cables, and opener components.</p>
+                    <p>Preventive maintenance to keep your door running smoothly and safely. We lubricate moving parts, adjust spring tension, tighten hardware, test safety features, and inspect for wear. Extends the life of springs, cables, and opener components.</p>
                     <span class="service-tag">Recommended Yearly</span>
                 </div>
                 <div class="service-card">
                     <h3>Emergency Repair</h3>
-                    <p>24/7 emergency service for stuck doors, broken springs or cables, doors off-track, and non-working keypads. Call anytime.</p>
+                    <p>24/7 emergency service for stuck doors, broken springs or cables, doors off-track, and non-working keypads. Availability confirmed by phone. We understand a stuck garage door can be a security risk -- call us anytime, day or night.</p>
                     <span class="service-tag">24/7 Available</span>
                 </div>
                 <div class="service-card">
                     <h3>Hinges</h3>
-                    <p>Repair and replacement for worn or broken hinges. Symptoms include creaking, banging, and panel misalignment. Most repairs done in one visit.</p>
+                    <p>Repair and replacement for worn or broken hinges. Symptoms include creaking and banging sounds, panel misalignment, and uneven door opening. Most hinge repairs are completed in a single visit with parts we carry on the truck.</p>
                 </div>
                 <div class="service-card">
                     <h3>Keypads</h3>
-                    <p>Fix non-responsive buttons, intermittent function, moisture damage, and lost codes. LiftMaster-compatible replacements available.</p>
+                    <p>Fix non-responsive buttons, intermittent function, moisture damage, and lost codes. We carry LiftMaster-compatible replacement keypads on the truck. If your keypad is flickering, dead, or just won't accept codes anymore, we can resolve it same-day.</p>
                 </div>
                 <div class="service-card">
                     <h3>Clickers &amp; Remotes</h3>
-                    <p>Repair for no-response, short range, and sync issues. Replacement units available. Exclusive LiftMaster brand remotes.</p>
+                    <p>Repair for no-response, short range, and sync issues. Replacement units available on-site. We carry exclusive LiftMaster brand remotes and can program them during the same visit. Lost or damaged remotes replaced quickly.</p>
                 </div>
                 <div class="service-card">
                     <h3>Panel &amp; Section Repair</h3>
-                    <p>Fix dents, cracks, warping, and rust damage to individual panels. We never upsell or suggest unnecessary full replacements.</p>
+                    <p>Fix dents, cracks, warping, and rust damage to individual panels. We repair what can be repaired and only replace what truly needs it. We never upsell or suggest unnecessary full door replacements.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Weather Strips</h3>
-                    <p>Bottom seal replacement to stop water, cold drafts, dust, and debris from entering your garage. LiftMaster-compatible seals.</p>
+                    <h3>Bottom Weather Strips</h3>
+                    <p>Bottom seal replacement to stop water, cold drafts, dust, and debris from entering your garage. Signs you need a new seal: water pooling inside, cold drafts, visible gaps, dust buildup, or sunlight visible under the door. LiftMaster-compatible seals.</p>
                 </div>
                 <div class="service-card">
                     <h3>Rollers</h3>
-                    <p>We recommend nylon rollers -- no bearings to wear out. Signs of failure: squeaking, grinding, jerky movement, or visible cracks.</p>
-                    <span class="service-tag">Tip: Never use WD-40</span>
+                    <p>We recommend nylon rollers -- no bearings to wear out, much quieter operation. Signs of failure: squeaking, grinding, jerky movement, or visible cracks in the roller. Warning: never use WD-40 on garage door rollers -- it ruins bearings.</p>
+                    <span class="service-tag">Tip: Never Use WD-40</span>
+                </div>
+            </div>
+
+            <!-- Service Call Image -->
+            <div class="service-call-banner">
+                <div class="glass-img-card">
+                    <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/06/Call-Best-Choice-Garage-Door-Repairs.png" alt="Call Best Choice Garage Door Repairs">
                 </div>
             </div>
         </div>
@@ -1255,6 +1532,13 @@
                     <blockquote>We treat every customer like family. No pressure. No sales gimmicks.</blockquote>
                     <p>We are licensed and insured throughout British Columbia, and we proudly serve the entire Lower Mainland -- from North Vancouver to Abbotsford.</p>
                 </div>
+                <div class="about-portrait">
+                    <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/07/best-choice-garage-img-14-683x1024.jpg" alt="Brian Trommel - Founder, Best Choice Garage Doors">
+                </div>
+            </div>
+
+            <!-- Second row: stats + team photo -->
+            <div class="about-row-two">
                 <div class="about-card">
                     <div class="about-stats">
                         <div class="about-stat">
@@ -1279,6 +1563,16 @@
                         <div style="font-size: 24px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em;">LiftMaster</div>
                         <div style="font-size: 14px; color: var(--text-tertiary); margin-top: 4px;">Authorized Repair Specialists</div>
                     </div>
+                </div>
+                <div class="about-team-card">
+                    <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/06/bestchoicegaragedoors-img-2.png" alt="Best Choice Garage Doors team">
+                </div>
+            </div>
+
+            <!-- Staff work photo -->
+            <div style="margin-top: 32px;">
+                <div class="about-team-card" style="max-width: 720px; margin: 0 auto;">
+                    <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/07/best-choice-garage-img-15-scaled.jpg" alt="Best Choice Garage Doors technician at work" style="max-height: 400px;">
                 </div>
             </div>
         </div>
@@ -1323,33 +1617,67 @@
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"10/10. His workmanship was impeccable."</p>
+                    <p class="review-text">"10/10. His workmanship was impeccable. Brian arrived on time, explained exactly what needed to be done, and completed the repair quickly and professionally. I couldn't be more impressed."</p>
                     <div class="review-author">Mary Kapelus</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Excellent service, excellent price. Brian is efficient, professional."</p>
+                    <p class="review-text">"Excellent service, excellent price. Brian is efficient, professional, and knows exactly what he's doing. He fixed our garage door issue in no time. I would recommend Best Choice to anyone."</p>
                     <div class="review-author">Brad Smith</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Brian was here in Port Moody within an hour and had the job done within another hour."</p>
+                    <p class="review-text">"Brian was here in Port Moody within an hour and had the job done within another hour. Fast, professional, fair price. He explained everything clearly and didn't try to upsell us on anything."</p>
                     <div class="review-author">L.F.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Honest and knowledgeable. I will be calling him."</p>
+                    <p class="review-text">"Honest and knowledgeable. Brian took the time to explain what was wrong and what he was going to fix. No pressure, no upselling. I will be calling him for all my garage door needs from now on."</p>
                     <div class="review-author">Bernadette E.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Your customer service was great. Will definitely recommend."</p>
+                    <p class="review-text">"Your customer service was great. Brian was prompt, courteous, and very knowledgeable. He got our garage door working perfectly again. Will definitely recommend Best Choice to friends and family."</p>
                     <div class="review-author">Richard Joy</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="review-text">"Emergency repair -- great service. Highly recommended."</p>
+                    <p class="review-text">"Emergency repair -- great service. Our garage door broke late in the evening and Brian was able to come out and fix it the same night. Incredibly responsive and professional. Highly recommended."</p>
                     <div class="review-author">Ken Thomas</div>
+                </div>
+            </div>
+
+            <!-- Reviews Badge -->
+            <div class="reviews-badge-wrap">
+                <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/06/reviews.png" alt="5-star reviews badge">
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALS -->
+    <section id="specials" class="section specials-section">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">Deals</div>
+                <h2 class="section-title">Current Specials</h2>
+                <p class="section-subtitle">Save on your next garage door service.</p>
+            </div>
+            <div class="specials-content">
+                <div class="specials-card">
+                    <div class="special-badge" style="margin: 0 auto 16px;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Included Free
+                    </div>
+                    <h3>Free Safety Check</h3>
+                    <p>Every service visit includes a complimentary safety inspection of all major garage door components. We check springs, cables, rollers, hinges, tracks, and opener safety features -- at no extra charge.</p>
+                </div>
+                <div class="specials-badge-img">
+                    <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/06/sales-discounts.png" alt="Sales and discounts badge">
+                </div>
+                <div class="specials-card">
+                    <h3>Printable Coupons</h3>
+                    <p>Visit our website for downloadable PDF coupons including a maintenance discount and a general service coupon. Mention the coupon when you call to book your appointment.</p>
+                    <a href="https://bcgaragedoors.ca/specials/" target="_blank" rel="noopener" style="display: inline-block; margin-top: 12px; font-size: 15px; font-weight: 500; color: var(--apple-blue); text-decoration: none;">View Coupons &rarr;</a>
                 </div>
             </div>
         </div>
@@ -1368,29 +1696,72 @@
                     <div class="tip-number">1</div>
                     <div>
                         <h3>Stop Using a Misaligned Door</h3>
-                        <p>If your door looks crooked or uneven, stop using it immediately. Continued use can cause serious damage or injury.</p>
+                        <p>If your door looks crooked or uneven, stop using it immediately. Continued use can cause cables to snap, panels to crack, or the door to fall off the track entirely -- risking serious damage or injury.</p>
                     </div>
                 </div>
                 <div class="tip-card">
                     <div class="tip-number">2</div>
                     <div>
                         <h3>Check for a Broken Spring</h3>
-                        <p>If your door won't open, a broken spring is the most likely cause. Look for a visible gap in the spring coil above the door.</p>
+                        <p>If your door won't open, a broken spring is the most likely cause. Look for a visible gap in the spring coil above the door. Never attempt to replace a spring yourself -- they are under extreme tension.</p>
                     </div>
                 </div>
                 <div class="tip-card">
                     <div class="tip-number">3</div>
                     <div>
                         <h3>Test the Weight Balance</h3>
-                        <p>Pull the emergency release and lift the door halfway. If it doesn't stay put, the springs are out of balance and need service.</p>
+                        <p>Pull the emergency release handle and lift the door manually to about halfway. If it doesn't stay put on its own, the springs are out of balance and need professional adjustment.</p>
                     </div>
                 </div>
                 <div class="tip-card">
                     <div class="tip-number">4</div>
                     <div>
                         <h3>Motor Runs But Door Doesn't Move?</h3>
-                        <p>That's a stripped gear inside the opener. The motor is spinning but can't engage the drive. Call for a repair.</p>
+                        <p>That's almost certainly a stripped gear inside the opener. The motor is spinning but can't engage the drive mechanism. This is a common issue and an easy fix for a professional -- call for a repair.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section" style="background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 50%, var(--page-bg) 100%);">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">From the Blog</div>
+                <h2 class="section-title">Expert Garage Door Insights</h2>
+                <p class="section-subtitle">Tips and knowledge from our 30+ years in the trade.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-date">January 28, 2026</div>
+                    <h3>How Delaying Cable Repair Changes Outcomes</h3>
+                    <span class="blog-tag">Cables</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-date">January 28, 2026</div>
+                    <h3>What Happens When Cables Begin to Fail</h3>
+                    <span class="blog-tag">Cables</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-date">January 28, 2026</div>
+                    <h3>Cable Repair Prevents Small Issues From Becoming Major</h3>
+                    <span class="blog-tag">Cables</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-date">January 28, 2026</div>
+                    <h3>Cable Repair Often Solves More Than One Problem</h3>
+                    <span class="blog-tag">Cables</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-date">December 16, 2025</div>
+                    <h3>Key Signs of Reliable Maintenance</h3>
+                    <span class="blog-tag">Maintenance</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-date">December 16, 2025</div>
+                    <h3>Professional Maintenance Enhances Safety &amp; Value</h3>
+                    <span class="blog-tag">Maintenance</span>
                 </div>
             </div>
         </div>
@@ -1441,7 +1812,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Yes. Every service visit includes a free safety check at no extra charge. We inspect all major components to make sure your door is operating safely.</div>
+                        <div class="faq-answer-inner">Yes. Every service visit includes a free safety check at no extra charge. We inspect all major components -- springs, cables, rollers, hinges, tracks, and opener safety features -- to make sure your door is operating safely.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1450,7 +1821,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">We focus 100% on repairs so we can provide honest service without any sales pressure. When you call us, you know we're there to fix your door -- not to sell you a new one.</div>
+                        <div class="faq-answer-inner">We focus 100% on repairs so we can provide honest service without any sales pressure. When you call us, you know we're there to fix your door -- not to sell you a new one. This is a deliberate choice that lets us be the best at what we do.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1459,7 +1830,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Most repairs are completed in under 90 minutes. We carry common parts on the truck so there's rarely a need for a follow-up visit.</div>
+                        <div class="faq-answer-inner">Most repairs are completed in under 90 minutes. We carry common parts on the truck so there's rarely a need for a follow-up visit. From the time we arrive, you'll have a working garage door before you know it.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1468,7 +1839,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Yes, we are fully licensed and insured throughout British Columbia. Your home and property are protected.</div>
+                        <div class="faq-answer-inner">Yes, we are fully licensed and insured throughout British Columbia. Your home and property are protected. We carry comprehensive liability insurance for every job.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1477,7 +1848,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">We are LiftMaster specialists. We service all major garage door brands, but our primary expertise and replacement parts are LiftMaster.</div>
+                        <div class="faq-answer-inner">We are LiftMaster specialists. We service all major garage door brands, but our primary expertise and replacement parts are LiftMaster. We carry LiftMaster openers, remotes, keypads, and accessories on the truck.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1486,7 +1857,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Yes, we offer 24/7 emergency repair service. If your door is stuck, off-track, or a spring or cable has broken, call us anytime -- day or night.</div>
+                        <div class="faq-answer-inner">Yes, we offer 24/7 emergency repair service. If your door is stuck, off-track, or a spring or cable has broken, call us anytime -- day or night. We understand a non-functional garage door is both an inconvenience and a security concern.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1495,7 +1866,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">We serve the entire Lower Mainland of British Columbia, from North Vancouver and West Vancouver all the way east to Abbotsford and Mission. Our shop is based in Langley.</div>
+                        <div class="faq-answer-inner">We serve the entire Lower Mainland of British Columbia, from North Vancouver and West Vancouver all the way east to Abbotsford and Mission. Our shop is based in Langley, and we have the whole region covered.</div>
                     </div>
                 </div>
             </div>
@@ -1534,6 +1905,7 @@
                 <div class="contact-socials">
                     <a href="https://facebook.com/bestchoicegarage/" target="_blank" rel="noopener">Facebook</a>
                     <a href="https://instagram.com/bcgaragedoorsofficial/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://twitter.com/BCGarageDoors" target="_blank" rel="noopener">X / Twitter</a>
                     <a href="https://youtube.com/user/BestChoiceGarageDoor" target="_blank" rel="noopener">YouTube</a>
                     <a href="https://g.co/kgs/Hwo4qVZ" target="_blank" rel="noopener">Google</a>
                     <a href="https://yelp.com/biz/best-choice-garage-door-langley-2" target="_blank" rel="noopener">Yelp</a>
@@ -1557,7 +1929,10 @@
         <div class="footer-inner">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <strong style="font-size: 16px; color: var(--text-primary);">BC Garage Doors</strong>
+                    <div class="footer-logo">
+                        <img src="https://bcgaragedoors.ca/wp-content/uploads/2025/06/bcgd-logo.png" alt="BC Garage Doors Logo">
+                        <strong style="font-size: 16px; color: var(--text-primary);">BC Garage Doors</strong>
+                    </div>
                     <p>Best Choice Garage Door Services Inc. Family-owned and operated in Langley, BC for over 30 years. Licensed and insured throughout British Columbia.</p>
                 </div>
                 <div>
@@ -1568,12 +1943,15 @@
                     <a href="#services">Emergency Repair</a>
                     <a href="#services">Keypads &amp; Remotes</a>
                     <a href="#services">Panels &amp; Rollers</a>
+                    <a href="#services">Weather Strips</a>
                 </div>
                 <div>
                     <h4>Company</h4>
                     <a href="#about">About Us</a>
                     <a href="#reviews">Reviews</a>
+                    <a href="#specials">Specials</a>
                     <a href="#tips">Safety Tips</a>
+                    <a href="#blog">Blog</a>
                     <a href="#faq">FAQ</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -1589,8 +1967,10 @@
                 <div class="footer-bottom-links">
                     <a href="https://facebook.com/bestchoicegarage/" target="_blank" rel="noopener">Facebook</a>
                     <a href="https://instagram.com/bcgaragedoorsofficial/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://twitter.com/BCGarageDoors" target="_blank" rel="noopener">X</a>
                     <a href="https://youtube.com/user/BestChoiceGarageDoor" target="_blank" rel="noopener">YouTube</a>
                     <a href="https://g.co/kgs/Hwo4qVZ" target="_blank" rel="noopener">Google</a>
+                    <a href="https://bcgaragedoors.ca/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -1640,7 +2020,7 @@
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.service-card, .review-card, .value-card, .tip-card, .process-step').forEach(el => {
+        document.querySelectorAll('.service-card, .review-card, .value-card, .tip-card, .process-step, .blog-card, .specials-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(16px)';
             el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
