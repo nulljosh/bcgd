@@ -3,421 +3,1648 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Honest garage door repair built on over 30 years of real-world experience in Langley, BC">
-    <title>Best Choice Garage Doors - Langley BC Garage Door Repair</title>
+    <meta name="description" content="BC Garage Doors - Trusted garage door repair in Langley, BC. 30+ years experience, family-owned, 24/7 emergency service. (604) 240-0180">
+    <meta name="keywords" content="garage door repair, Langley BC, LiftMaster, emergency garage door, springs, cables, BC Garage Doors">
+    <title>BC Garage Doors | Trusted Garage Door Repair in Langley, BC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        * {
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         :root {
-            --primary-color: #c41e3a;
-            --secondary-color: #1a1a1a;
-            --text-color: #333;
-            --light-bg: #f5f5f5;
-            --white: #ffffff;
+            --glass-bg: rgba(255, 255, 255, 0.72);
+            --glass-bg-heavy: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.45);
+            --glass-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            --glass-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.10);
+            --blur: blur(20px);
+            --blur-heavy: blur(40px);
+            --page-bg: #f5f5f7;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --text-tertiary: #86868b;
+            --apple-blue: #0071e3;
+            --apple-blue-hover: #0077ed;
+            --apple-green: #34c759;
+            --apple-red: #ff3b30;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --section-padding: 80px 0;
+            --card-radius: 20px;
+            --small-radius: 12px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+            color: var(--text-primary);
+            background: var(--page-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
+        /* ========== NAV ========== */
+        .nav {
+            position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
+            background: rgba(245, 245, 247, 0.72);
+            backdrop-filter: var(--blur-heavy);
+            -webkit-backdrop-filter: var(--blur-heavy);
+            border-bottom: 1px solid var(--border-color);
         }
 
-        nav {
-            max-width: 1200px;
+        .nav-inner {
+            max-width: 1080px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 0 24px;
+            height: 52px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
+        .nav-brand {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 28px;
         }
 
         .nav-links a {
+            font-size: 13px;
+            color: var(--text-secondary);
             text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.3s;
+            transition: color 0.2s ease;
         }
 
         .nav-links a:hover {
-            color: var(--primary-color);
+            color: var(--text-primary);
         }
 
-        .phone-btn {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
+        .nav-phone {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--apple-blue);
             text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s;
+            transition: opacity 0.2s ease;
         }
 
-        .phone-btn:hover {
-            background: #a01830;
+        .nav-phone:hover {
+            opacity: 0.8;
         }
 
+        .nav-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-hamburger svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--text-primary);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 52px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(245, 245, 247, 0.95);
+            backdrop-filter: var(--blur-heavy);
+            -webkit-backdrop-filter: var(--blur-heavy);
+            z-index: 999;
+            padding: 32px 24px;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .mobile-menu .mobile-phone {
+            display: inline-block;
+            margin-top: 32px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            background: var(--apple-blue);
+            padding: 16px 32px;
+            border-radius: 980px;
+            text-decoration: none;
+        }
+
+        /* ========== HERO ========== */
         .hero {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-            color: var(--white);
-            padding: 6rem 2rem;
+            padding: 140px 24px 100px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, #e8e8ed 0%, var(--page-bg) 100%);
+        }
+
+        .hero-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 980px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--apple-green);
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+            margin-bottom: 16px;
         }
 
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+        .hero-sub {
+            font-size: 24px;
+            font-weight: 400;
+            color: var(--text-secondary);
+            line-height: 1.35;
+            margin-bottom: 12px;
         }
 
-        .cta-buttons {
+        .hero-detail {
+            font-size: 17px;
+            color: var(--text-tertiary);
+            margin-bottom: 36px;
+            line-height: 1.5;
+        }
+
+        .hero-actions {
             display: flex;
-            gap: 1rem;
+            gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        .btn {
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
         .btn-primary {
-            background: var(--white);
-            color: var(--primary-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--apple-blue);
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 14px 28px;
+            border-radius: 980px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--apple-blue-hover);
+            transform: scale(1.02);
         }
 
         .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--glass-bg-heavy);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--border-color);
+            color: var(--apple-blue);
+            font-size: 17px;
+            font-weight: 500;
+            padding: 14px 28px;
+            border-radius: 980px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
         }
 
-        .container {
-            max-width: 1200px;
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.95);
+            transform: scale(1.02);
+        }
+
+        /* ========== TRUST BAR ========== */
+        .trust-bar {
+            padding: 40px 24px;
+        }
+
+        .trust-bar-inner {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 4rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .trust-label {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+        }
+
+        /* ========== SECTION COMMON ========== */
+        .section {
+            padding: var(--section-padding);
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .section-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
         }
 
         .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: var(--secondary-color);
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            color: var(--text-primary);
         }
 
+        .section-subtitle {
+            font-size: 19px;
+            color: var(--text-secondary);
+            margin-top: 12px;
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ========== VALUE PROPS ========== */
+        .values {
+            padding: 0 24px 80px;
+        }
+
+        .values-grid {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .value-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .value-icon {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 16px;
+            background: var(--page-bg);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .value-card h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .value-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* ========== SERVICES ========== */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
         }
 
         .service-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 28px;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+            box-shadow: var(--glass-shadow-hover);
+            transform: translateY(-2px);
         }
 
         .service-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
         }
 
-        .faq-section {
-            background: var(--light-bg);
-            padding: 4rem 2rem;
+        .service-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .service-card .service-tag {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--apple-blue);
+            background: rgba(0, 113, 227, 0.08);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        /* ========== ABOUT ========== */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .about-text p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .about-text blockquote {
+            font-size: 19px;
+            font-style: italic;
+            color: var(--text-primary);
+            border-left: 3px solid var(--apple-blue);
+            padding-left: 20px;
+            margin: 24px 0;
+        }
+
+        .about-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 40px;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .about-stat {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: var(--small-radius);
+        }
+
+        .about-stat .stat-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.03em;
+        }
+
+        .about-stat .stat-label {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+        }
+
+        /* ========== PROCESS ========== */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--apple-blue);
+            margin-bottom: 16px;
+        }
+
+        .process-step h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .process-step p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* ========== REVIEWS ========== */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .review-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 28px;
+        }
+
+        .review-stars {
+            color: #ff9500;
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .review-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .review-author {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ========== TIPS ========== */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .tip-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 24px 28px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .tip-number {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            background: rgba(0, 113, 227, 0.08);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--apple-blue);
+        }
+
+        .tip-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .tip-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.45;
+        }
+
+        /* ========== SERVICE AREAS ========== */
+        .areas-bg {
+            background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 50%, var(--page-bg) 100%);
+        }
+
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .area-tag {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 980px;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-primary);
+            transition: background 0.2s ease;
+        }
+
+        .area-tag:hover {
+            background: var(--glass-bg-heavy);
+        }
+
+        /* ========== FAQ ========== */
+        .faq-list {
+            max-width: 720px;
+            margin: 0 auto;
         }
 
         .faq-item {
-            background: var(--white);
-            margin-bottom: 1rem;
-            border-radius: 5px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--small-radius);
+            margin-bottom: 8px;
             overflow: hidden;
         }
 
         .faq-question {
-            padding: 1.5rem;
-            font-weight: bold;
+            padding: 20px 24px;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-primary);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            user-select: none;
+            transition: background 0.2s ease;
         }
 
         .faq-question:hover {
-            background: var(--light-bg);
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .faq-chevron {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--text-tertiary);
+        }
+
+        .faq-item.active .faq-chevron {
+            transform: rotate(180deg);
         }
 
         .faq-answer {
-            padding: 0 1.5rem 1.5rem;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 24px 20px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.55;
         }
 
         .faq-item.active .faq-answer {
-            display: block;
+            max-height: 300px;
         }
 
-        footer {
-            background: var(--secondary-color);
-            color: var(--white);
-            padding: 3rem 2rem 1rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
+        /* ========== CONTACT ========== */
+        .contact-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--blur);
+            -webkit-backdrop-filter: var(--blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 48px;
+            text-align: center;
+            max-width: 640px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
         }
 
-        .footer-section h4 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+        .contact-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: var(--text-primary);
         }
 
-        .footer-section a {
-            color: var(--white);
+        .contact-card .contact-sub {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+        }
+
+        .contact-phone {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
             text-decoration: none;
             display: block;
-            margin-bottom: 0.5rem;
-            opacity: 0.8;
+            margin-bottom: 8px;
+            transition: color 0.2s ease;
         }
 
-        .footer-section a:hover {
-            opacity: 1;
-            color: var(--primary-color);
+        .contact-phone:hover {
+            color: var(--apple-blue);
         }
 
-        .copyright {
+        .contact-email {
+            font-size: 17px;
+            color: var(--apple-blue);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-detail {
             text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            opacity: 0.7;
+        }
+
+        .contact-detail-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+        }
+
+        .contact-detail-value {
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        .contact-socials {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .contact-socials a {
+            color: var(--text-tertiary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .contact-socials a:hover {
+            color: var(--apple-blue);
+        }
+
+        /* ========== CTA BANNER ========== */
+        .cta-banner {
+            padding: 80px 24px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 100%);
+        }
+
+        .cta-banner h2 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .cta-banner p {
+            font-size: 19px;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            padding: 48px 24px 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 32px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-top: 8px;
+        }
+
+        .footer h4 {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-tertiary);
+            margin-bottom: 12px;
+        }
+
+        .footer a {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            padding: 3px 0;
+            transition: color 0.2s ease;
+        }
+
+        .footer a:hover {
+            color: var(--apple-blue);
+        }
+
+        .footer-bottom {
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-bottom-links a {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            display: inline;
+            padding: 0;
+        }
+
+        /* ========== SPECIALS ========== */
+        .special-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(52, 199, 89, 0.08);
+            color: #248a3d;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 980px;
+            margin-bottom: 16px;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
             .nav-links {
                 display: none;
+            }
+
+            .nav-hamburger {
+                display: flex;
+            }
+
+            .hero {
+                padding: 120px 20px 72px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-sub {
+                font-size: 19px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .contact-card {
+                padding: 32px 20px;
+            }
+
+            .contact-phone {
+                font-size: 28px;
+            }
+
+            .trust-bar-inner {
+                gap: 32px;
+            }
+
+            .trust-value {
+                font-size: 26px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .areas-list {
+                gap: 8px;
+            }
+
+            .area-tag {
+                padding: 8px 16px;
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Best Choice Garage Doors</div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">BC Garage Doors</a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
-                <li><a href="#areas">Service Areas</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#areas">Areas</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="tel:6042400180" class="phone-btn">(604) 240-0180</a>
-        </nav>
-    </header>
+            <a href="tel:6042400180" class="nav-phone">(604) 240-0180</a>
+            <button class="nav-hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
+                <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+            </button>
+        </div>
+    </nav>
 
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" onclick="closeMobileMenu()">Services</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+        <a href="#tips" onclick="closeMobileMenu()">Tips</a>
+        <a href="#areas" onclick="closeMobileMenu()">Areas</a>
+        <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        <a href="tel:6042400180" class="mobile-phone">(604) 240-0180</a>
+    </div>
+
+    <!-- HERO -->
     <section class="hero">
-        <h1>Honest Garage Door Repair</h1>
-        <p>Built on over 30 years of real-world experience</p>
-        <div class="cta-buttons">
-            <a href="tel:6042400180" class="btn btn-primary">Call Now: (604) 240-0180</a>
-            <a href="#contact" class="btn btn-secondary">Get a Quote</a>
-        </div>
-    </section>
-
-    <section id="services" class="container">
-        <h2 class="section-title">Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Garage Door Repair</h3>
-                <p>Expert repair services for all types of garage doors. From broken springs to malfunctioning openers, we fix it all quickly and efficiently.</p>
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                24/7 Emergency Service Available
             </div>
-            <div class="service-card">
-                <h3>Spring Replacement</h3>
-                <p>Professional garage door spring replacement with high-quality parts. We service both torsion and extension springs.</p>
-            </div>
-            <div class="service-card">
-                <h3>Opener Installation</h3>
-                <p>Installation and repair of all major garage door opener brands. Smart opener upgrades available.</p>
-            </div>
-            <div class="service-card">
-                <h3>Door Installation</h3>
-                <p>Complete garage door installation services. Wide selection of styles and materials to choose from.</p>
-            </div>
-            <div class="service-card">
-                <h3>Maintenance</h3>
-                <p>Regular maintenance programs to keep your garage door operating smoothly and extend its lifespan.</p>
-            </div>
-            <div class="service-card">
-                <h3>Emergency Service</h3>
-                <p>24/7 emergency garage door repair service. We're here when you need us most.</p>
+            <h1>Trusted Garage Door Repair in Langley, BC</h1>
+            <p class="hero-sub">Family-owned. Three generations. Over 30 years of honest, expert repair.</p>
+            <p class="hero-detail">We fix only what's needed, explain everything in plain language, and show up on time. Repair specialists -- we don't install new doors, and we never upsell.</p>
+            <div class="hero-actions">
+                <a href="tel:6042400180" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call (604) 240-0180
+                </a>
+                <a href="#contact" class="btn-secondary">Get a Free Quote</a>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <div class="faq-question">
-                    How quickly can you respond to a service call?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    We typically respond to service calls within 24 hours. For emergency situations, we offer same-day service when available.
-                </div>
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <div class="trust-value">30+</div>
+                <div class="trust-label">Years Experience</div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    Do you offer warranties on your work?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    Yes, all our work comes with a comprehensive warranty. Parts and labor warranties vary by service type.
-                </div>
+            <div class="trust-item">
+                <div class="trust-value">4.9/5</div>
+                <div class="trust-label">Star Rating</div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    What brands do you service?
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    We service all major garage door brands including LiftMaster, Chamberlain, Genie, Craftsman, and more.
-                </div>
+            <div class="trust-item">
+                <div class="trust-value">128</div>
+                <div class="trust-label">5-Star Reviews</div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    What areas do you serve?
-                    <span>+</span>
+            <div class="trust-item">
+                <div class="trust-value">3</div>
+                <div class="trust-label">Generations</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-value">90 min</div>
+                <div class="trust-label">Most Repairs</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VALUE PROPS -->
+    <div class="values">
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0071e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                 </div>
-                <div class="faq-answer">
-                    We proudly serve Langley, Surrey, Abbotsford, and surrounding areas in BC.
+                <h3>On Time, Every Time</h3>
+                <p>We confirm your time slot and show up when we say we will.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0071e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Honest Service</h3>
+                <p>We fix only what needs fixing. No pressure, no sales gimmicks.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0071e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                </div>
+                <h3>Plain Language</h3>
+                <p>We explain every repair in words you actually understand.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0071e3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <h3>Fair Pricing</h3>
+                <p>Upfront, transparent pricing before any work begins.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">What We Fix</div>
+                <h2 class="section-title">Garage Door Repair Services</h2>
+                <p class="section-subtitle">LiftMaster specialists with parts on the truck. Most repairs completed in a single visit.</p>
+            </div>
+            <div class="special-badge" style="display:flex; margin: -24px auto 32px; width:fit-content;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Free safety check with every visit
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Garage Door Repair</h3>
+                    <p>Complete diagnostic and repair for all garage door types. From broken springs to malfunctioning openers, we handle everything.</p>
+                    <span class="service-tag">Most Common</span>
+                </div>
+                <div class="service-card">
+                    <h3>Springs</h3>
+                    <p>Torsion and extension spring replacement. Springs fail after roughly 10,000 cycles. Signs include door slamming shut, sagging, or feeling unusually heavy.</p>
+                    <span class="service-tag">Do Not DIY</span>
+                </div>
+                <div class="service-card">
+                    <h3>Cables</h3>
+                    <p>High-tension cable repair and replacement. Look for sagging on one side, jerky movement, snapping noises, or the door stopping halfway.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance</h3>
+                    <p>Preventive maintenance to keep your door running smoothly and safely. Extends the life of springs, cables, and opener components.</p>
+                    <span class="service-tag">Recommended Yearly</span>
+                </div>
+                <div class="service-card">
+                    <h3>Emergency Repair</h3>
+                    <p>24/7 emergency service for stuck doors, broken springs or cables, doors off-track, and non-working keypads. Call anytime.</p>
+                    <span class="service-tag">24/7 Available</span>
+                </div>
+                <div class="service-card">
+                    <h3>Hinges</h3>
+                    <p>Repair and replacement for worn or broken hinges. Symptoms include creaking, banging, and panel misalignment. Most repairs done in one visit.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Keypads</h3>
+                    <p>Fix non-responsive buttons, intermittent function, moisture damage, and lost codes. LiftMaster-compatible replacements available.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Clickers &amp; Remotes</h3>
+                    <p>Repair for no-response, short range, and sync issues. Replacement units available. Exclusive LiftMaster brand remotes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Panel &amp; Section Repair</h3>
+                    <p>Fix dents, cracks, warping, and rust damage to individual panels. We never upsell or suggest unnecessary full replacements.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Weather Strips</h3>
+                    <p>Bottom seal replacement to stop water, cold drafts, dust, and debris from entering your garage. LiftMaster-compatible seals.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Rollers</h3>
+                    <p>We recommend nylon rollers -- no bearings to wear out. Signs of failure: squeaking, grinding, jerky movement, or visible cracks.</p>
+                    <span class="service-tag">Tip: Never use WD-40</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <div style="text-align: center;">
-            <p style="font-size: 1.2rem; margin-bottom: 1rem;">Ready to fix your garage door?</p>
-            <p style="font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 1rem;">
-                <a href="tel:6042400180" style="color: var(--primary-color); text-decoration: none;">(604) 240-0180</a>
-            </p>
-            <p style="margin-bottom: 2rem;">20690 40th Ave, Langley, BC V3A 2X7</p>
-            <a href="tel:6042400180" class="btn btn-primary">Call Now</a>
+    <!-- ABOUT -->
+    <section id="about" class="section" style="background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 50%, var(--page-bg) 100%);">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">Our Story</div>
+                <h2 class="section-title">Three Generations of Garage Door Expertise</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Built on Family Values</h3>
+                    <p>Best Choice Garage Door Services Inc. was founded by Brian Trommel, who learned the trade from his father-in-law. Now, his son is continuing the tradition -- making this a true three-generation family business based in Langley, BC.</p>
+                    <p>With over 30 years of hands-on experience, we focus exclusively on repair. We made a deliberate choice not to install new doors so we can dedicate 100% of our energy to honest, expert repair work without any sales pressure.</p>
+                    <blockquote>We treat every customer like family. No pressure. No sales gimmicks.</blockquote>
+                    <p>We are licensed and insured throughout British Columbia, and we proudly serve the entire Lower Mainland -- from North Vancouver to Abbotsford.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="stat-value">30+</div>
+                            <div class="stat-label">Years in Business</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Generations</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-value">4.9</div>
+                            <div class="stat-label">Star Rating</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-value">128</div>
+                            <div class="stat-label">Happy Reviews</div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-color); text-align: center;">
+                        <div class="section-label" style="margin-bottom: 8px;">Specialty Brand</div>
+                        <div style="font-size: 24px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em;">LiftMaster</div>
+                        <div style="font-size: 14px; color: var(--text-tertiary); margin-top: 4px;">Authorized Repair Specialists</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Services</h4>
-                <a href="#services">Garage Door Repair</a>
-                <a href="#services">Spring Replacement</a>
-                <a href="#services">Opener Installation</a>
-                <a href="#services">Door Installation</a>
-                <a href="#services">Maintenance</a>
+    <!-- PROCESS -->
+    <section class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">How It Works</div>
+                <h2 class="section-title">Three Simple Steps</h2>
+                <p class="section-subtitle">From call to repair in under 90 minutes. Parts always on the truck.</p>
             </div>
-            <div class="footer-section">
-                <h4>Service Areas</h4>
-                <a href="#">Langley</a>
-                <a href="#">Surrey</a>
-                <a href="#">Abbotsford</a>
-                <a href="#">White Rock</a>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <a href="tel:6042400180">(604) 240-0180</a>
-                <p>20690 40th Ave<br>Langley, BC V3A 2X7</p>
-            </div>
-            <div class="footer-section">
-                <h4>Hours</h4>
-                <p>Monday - Friday: 8am - 6pm<br>
-                Saturday: 9am - 5pm<br>
-                Sunday: Emergency Service<br>
-                24/7 Emergency Available</p>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Book in 60 Seconds</h3>
+                    <p>Call us or book online. Tell us what's happening with your door and we'll ask a few quick questions.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Time Slot Confirmed</h3>
+                    <p>We confirm a time that works for you. We show up on time, every time. No waiting around all day.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Same-Day Repair</h3>
+                    <p>Most repairs completed in under 90 minutes. We carry parts on the truck so there's no need for a second visit.</p>
+                </div>
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Best Choice Garage Doors. All rights reserved.
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section" style="background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 50%, var(--page-bg) 100%);">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">What People Say</div>
+                <h2 class="section-title">128 Reviews. 4.9 Stars.</h2>
+                <p class="section-subtitle">Real feedback from real customers across the Lower Mainland.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"10/10. His workmanship was impeccable."</p>
+                    <div class="review-author">Mary Kapelus</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Excellent service, excellent price. Brian is efficient, professional."</p>
+                    <div class="review-author">Brad Smith</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Brian was here in Port Moody within an hour and had the job done within another hour."</p>
+                    <div class="review-author">L.F.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Honest and knowledgeable. I will be calling him."</p>
+                    <div class="review-author">Bernadette E.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Your customer service was great. Will definitely recommend."</p>
+                    <div class="review-author">Richard Joy</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Emergency repair -- great service. Highly recommended."</p>
+                    <div class="review-author">Ken Thomas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">Homeowner Tips</div>
+                <h2 class="section-title">Safety Tips for Your Garage Door</h2>
+                <p class="section-subtitle">Important things every homeowner should know. Photo eyes have been mandatory on all garage door openers since 1991.</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">1</div>
+                    <div>
+                        <h3>Stop Using a Misaligned Door</h3>
+                        <p>If your door looks crooked or uneven, stop using it immediately. Continued use can cause serious damage or injury.</p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">2</div>
+                    <div>
+                        <h3>Check for a Broken Spring</h3>
+                        <p>If your door won't open, a broken spring is the most likely cause. Look for a visible gap in the spring coil above the door.</p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">3</div>
+                    <div>
+                        <h3>Test the Weight Balance</h3>
+                        <p>Pull the emergency release and lift the door halfway. If it doesn't stay put, the springs are out of balance and need service.</p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">4</div>
+                    <div>
+                        <h3>Motor Runs But Door Doesn't Move?</h3>
+                        <p>That's a stripped gear inside the opener. The motor is spinning but can't engage the drive. Call for a repair.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE AREAS -->
+    <section id="areas" class="section areas-bg">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">Coverage</div>
+                <h2 class="section-title">Serving All of the Lower Mainland</h2>
+                <p class="section-subtitle">From North Vancouver to Abbotsford, we come to you.</p>
+            </div>
+            <div class="areas-list">
+                <span class="area-tag">North Vancouver</span>
+                <span class="area-tag">West Vancouver</span>
+                <span class="area-tag">Vancouver</span>
+                <span class="area-tag">Burnaby</span>
+                <span class="area-tag">Coquitlam</span>
+                <span class="area-tag">Port Coquitlam</span>
+                <span class="area-tag">Port Moody</span>
+                <span class="area-tag">Pitt Meadows</span>
+                <span class="area-tag">New Westminster</span>
+                <span class="area-tag">Maple Ridge</span>
+                <span class="area-tag">Mission</span>
+                <span class="area-tag">Richmond</span>
+                <span class="area-tag">Surrey</span>
+                <span class="area-tag">Delta</span>
+                <span class="area-tag">Ladner</span>
+                <span class="area-tag">Tsawwassen</span>
+                <span class="area-tag">Langley</span>
+                <span class="area-tag">Abbotsford</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">Questions</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you offer a free safety check?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Yes. Every service visit includes a free safety check at no extra charge. We inspect all major components to make sure your door is operating safely.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Why don't you install new doors?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We focus 100% on repairs so we can provide honest service without any sales pressure. When you call us, you know we're there to fix your door -- not to sell you a new one.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How long do repairs usually take?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Most repairs are completed in under 90 minutes. We carry common parts on the truck so there's rarely a need for a follow-up visit.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Are you licensed and insured?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Yes, we are fully licensed and insured throughout British Columbia. Your home and property are protected.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What brands do you work with?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We are LiftMaster specialists. We service all major garage door brands, but our primary expertise and replacement parts are LiftMaster.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you offer emergency service?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Yes, we offer 24/7 emergency repair service. If your door is stuck, off-track, or a spring or cable has broken, call us anytime -- day or night.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What areas do you serve?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We serve the entire Lower Mainland of British Columbia, from North Vancouver and West Vancouver all the way east to Abbotsford and Mission. Our shop is based in Langley.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" style="background: linear-gradient(180deg, var(--page-bg) 0%, #e8e8ed 100%);">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">Get In Touch</div>
+                <h2 class="section-title">Ready to Fix Your Door?</h2>
+                <p class="section-subtitle">Call us now or send an email. We respond fast.</p>
+            </div>
+            <div class="contact-card">
+                <a href="tel:6042400180" class="contact-phone">(604) 240-0180</a>
+                <a href="mailto:expert@bcgaragedoors.ca" class="contact-email">expert@bcgaragedoors.ca</a>
+                <a href="tel:6042400180" class="btn-primary" style="margin-bottom: 12px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call Now
+                </a>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <div class="contact-detail-label">Address</div>
+                        <div class="contact-detail-value">20690 40th Ave<br>Langley, BC V3A 2X7</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-label">Hours</div>
+                        <div class="contact-detail-value">24/7 Emergency<br>Always Available</div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-label">Service</div>
+                        <div class="contact-detail-value">All Lower Mainland<br>Vancouver to Abbotsford</div>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="https://facebook.com/bestchoicegarage/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://instagram.com/bcgaragedoorsofficial/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://youtube.com/user/BestChoiceGarageDoor" target="_blank" rel="noopener">YouTube</a>
+                    <a href="https://g.co/kgs/Hwo4qVZ" target="_blank" rel="noopener">Google</a>
+                    <a href="https://yelp.com/biz/best-choice-garage-door-langley-2" target="_blank" rel="noopener">Yelp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <h2>Garage door not working right?</h2>
+        <p>Most repairs done same-day in under 90 minutes. Call Brian.</p>
+        <a href="tel:6042400180" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            (604) 240-0180
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <strong style="font-size: 16px; color: var(--text-primary);">BC Garage Doors</strong>
+                    <p>Best Choice Garage Door Services Inc. Family-owned and operated in Langley, BC for over 30 years. Licensed and insured throughout British Columbia.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <a href="#services">Garage Door Repair</a>
+                    <a href="#services">Springs &amp; Cables</a>
+                    <a href="#services">Maintenance</a>
+                    <a href="#services">Emergency Repair</a>
+                    <a href="#services">Keypads &amp; Remotes</a>
+                    <a href="#services">Panels &amp; Rollers</a>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#tips">Safety Tips</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <a href="tel:6042400180">(604) 240-0180</a>
+                    <a href="mailto:expert@bcgaragedoors.ca">expert@bcgaragedoors.ca</a>
+                    <p style="font-size: 14px; color: var(--text-secondary); margin-top: 4px;">20690 40th Ave<br>Langley, BC V3A 2X7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Best Choice Garage Door Services Inc. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="https://facebook.com/bestchoicegarage/" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://instagram.com/bcgaragedoorsofficial/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://youtube.com/user/BestChoiceGarageDoor" target="_blank" rel="noopener">YouTube</a>
+                    <a href="https://g.co/kgs/Hwo4qVZ" target="_blank" rel="noopener">Google</a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script>
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                item.classList.toggle('active');
-                const span = question.querySelector('span');
-                span.textContent = item.classList.contains('active') ? '-' : '+';
+        // FAQ accordion
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const wasActive = item.classList.contains('active');
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            // Toggle clicked
+            if (!wasActive) item.classList.add('active');
+        }
+
+        // Mobile menu
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.remove('active');
+        }
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const navHeight = 52;
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
             });
         });
 
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+        // Subtle scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .review-card, .value-card, .tip-card, .process-step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(16px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
         });
     </script>
 </body>
