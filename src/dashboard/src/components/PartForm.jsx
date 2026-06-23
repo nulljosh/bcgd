@@ -1,1 +1,113 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IGdlbmVyYXRlSWQsIENBVEVHT1JJRVMgfSBmcm9tICcuLi9saWIvc3RvcmFnZSc7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQYXJ0Rm9ybSh7IHBhcnQsIG9uU2F2ZSwgb25DYW5jZWwgfSkgewogIGNvbnN0IFtmb3JtLCBzZXRGb3JtXSA9IHVzZVN0YXRlKHBhcnQgfHwgewogICAgaWQ6IGdlbmVyYXRlSWQoKSwKICAgIG5hbWU6ICcnLAogICAgc2t1OiAnJywKICAgIGNhdGVnb3J5OiBDQVRFR09SSUVTWzBdLAogICAgcXVhbnRpdHk6IDAsCiAgICBtaW5UaHJlc2hvbGQ6IDUsCiAgICBjb3N0OiAwLAogICAgc3VwcGxpZXI6ICcnLAogIH0pOwoKICBjb25zdCB1cGRhdGUgPSAoZmllbGQsIHZhbHVlKSA9PiBzZXRGb3JtKHByZXYgPT4gKHsgLi4ucHJldiwgW2ZpZWxkXTogdmFsdWUgfSkpOwoKICBjb25zdCBoYW5kbGVTdWJtaXQgPSAoZSkgPT4gewogICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgaWYgKCFmb3JtLm5hbWUudHJpbSgpIHx8ICFmb3JtLnNrdS50cmltKCkpIHJldHVybjsKICAgIG9uU2F2ZSh7CiAgICAgIC4uLmZvcm0sCiAgICAgIHF1YW50aXR5OiBOdW1iZXIoZm9ybS5xdWFudGl0eSksCiAgICAgIG1pblRocmVzaG9sZDogTnVtYmVyKGZvcm0ubWluVGhyZXNob2xkKSwKICAgICAgY29zdDogTnVtYmVyKGZvcm0uY29zdCksCiAgICB9KTsKICB9OwoKICByZXR1cm4gKAogICAgPGZvcm0gY2xhc3NOYW1lPSJwYXJ0LWZvcm0gZ2xhc3MtY2FyZCBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW5Eb3duIiBvblN1Ym1pdD17aGFuZGxlU3VibWl0fT4KICAgICAgPGgzIGNsYXNzTmFtZT0iZm9ybS10aXRsZSI+e3BhcnQgPyAnRWRpdCBQYXJ0JyA6ICdBZGQgTmV3IFBhcnQnfTwvaDM+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1ncmlkIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+UGFydCBOYW1lPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgICB2YWx1ZT17Zm9ybS5uYW1lfQogICAgICAgICAgICBvbkNoYW5nZT17ZSA9PiB1cGRhdGUoJ25hbWUnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJUb3JzaW9uIFNwcmluZyAyaW4iCiAgICAgICAgICAgIHJlcXVpcmVkCiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+U0tVPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgICB2YWx1ZT17Zm9ybS5za3V9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgnc2t1JywgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICBwbGFjZWhvbGRlcj0iU1BSLVRPUi0yMDAiCiAgICAgICAgICAgIHJlcXVpcmVkCiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+Q2F0ZWdvcnk8L2xhYmVsPgogICAgICAgICAgPHNlbGVjdCB2YWx1ZT17Zm9ybS5jYXRlZ29yeX0gb25DaGFuZ2U9e2UgPT4gdXBkYXRlKCdjYXRlZ29yeScsIGUudGFyZ2V0LnZhbHVlKX0+CiAgICAgICAgICAgIHtDQVRFR09SSUVTLm1hcChjID0+IDxvcHRpb24ga2V5PXtjfSB2YWx1ZT17Y30+e2N9PC9vcHRpb24+KX0KICAgICAgICAgIDwvc2VsZWN0PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+U3VwcGxpZXI8L2xhYmVsPgogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIHR5cGU9InRleHQiCiAgICAgICAgICAgIHZhbHVlPXtmb3JtLnN1cHBsaWVyfQogICAgICAgICAgICBvbkNoYW5nZT17ZSA9PiB1cGRhdGUoJ3N1cHBsaWVyJywgZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICBwbGFjZWhvbGRlcj0iQ2xvcGF5IgogICAgICAgICAgLz4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvcm0tZmllbGQiPgogICAgICAgICAgPGxhYmVsPlF1YW50aXR5PC9sYWJlbD4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgIG1pbj0iMCIKICAgICAgICAgICAgdmFsdWU9e2Zvcm0ucXVhbnRpdHl9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgncXVhbnRpdHknLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+TWluIFRocmVzaG9sZDwvbGFiZWw+CiAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICBtaW49IjAiCiAgICAgICAgICAgIHZhbHVlPXtmb3JtLm1pblRocmVzaG9sZH0KICAgICAgICAgICAgb25DaGFuZ2U9e2UgPT4gdXBkYXRlKCdtaW5UaHJlc2hvbGQnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+VW5pdCBDb3N0ICgkKTwvbGFiZWw+CiAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgdHlwZT0ibnVtYmVyIgogICAgICAgICAgICBtaW49IjAiCiAgICAgICAgICAgIHN0ZXA9IjAuMDEiCiAgICAgICAgICAgIHZhbHVlPXtmb3JtLmNvc3R9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgnY29zdCcsIGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgIC8+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBjbGFzc05hbWU9ImZvcm0tYWN0aW9ucyI+CiAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGNsYXNzTmFtZT0iYnRuIGJ0bi1zZWNvbmRhcnkiIG9uQ2xpY2s9e29uQ2FuY2VsfT5DYW5jZWw8L2J1dHRvbj4KICAgICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIgY2xhc3NOYW1lPSJidG4gYnRuLXByaW1hcnkiPgogICAgICAgICAge3BhcnQgPyAnU2F2ZSBDaGFuZ2VzJyA6ICdBZGQgUGFydCd9CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZGl2PgogICAgPC9mb3JtPgogICk7Cn0K
+import { useState } from 'react';
+import { generateId, CATEGORIES } from '../lib/storage';
+
+export default function PartForm({ part, onSave, onCancel }) {
+  const [form, setForm] = useState(part || {
+    id: generateId(),
+    name: '',
+    sku: '',
+    category: CATEGORIES[0],
+    quantity: 0,
+    minThreshold: 5,
+    cost: 0,
+    supplier: '',
+  });
+
+  const update = (field, value) => setForm(prev => ({ ...prev, [field]: value }));
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!form.name.trim() || !form.sku.trim()) return;
+    onSave({
+      ...form,
+      quantity: Number(form.quantity),
+      minThreshold: Number(form.minThreshold),
+      cost: Number(form.cost),
+    });
+  };
+
+  return (
+    <form className="part-form glass-card animate__animated animate__fadeInDown" onSubmit={handleSubmit}>
+      <h3 className="form-title">{part ? 'Edit Part' : 'Add New Part'}</h3>
+
+      <div className="form-grid">
+        <div className="form-field">
+          <label>Part Name</label>
+          <input
+            type="text"
+            value={form.name}
+            onChange={e => update('name', e.target.value)}
+            placeholder="Torsion Spring 2in"
+            required
+          />
+        </div>
+
+        <div className="form-field">
+          <label>SKU</label>
+          <input
+            type="text"
+            value={form.sku}
+            onChange={e => update('sku', e.target.value)}
+            placeholder="SPR-TOR-200"
+            required
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Category</label>
+          <select value={form.category} onChange={e => update('category', e.target.value)}>
+            {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
+        </div>
+
+        <div className="form-field">
+          <label>Supplier</label>
+          <input
+            type="text"
+            value={form.supplier}
+            onChange={e => update('supplier', e.target.value)}
+            placeholder="Clopay"
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Quantity</label>
+          <input
+            type="number"
+            min="0"
+            value={form.quantity}
+            onChange={e => update('quantity', e.target.value)}
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Min Threshold</label>
+          <input
+            type="number"
+            min="0"
+            value={form.minThreshold}
+            onChange={e => update('minThreshold', e.target.value)}
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Unit Cost ($)</label>
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            value={form.cost}
+            onChange={e => update('cost', e.target.value)}
+          />
+        </div>
+      </div>
+
+      <div className="form-actions">
+        <button type="button" className="btn btn-secondary" onClick={onCancel}>Cancel</button>
+        <button type="submit" className="btn btn-primary">
+          {part ? 'Save Changes' : 'Add Part'}
+        </button>
+      </div>
+    </form>
+  );
+}

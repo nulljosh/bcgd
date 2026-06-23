@@ -1,1 +1,52 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IGNoZWNrUGluIH0gZnJvbSAnLi4vbGliL3N0b3JhZ2UnOwppbXBvcnQgTG9nbyBmcm9tICcuL0xvZ28nOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gUGluR2F0ZSh7IG9uQXV0aGVudGljYXRlZCB9KSB7CiAgY29uc3QgW3Bpbiwgc2V0UGluXSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbc2hha2luZywgc2V0U2hha2luZ10gPSB1c2VTdGF0ZShmYWxzZSk7CgogIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IChlKSA9PiB7CiAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgICBpZiAoY2hlY2tQaW4ocGluKSkgewogICAgICBvbkF1dGhlbnRpY2F0ZWQoKTsKICAgIH0gZWxzZSB7CiAgICAgIHNldEVycm9yKHRydWUpOwogICAgICBzZXRTaGFraW5nKHRydWUpOwogICAgICBzZXRQaW4oJycpOwogICAgICBzZXRUaW1lb3V0KCgpID0+IHNldFNoYWtpbmcoZmFsc2UpLCA1MDApOwogICAgfQogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icGluLWdhdGUiPgogICAgICA8Zm9ybQogICAgICAgIGNsYXNzTmFtZT17YHBpbi1jYXJkIGdsYXNzLWNhcmQgJHtzaGFraW5nID8gJ3Bpbi1zaGFrZScgOiAnJ31gfQogICAgICAgIG9uU3VibWl0PXtoYW5kbGVTdWJtaXR9CiAgICAgID4KICAgICAgICA8TG9nbyBzaXplPXs0OH0gLz4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJwaW4tdGl0bGUiPkJlc3QgQ2hvaWNlIEdhcmFnZSBEb29yczwvaDE+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJwaW4tc3VidGl0bGUiPkVudGVyIFBJTjwvcD4KICAgICAgICA8aW5wdXQKICAgICAgICAgIHR5cGU9InBhc3N3b3JkIgogICAgICAgICAgbWF4TGVuZ3RoPXs0fQogICAgICAgICAgdmFsdWU9e3Bpbn0KICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHsKICAgICAgICAgICAgc2V0UGluKGUudGFyZ2V0LnZhbHVlLnJlcGxhY2UoL1xEL2csICcnKSk7CiAgICAgICAgICAgIHNldEVycm9yKGZhbHNlKTsKICAgICAgICAgIH19CiAgICAgICAgICBjbGFzc05hbWU9InBpbi1pbnB1dCIKICAgICAgICAgIGF1dG9Gb2N1cwogICAgICAgICAgaW5wdXRNb2RlPSJudW1lcmljIgogICAgICAgICAgcGF0dGVybj0iWzAtOV0qIgogICAgICAgICAgcGxhY2Vob2xkZXI9Ii0tLS0iCiAgICAgICAgLz4KICAgICAgICB7ZXJyb3IgJiYgPHAgY2xhc3NOYW1lPSJwaW4tZXJyb3IiPkluY29ycmVjdCBQSU48L3A+fQogICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0IiBjbGFzc05hbWU9ImJ0biBidG4tcHJpbWFyeSBwaW4tc3VibWl0Ij4KICAgICAgICAgIFVubG9jawogICAgICAgIDwvYnV0dG9uPgogICAgICA8L2Zvcm0+CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { useState } from 'react';
+import { checkPin } from '../lib/storage';
+import Logo from './Logo';
+
+export default function PinGate({ onAuthenticated }) {
+  const [pin, setPin] = useState('');
+  const [error, setError] = useState(false);
+  const [shaking, setShaking] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (checkPin(pin)) {
+      onAuthenticated();
+    } else {
+      setError(true);
+      setShaking(true);
+      setPin('');
+      setTimeout(() => setShaking(false), 500);
+    }
+  };
+
+  return (
+    <div className="pin-gate">
+      <form
+        className={`pin-card glass-card ${shaking ? 'pin-shake' : ''}`}
+        onSubmit={handleSubmit}
+      >
+        <Logo size={48} />
+        <h1 className="pin-title">Best Choice Garage Doors</h1>
+        <p className="pin-subtitle">Enter PIN</p>
+        <input
+          type="password"
+          maxLength={4}
+          value={pin}
+          onChange={e => {
+            setPin(e.target.value.replace(/\D/g, ''));
+            setError(false);
+          }}
+          className="pin-input"
+          autoFocus
+          inputMode="numeric"
+          pattern="[0-9]*"
+          placeholder="----"
+        />
+        {error && <p className="pin-error">Incorrect PIN</p>}
+        <button type="submit" className="btn btn-primary pin-submit">
+          Unlock
+        </button>
+      </form>
+    </div>
+  );
+}

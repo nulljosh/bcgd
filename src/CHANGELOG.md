@@ -1,1 +1,213 @@
-IyBDaGFuZ2Vsb2cKCiMjIFt2MC4wLjFdIOKAlCAyMDI2LTA1LTIzCgotIDIxMmMyYzIyIGNob3JlOiBzbm93IGxlb3BhcmQgcGFzcyAocG9ydGZvbGlvLWlvcykKLSA1MDRiZGMyNCBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKG55Yy13ZWIpCi0gNzkzMmQyNDAgY2hvcmU6IHNub3cgbGVvcGFyZCBwYXNzIChueWMtaW9zKQotIGY5NTE4ODc4IGNob3JlOiBzbm93IGxlb3BhcmQgcGFzcyAobnljKQotIGUwYTZlMDJkIGNob3JlOiBzbm93IGxlb3BhcmQgcGFzcyAobmltYmxlLXdlYikKLSA2MDY0OGNiNyBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKG5pbWJsZS1pb3MpCi0gNTY5YzRmOGUgY2hvcmU6IHNub3cgbGVvcGFyZCBwYXNzIChuaW1ibGUpCi0gNTY0NGVlYTMgY2hvcmU6IHNub3cgbGVvcGFyZCBwYXNzIChsaW5nby1tYWNvcykKLSAzMDM1NmYzMiBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKGxpbmdvLWlvcykKLSA4MTIwMjNhMiBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKGxpbmdvKQotIDgxNDMxNWZkIGNob3JlOiBzbm93IGxlb3BhcmQgcGFzcyAobGlmZS1pb3MpCi0gMzg3M2U3ZDggY2hvcmU6IHNub3cgbGVvcGFyZCBwYXNzIChsaWZlKQotIGRkYjE0YzMwIGNob3JlOiBzbm93IGxlb3BhcmQgcGFzcyAoc3VwYWJhc2UpCi0gNzcwNDk0YjQgY2hvcmU6IHNub3cgbGVvcGFyZCBwYXNzIChicmllZikKLSBiMTI1MTE2ZCBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKGNoYXJ0ZXJzLWlvcykKLSBmZmJjZDY4MiBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKGJoYWRkaWUpCi0gYmFjMzhkN2MgY2hvcmU6IHNub3cgbGVvcGFyZCBwYXNzICh3aXJldGV4dC1tYWNvcykKLSBjYzU3ZDcxOCBjaG9yZTogc25vdyBsZW9wYXJkIHBhc3MgKHdpcmV0ZXh0KQotIGNhYjlmM2ExIGNob3JlKHRhbGx5KTogcmVzZXQgdG8gdjEuMC4wLCB0cmltIGNoYW5nZWxvZwotIGQzNDQzYTljIGRvY3ModGFsbHkpOiBidW1wIHRvIHYzLjcuMCwgZG9jdW1lbnQgYmxvYiBtaWdyYXRpb24gZml4Ci0gYzUxZjhjOWIgZml4KHRhbGx5KTogcmVzdG9yZSBibG9iIGxlZ2FjeSBwYXRoIGZhbGxiYWNrICsgYnJvYWRlbiBwYXltZW50IGFtb3VudCByZWdleAotIGEwMDUwODFhIGZpeChicmllZik6IEErIGdhcCDigJQgQ0FTRS0wMDAyIGJsZWVkIGZpeGVzLCB3aGl0ZSB0aGVtZSwgZGVhZCBjb2RlIGNsZWFudXAsIHY2Ci0gMjk2YTk0YmMgZmVhdChicmllZik6IENBU0UtMDAwMiB3ZWIgKyBtYWNPUyB0b29sYmFyIGxhYmVsICsgU3VwYWJhc2Ugam91cm5hbCByZW1vdmVkCi0gZGZmNWUzMzMgZG9jczogZml4IHN0YWxlIFJFQURNRSBkZXNjcmlwdGlvbnMgZm9yIGxpZmUgYW5kIGxpbmdvCi0gOWFkMDE3NmMgZmVhdChicmllZik6IHN5bmMgc2NlbmFyaW9zICsgY29tcGFyYWJsZXMgd2l0aCB1cGRhdGVkIHByb2plY3Rpb25zCi0gMmNmN2UzODYgZmVhdChicmllZik6IGFkZCBsYXd5ZXIgY29udGFjdCBkZXRhaWxzICsgYmlvbWV0cmljIGNvb2xkb3duCi0gZmUxZTBkNGIgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTIxCi0gODRjMTRlYjEgZml4KGJyaWVmKTogbWFyayBQYXVsIEtlbnQgKyBETEEgZGVjbGluZWQsIGFkZCBIYXJkaW5nICYgQ2hhbnRsZXIgcmVmZXJyYWxzCi0gY2U1Njc0MDggY2hvcmU6IHVwZGF0ZSBzY2hvb2wgc3VibW9kdWxlIChpZ25vcmUgLnZlcmNlbCkKLSA4MzgzZWQ2MCBmZWF0KGNoYXJ0ZXJzKTogYXBwbHkgcG9ydGZvbGlvIHZpYmUg4oCUIGdlaXN0IGZvbnQsIG1vbm9jaHJvbWUgcGFsZXR0ZQotIDZlZmI0Mzg1IGZlYXQoY2hhcnRlcnMpOiBhcHBsZSBsaXF1aWQgZ2xhc3MgdWkgKyBpb3MgZGF0YSBjb21wbGV0ZSAoMTUgY291bnRyaWVzKQotIDcxMWFjMTAwIGZpeChjaGFydGVycyk6IHNpbXBsaWZ5IHZlcmNlbC5qc29uLCByZW1vdmUgdW5uZWNlc3NhcnkgcmV3cml0ZXMKLSA1ZmI3NmE3MCBmZWF0KGNoYXJ0ZXJzKTogdjEuMS4wIOKAlCBjb21wYXJlIG1vZGUsIDQgbmV3IGNvdW50cmllcywgaU9TIGFwcAotIGQxN2MyYWQwIGZpeChicmllZik6IHJlcGxhY2UgbWFnaWMgbGluayB3aXRoIHBhc3N3b3JkIGF1dGgsIHR3by1zdGVwIGxvZ2luIGZsb3cKLSAxNjlhN2JkNCBmaXgobGlmZS1pb3MpOiByZXBhaXIgYnJva2VuIHNlY3Rpb27ihpJjaGFydCBtYXBwaW5ncywgYnJpZGdlIHRvIEErCi0gZGU5ZDMzZDMgZmVhdChsaWZlKTogYWRkIGNvbnNjaWVuY2UvTURNQS9MU0QvQ29uY2VydGEgY29udGVudCwgZXhwYW5kIHNleHVhbGl0eQotIDA0MjRiMjA1IGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0xOQotIDRhMGFmZGNkIGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0xOQotIDdhYWVhMTAxIGZpeCh0YWxseSk6IGF2YXRhciB2YWxpZGF0aW9uICsgc2V0dGluZ3MgZmFsbGJhY2sgKyBtZXNzYWdlcyByZWZyZXNoIG9uIGxvZ2luCi0gOGEwNjU2ZTMgZml4OiBhdmF0YXIgZmFsbGJhY2ssIFlURCBhY2N1cmFjeSwgdXBjb21pbmcgc2NoZWR1bGUgYW1vdW50cywgaU9TIFBXRCB0aW1lbGluZQotIDQ2NTFhNTQxIGZlYXQoYnJpZWYpOiBhZGQgRmFjZSBJRCB1bmxvY2sgKyBDQVNFLTAwMDIgdHdvLWNhc2Ugc3VwcG9ydAotIDk3NWMyOTFmIGZpeDogZW1wdHkgc3lzdGVtSW1hZ2Ugc3RyaW5nIGluIGNhc2UgcGlja2VyIE1lbnUg4oCUIHVzZSBjb25kaXRpb25hbCBMYWJlbCBpbnN0ZWFkCi0gMTNmMzg0NDkgZml4OiBjYXNlIHBpY2tlciB2aXNpYmxlIGluIGFsbCB0YWJzLCBjaGVja2xpc3QgKyBsaW1pdGF0aW9uIGJhbm5lciBicmFuY2ggb24gYWN0aXZlQ2FzZQotIGRjODRjMmFkIGZlYXQ6IGFkZCBDQVNFLTAwMDIgVHJvbW1lbCB2LiBUcm9tbWVsIOKAlCBpT1MgKyBtYWNPUyBjYXNlIHN3aXRjaGluZwotIDU5ZTAwYzdjIGZlYXQoY2hhcnRlcnMpOiBjb25zdGl0dXRpb25hbCByaWdodHMgcmVmZXJlbmNlIGFwcAotIGY5NmY3MjZjIGZpeChicmllZik6IGZ1bGwgZmF0aGVyIHN0YXRlbWVudCArIGxhd3llciB1cGRhdGVzIChDVyBlbWFpbCwgQUYgdm9pY2VtYWlsK3Bob25lLCBLTCBhZGRyZXNzK3Bob25lKSArIDMwcyBjYWxsIHNjcmlwdAotIDNkYjg1YjZjIGZlYXQoYnJpZWYpOiB2MyBzY3JpcHQgLSBmdWxsIHJlbmRlciArIFN1cGFiYXNlIGF1dGgvc3luYywgRE9NLW9ubHkgKG5vIGlubmVySFRNTCkKLSA2MjkzZGJiOCBhdXRvOiBkYWlseSBzeW5jIDIwMjYtMDUtMTcKLSBkYTI2MDM5YiBkb2NzOiBhZGQgU3VwYWJhc2UgYXV0aCBtaWdyYXRpb24gdG8gYnJpZWYgaU9TL21hY09TIHJvYWRtYXAKLSAxMWZmMDllNCBjaG9yZTogdXBkYXRlIGVwaXBoYW55IHN1Ym1vZHVsZQotIGE2ZTZkNGJjIGZpeDogdW5pcXVlIGF2YXRhciBibG9iIFVSTCBwZXIgdXBsb2FkIHRvIGJ1c3QgQ0ROIGNhY2hlCi0gNTYzZTU0ZGMgZml4OiByZW1vdmUgZXhwaXJlZCBibG9iIG1pZ3JhdGlvbiBmYWxsYmFjayB0byBoYWx2ZSBsaXN0IG9wcwotIDU3ZjdlNDU2IGZpeDogY29ycyBpc09yaWdpbkFsbG93ZWQgcmV0dXJucyB0cnVlIGZvciBuby1vcmlnaW4gc2FtZS1vcmlnaW4gcmVxdWVzdHM7IGFkZCBwYXJzZVNpZ25JbkxpbmsgcmVncmVzc2lvbiB0ZXN0IGZvciBCQyBTZWxmLVNlcnZlIHNwYW4gcGF0dGVybgotIDI0M2FlN2Y3IGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0xNgotIGIzMDJmYWQzIGZpeDogbW92ZSBncmFwaGVyIGljb24uc3ZnIHRvIHB1YmxpYy8gZm9yIFZpdGUgc3RhdGljIHNlcnZpbmcKLSAzM2U5MzI3MyBmZWF0KGJyaWVmKTogam91cm5hbCBlZGl0L2RlbGV0ZSwgY2xlYW4gZGVhZCBjb2RlLCBBKyBwYXNzIChpT1MgKyBtYWNPUykKLSA1ZjU3ZTU2ZCBmaXgoYnJpZWYpOiByZW1vdmUgdGhlbWUgdG9nZ2xlLCBmb2xsb3cgc3lzdGVtIGF1dG9tYXRpY2FsbHkKLSBhNjRiZDE1OSBmZWF0KGJoYWRkaWUpOiByZW5hbWUgdG8gUHVsc2UsIHJlZnJhbWUgY29uY2VwdCwgd2lyZSByZWFsIGRhdGEKLSAzYjhhOTc5YyBmaXg6IHN1cmZhY2UgcmVhbCBsb2dpbiBlcnJvciBmcm9tIHNlcnZlciBpbnN0ZWFkIG9mIGdlbmVyaWMgc2Vzc2lvbiBleHBpcmVkIG1lc3NhZ2UKLSA3YThlNDFkNCBmZWF0KGJyaWVmKTogYXV0byBzeXN0ZW0gdGhlbWUgKyBsYXd5ZXIgc3RhdHVzIGN5Y2xpbmcgKGlPUyArIG1hY09TKQotIGY3YTU2NWMzIGZpeDogcmFpc2UgbG9naW4gcmF0ZSBsaW1pdCB0byAyMC8xNW1pbiwgYWRkIDQyOSBlcnJvciBjYXNlIG9uIGlPUwotIGYyYTFmYjMwIGZpeDogc2lsZW5jZSB0cnk/IHdhcm5pbmdzLCBvcHQgaW50byBuZXcgU3VwYWJhc2Ugc2Vzc2lvbiBiZWhhdmlvcjsgdXBkYXRlIGRvY3MKLSBjNWQxY2Q1OSBmaXg6IHJlc29sdmUgU3dpZnQgNiBkYXRhIHJhY2UgZXJyb3JzIGluIEJyaWVmIFN0b3JlCi0gNmUzOTJiMmUgZml4KGJyaWVmKTogdHlwZWQgRW5jb2RhYmxlIHVwc2VydHMgKyBGb3VuZGF0aW9uIGltcG9ydCBmb3IgaU9TL21hY09TCi0gY2MxZDE4MTAgZmVhdChicmllZik6IFN1cGFiYXNlIGF1dGggKyBEQiBzeW5jIGZvciBpT1MgYW5kIG1hY09TCi0gMTA2YmYyMWYgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTE1Ci0gNzA2MTM5MzMgZmVhdCh0YWxseSk6IFBXRF9ERU5JRUQvUFdEX0RFTklFRF9EQVRFL1BXRF9SRVNVQk1JVFRFRCBlbnYgdmFyIG92ZXJyaWRlcwotIDcwNGYxMzdjIGZpeDogbnBtIGF1ZGl0IGZpeCDigJQgcmVzb2x2ZSBoaWdoIHNldmVyaXR5IGRlcHMKLSA3M2UzZjQzZSBmaXg6IG5wbSBhdWRpdCBmaXgg4oCUIHJlc29sdmUgaGlnaCBzZXZlcml0eSBkZXBzCi0gODRmZTUxOTUgc2VjdXJpdHk6IGFkZCBDb250ZW50LVNlY3VyaXR5LVBvbGljeSBoZWFkZXIKLSA5YTllZjM4MSBzZWN1cml0eTogYWRkIENvbnRlbnQtU2VjdXJpdHktUG9saWN5IGhlYWRlcgotIDE5OGNjMzk2IHNlY3VyaXR5OiBDU1AgaGVhZGVyICsgcmF0ZSBsaW1pdGluZyBvbiB3cml0ZSBlbmRwb2ludHMKLSBkZTVmNWUxOSBhdXRvOiBkYWlseSBzeW5jIDIwMjYtMDUtMTUKLSA0NDE3NGY2YiBmaXgodGFsbHkpOiBhdmF0YXIgY2FjaGUtYnVzdCwgbm90aWZpY2F0aW9uIHN5bmMgYWNyb3NzIHBsYXRmb3JtcwotIDZlZmNjMDhlIGZlYXQoYnJpZWYpOiBzeW5jIGlvcy9tYWNvcyDigJQgQ1JDQyBmaXgsIGNoZWNrbGlzdCBpdGVtcyAxNC0xNiwgZW1haWwtZmlyc3Qgc3RyYXRlZ3ksIGNhbm9uaWNhbCBDYXNlRGF0YS5qc29uOyBtYWNvcyBzeW1saW5rcyBpb3MgQ2FzZURhdGEuc3dpZnQKLSA1OGNkOGU1NSBkb2NzOiBhZGQgYnJpZWYtaW9zICsgc2Nob29sLCBmaXggbGlmZSBkZXNjLCBNb25pY2Eg4oaSIEVwaXBoYW55LCByZW1vdmUgZnVzZQotIDRkZTdiYThkIGZlYXQ6IGFkZCBicmllZi9tYWNvcyBuYXRpdmUgYXBwLCByZXN0cnVjdHVyZSBicmllZiBhcyBjcm9zcy1wbGF0Zm9ybQotIGZhODNkY2YzIGNob3JlKHRhbGx5KTogYWRkIHNlZWQtcHdkLXN0YXR1cy5qcyArIHNlZWQgam9zaHVhdHJvbW1lbCBkZW5pZWQKLSA0MjU4NzE2MCBmZWF0KHRhbGx5KTogdjMuNi4wIOKAlCBzZXR0aW5ncyB0YWIsIHBlci11c2VyIFBXRCBzdGF0dXMsIHVwZ3JhZGVkIGF2YXRhcgotIDNlMzA4OTAyIGZlYXQoYnJpZWYtaW9zKTogYWRkIFdhbmcgdi4gQUcgQ2FuYWRhIHRvIGNvbXBhcmFibGUgY2FzZXMgdGFibGUgaW4gTW9uZXlUYWJWaWV3Ci0gNjhhZDAxNGQgZmVhdDogZGFyayBsYXVuY2ggc2NyZWVuIHdpdGggc2NhbGVzIGljb24gKExhdW5jaEJHICsgTGF1bmNoTG9nbykKLSBkZjBhYjFiMyByZWZhY3Rvcjogc2ltcGxpZnkgYnJpZWYtaW9zIOKAlCBleHRyYWN0IFNlY3Rpb25DYXJkLCBkcm9wIGRlYWQgQ29tcGFyYWJsZUNhc2UgKyBQcmlvcml0eS5ub25lLCBmaXggcmlzaygpIGNvbG9yLCBuZXcgc2NhbGVzIGljb24KLSA0ZWU4M2Y4NSBmZWF0OiBhZGQgQXBwSWNvbi5wbmcgKDEwMjR4MTAyNCkgdG8gYXNzZXQgY2F0YWxvZwotIGNlY2M0MTU4IGZpeDogVUlSZXF1aXJlc0Z1bGxTY3JlZW4gdG8gc3VwcHJlc3Mgb3JpZW50YXRpb24gd2FybmluZwotIDAwOGI5NDFjIGZpeDogcmVtb3ZlIGludmFsaWQgQE9ic2VydmFibGUgbG9jYWwgdHlwZSBoYWNrcyAoU3dpZnQgNikKLSA5YTI5YTcwNCBmaXg6IFNoYXBlU3R5bGUgZXh0ZW5zaW9uICsgR3JvdW5kIGluaXQgYXJnIG9yZGVyCi0gODgxMTYxZGIgZmVhdDogQnJpZWYgaU9TIG5hdGl2ZSBhcHAgdjEuMC4wCi0gNDBmZGRmNzUgY2hvcmU6IHJlbW92ZSBmdXNlLCBkcm9wIGNsYXVkZS11c2FnZSwgZXhwYW5kIHJvb3N0L3NwYXJrIHZpc2lvbgotIGVmMTE5ZjljIGZpeDogTGFuZ2xleSBIb3NwaXRhbCAobm90IExpb25zIEdhdGUpCi0gM2Q5NWE2MjYgZmVhdChsaWZlKTogaW50ZWdyYXRlIDIwMTktMjAyNCBwZXJzb25hbCBoaXN0b3J5IGFjcm9zcyB3ZWIgKyBpT1MKLSBlYjAzZWFiZiBhdXRvOiBkYWlseSBzeW5jIDIwMjYtMDUtMTEKLSAwNzNjZjBiMyBmZWF0OiBjcm9zcy1wbGF0Zm9ybSBtZXNzYWdlIHJlYWQgc3RhdGUgc3luYyAodjMuNS4wKQotIDJlMzU1MDdmIGZpeDogc3RhYmxlIG1lc3NhZ2UgSURzLCBwZXItbWVzc2FnZSByZWFkLCBsYW5kaW5nIENTUyBjbGVhbnVwCi0gYmQ2MDRiOTUgZmVhdDogbWVzc2FnZXMgcmVhZCBzdGF0ZSBmaXgsIGlPUyBNZXNzYWdlc1ZpZXcgcmVkZXNpZ24sIGF2YXRhciBkaXNrIGNhY2hlCi0gZTlkNDM3MGYgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTEwCi0gNjBmMjIzMDYgZmVhdChkb3NlKTogcmVmcmVzaCBwb3J0Zm9saW8gdmliZSDigJQgUGx1cyBKYWthcnRhIFNhbnMgaGVhZGluZ3MsIHdhcm0gZGFyayBwYWxldHRlICMxNjE1MTQvI2VkZWJlOAotIDY2NDU0YTkxIGZlYXQobmltYmxlKTogYWRkIHZlcnNpb24gZGlzcGxheSB0byBtYWNPUyBTZXR0aW5ncyArIGJ1bXAgc2NyaXB0Ci0gNmM2NjBlYmUgY2hvcmU6IGJ1bXAgdmVyc2lvbiB0byB2MS4yLjAKLSBkNzk4OTJlNiBjaG9yZTogYnVtcCB2ZXJzaW9uIHRvIHYzLjEuMAotIDBmYzE0ODYwIGZlYXQoZG9zZSk6IGF1dG8gZGFyay9saWdodCBtb2RlICsgaU9TIGJ1aWxkIGZpeAotIGVhZWEwOWViIGZlYXQobmltYmxlKTogdmlnb3JvdXMgTkwgcXVlcnkgdW5kZXJzdGFuZGluZyArIGZpeCBpbnN0YW50IGFuc3dlciBwcmlvcml0eQotIGFhZTRhYzhhIGZpeDogdGFsbHkgbG9naW4uaHRtbCByZWRlc2lnbiAoZGFyayBtb2RlLCB0YWlsd2luZCkKLSA3YTkzODBmZSBjaG9yZTogZ2l0aWdub3JlIG5vZGVfbW9kdWxlcywgcmVtb3ZlIGZyb20gdHJhY2tpbmcKLSA2MmYxZDc3MSBjaG9yZTogZ2l0aWdub3JlIG5vZGVfbW9kdWxlcywgcmVtb3ZlIGZyb20gdHJhY2tpbmcKLSAwZGFjY2E0ZiBkb2NzOiB2Mi4wLjAgY2hhbmdlbG9nLCBKV1Qgcm90YXRpb24KLSBhNTVlNDhiOSBkb2NzOiB2MS4yLjAsIG5vdGUgSUNTIGVuY3J5cHRpb24KLSAzZDBjOTU1NiBkb2NzOiB2Mi4xLjAsIFN1cGFiYXNlIGF1dGgKLSAxNjMwMTcxOCBjaG9yZTogYnVtcCBjYWRlbmNlIHN1Ym1vZHVsZSAodW50cmFjayB4Y29kZXByb2opCi0gYTgxMWM3ZWUgY2hvcmU6IGJ1bXAgY2FkZW5jZSArIGVwaXBoYW55IHN1Ym1vZHVsZSBwb2ludGVycwotIDA4YjEyMDRiIGZpeDogYWRkIEdFTkVSQVRFX0lORk9QTElTVF9GSUxFIHRvIHdpcmV0ZXh0LWlvcyAocmVzb2x2ZSBjb2RlIHNpZ25pbmcpCi0gODE1MzcyOGEgZml4OiBhZGQgR0VORVJBVEVfSU5GT1BMSVNUX0ZJTEUgdG8gcmVzb2x2ZSBjb2RlIHNpZ25pbmcgYnVpbGQgZXJyb3IKLSA4ZTMwYjBiNSBmZWF0OiBzd2FwIGxvY2FsU3RvcmFnZSBhdXRoIGZvciBTdXBhYmFzZSAoZW1haWwrcGFzc3dvcmQpCi0gOTBmMDRlYTIgY2hvcmU6IGJ1bXAgY2FkZW5jZSBzdWJtb2R1bGUgKHByb2plY3QueW1sIGlPUy9tYWNPUyBidWlsZCBmaXgpCi0gYTgxYTM1NTYgZmVhdDogZW5jcnlwdCBJQ1MgVVJMcyBpbiBsb2NhbFN0b3JhZ2Ugd2l0aCBBRVMtR0NNCi0gYTQ0ZTY5Y2YgY2hvcmU6IGJ1bXAgY2FkZW5jZSBzdWJtb2R1bGUgdG8gOWEzY2Y1OCAocGVyLXJlcG8gYnJlYWtkb3duKQotIGJhOTkwY2NiIHN0eWxlKHNjaG9vbCk6IHZpYmUtY2xvbmUgdGFsbHkgYWVzdGhldGljIGludG8gc2Nob29sIGRhc2hib2FyZAotIDhjNTkxOWU4IGZpeChzY2hvb2wpOiByZW1vdmUgc3RhbGUgd2FybmluZywgcmVmcmVzaCByZXRyaWV2ZWRfYXQKLSA5YTM2ZTA4MyBSZXZlcnQgImNob3JlOiByZW1vdmUgc2Nob29sIHNlY3Rpb24gZW50aXJlbHkiCi0gZGZmZTAyNzYgY2hvcmU6IHJlbW92ZSBzY2hvb2wgc2VjdGlvbiBlbnRpcmVseQotIDVhMmYxZmQ2IGZpeChzY2hvb2wpOiBoaWRlIEEmUCAxMiwgZHJvcCBzY2llbmNlIHF1aXogdGFiCi0gZDIyMTJhNzAgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTA5Ci0gODNkZWRlMzkgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTA4Ci0gMzFhNzQ3MDggcmVmYWN0b3Ioc2Nob29sKTogcmVtb3ZlIGRlYWQgY29kZSwgZml4IHNob3J0TmFtZSBmb3IgYmxlbmRlZCBjb3Vyc2UsIERSWSBzd2lmdCBmZXRjaCthdmVyYWdlCi0gNTcxYjZiODIgZmVhdDogYWRkIHNwcmluZyBibGVuZGVkIFByZS1DYWxjIDEyIChPVSAxOTg4ODkpLCBmaXggY291cnNlIG5hbWVzCi0gNWYyNWI3ODUgZml4KGlvcyk6IGRhcmsgbG9naW4gc2NyZWVuICsgdGFsbHkgbWFya3MgaWNvbgotIDkzZTA1NmQ0IGNob3JlKGlvcyk6IGZvcmNlLWFkZCBMYXVuY2hJY29uLnBuZyAoUE5HIGdpdGlnbm9yZWQgYnkgcGF0dGVybikKLSBiMzA3OGM3NyBmZWF0KGlvcyk6IHNwbGFzaCBzY3JlZW4gd2l0aCB0YWxseSBtYXJrcyArIGZpeCB2Mi40LjEgdmVyc2lvbiBpbiBwcm9qZWN0LnltbAotIDIzMjQzNTY3IGZpeChpb3MpOiByZWdlbmVyYXRlIGFwcCBpY29uIFBOR3MgYXQgcHJvcGVyIDEwMjR4MTAyNCBzY2FsZQotIDNkN2JhMWZjIGZlYXQobmltYmxlLWlvcyk6IHYxLjIuMCDigJQgY3Jhc2ggZml4LCBkZXNpZ24gaGFuZG9mZiwgaGlzdG9yeSwgc2hpbW1lcgotIDRlYTNmNTAwIGZlYXQoZG9zZSk6IGFkZCBkYWlseSByb3V0aW5lIGNoZWNrbGlzdAotIGIwZDUxYzhiIGZlYXQ6IGxpdmUgc2VhcmNoIGRlYm91bmNlICsgaW4tYXBwIFNGU2FmYXJpVmlld0NvbnRyb2xsZXIgYnJvd3NpbmcKLSBjMjk4NGYzZCBmaXg6IGd1YXJkIERERyBVUkwgY29uc3RydWN0aW9uIGluIFJlc3VsdERldGFpbFZpZXcKLSA1OTc2OWRiYyBmaXgoaW9zKTogdXBkYXRlIGFwcCBpY29uIHRvIG9yYW5nZSB0YWxseSBkZXNpZ24sIGJ1bXAgUkVBRE1FIHRvIHYyLjQuMAotIGU5MjgxZDgyIGZlYXQ6IGZsYXQgcmVkZXNpZ24gd2l0aCBjbGlja2FibGUgcmVzdWx0IGRldGFpbCB2aWV3cwotIDVkZTNiYzFkIGZpeChpb3MpOiBzeW5jIGxvZ2luICsgc3BsYXNoIHN0eWxlIHdpdGggcmVzdCBvZiBhcHAKLSBlNTIwYzc1MyBmaXgod2ViKTogbWF0Y2ggbG9naW4gcGFnZSB0byBsYW5kaW5nIHBhZ2UgdGhlbWUgKFNwYWNlIEdyb3Rlc2ssIHBhcmNobWVudCBwYWxldHRlLCBvcmFuZ2UgYWNjZW50KQotIGU1NjlhYzVjIGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0wNwotIDkyNTZiMzhjIGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0wNgotIDEwZmExY2Y2IGZlYXQoc2Nob29sKTogYWRkIHN0cnVjdHVyZWQgbWF0aCBlbnJvbGxtZW50IChNb24vV2VkIDM6MzAtNjozMCwgNiB3a3Mg4oaSIFVWaWMpCi0gZjc3ZmMyZjggZmVhdDogbm9kZS1ncmFwaCBhdmF0YXIgKyBpT1MgaG9tZSBwYXJpdHkKLSAxOTQxMTBhNCByZWZhY3Rvcjogc2ltcGxpZnkgKyBmaXggcmV2aWV3IGZpbmRpbmdzIGZyb20gVUkgb3ZlcmhhdWwKLSA3NmZjYjRiNiBmZWF0OiBpT1MgVUkgb3ZlcmhhdWwgKyBsYW5kaW5nIHBhZ2UgcmVkZXNpZ24gKyBub3RpZmljYXRpb24gc3luYwotIDczYWRkMGUwIGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0wNQotIGQ2ZmZjMWI4IGZpeDogcGFzcyByZXBvcnRNb250aHMvcGluU2V0L3Nob3dQaW5TaGVldCBwcm9wcyB0byBTY3JlZW4g4oCUIGNyYXNoIG9uIHJlbmRlcgotIGI2NzdmYTI3IGZlYXQ6IHJlZGVzaWduIGljb24gd2l0aCBib2xkIHRhbGx5IGdyb3VwcyArIGJ1bXAgdG8gdjMuMi4yCi0gYjMwMThkMTYgZml4OiBDT1JTIGRlbGVnYXRlIGJsb2NrcyBkaXJlY3QgbmF2aWdhdGlvbiAobm8gT3JpZ2luIGhlYWRlciA9IDUwMCkKLSA0MjA5NGFmZiBkb2NzOiBidW1wIHRvIHYzLjIuMQotIDJhMzU0MDM1IGRvY3M6IHJlbW92ZSBQSU4gdmFsdWUgZnJvbSBjaGFuZ2Vsb2cKLSBmMDYzMzZmMiBmZWF0OiBQSU4gc3RvcmVkIHBlci11c2VyIGluIGVuY3J5cHRlZCBCbG9iIHByb2ZpbGUKLSA4NzUwOTM5NyBkb2NzOiBidW1wIHRvIHYzLjIuMCwgZG9jdW1lbnQgbWVzc2FnZXMgc3luYyArIHN0YXR1cyB0YWIgY2hhbmdlcwotIGI1MzE2MTc3IGZpeDogbWVzc2FnZXMgc3luYyArIHJlcG9ydCBzdGF0dXMgKyBhY2NvdW50IGluZm8gaW4gc3RhdHVzIHRhYgotIDNhYWQ1NWIzIGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0wNAotIDdmMGY4MTcxIGZpeDogcmVmcmVzaCBzY2hvb2wgZ3JhZGVzIGRhdGEgKHdhcyA1NjJoIHN0YWxlKQotIDM5MTI5MTY0IGZlYXQ6IGFkZCBncmFwaGVyIOKAlCBEZXNtb3Mtc3R5bGUgZ3JhcGhpbmcgY2FsY3VsYXRvcgotIDM1MjczMzE5IGZlYXQ6IHJlZnJlc2ggRDJMIGdyYWRlcyAyMDI2LTA1LTA0Ci0gOGJmMzAxZDggZmVhdChuaW1ibGUpOiBpbXBsZW1lbnQgcHJvdG90eXBlIGRlc2lnbiBhY3Jvc3MgbWFjT1MsIGlPUywgd2ViCi0gMGVmODMxYTAgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTAzCi0gNjgyZTAzMTAgcmVmYWN0b3Iod2lyZXRleHQpOiBzaW1wbGlmeSBpbnNwZWN0b3IgKyB0b29sYmFyIFVJCi0gMjJhM2Q0MTUgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA1LTAzCi0gOGU5MjA3NTIgY2hvcmU6IGRlbGV0ZSBoYWxsdWNpbmF0ZWQgY2xhdWRlLXVzYWdlICsgY2xhdWRlLXVzYWdlLWlvcyBwcm9qZWN0cwotIDAzODJmYmU3IGZlYXQ6IHBpeGVsIGFydCBhdmF0YXJzLCBsYW5kaW5nIHBhZ2UgcGFyaXR5LCBtb250aGx5IHJlcG9ydCBQSU4gcHJvbXB0LCBTS04gcHJvZmlsZSBibG9iCi0gZjhiNjhhY2QgZml4OiBjb252ZXJ0IG5vdGlmaWNhdGlvbnMgdG8gRE9NIG1ldGhvZHMsIHJlbW92ZSBkZWFkIGVzYygpIGhlbHBlcgotIDFmZjQ5YjU2IGZpeDogc2VjdXJpdHkgaGFyZGVuaW5nIGFjcm9zcyBkb3NlLCByb29zdCwgdGFsbHksIG5pbWJsZSwgZXBpcGhhbnkKLSA3MmVmOWVkNyBhdXRvOiBkYWlseSBzeW5jIDIwMjYtMDUtMDIKLSAzMzM5MTZiMCBmZWF0OiBzeW5jIG55YyBtYWNPUyB3aXRoIEFwcGxlIExpcXVpZCBHbGFzcyByZWRlc2lnbiAodjAuNC4wKQotIDc2NGYyZmQ2IGZlYXQ6IEFwcGxlIExpcXVpZCBHbGFzcyByZWRlc2lnbiDigJQgbnljLXdlYiB2Mi4yLjAgKyBueWMtaW9zIHYwLjQuMAotIDQzZGZjMGJjIGZlYXQ6IHYxLjEuMCDigJQgR2Vpc3QgZm9udCwgaUNhbC9Hb29nbGUgQ2FsZW5kYXIgaW50ZWdyYXRpb24sIFNldHRpbmdzIHRhYgotIDdmMTA4YTJkIGNob3JlOiB1cGRhdGUgZXBpcGhhbnkgc3VibW9kdWxlIHBvaW50ZXIKLSBlNzAzYzVjYyBmaXg6IG1lcmdlIGNvbW1lbnQtY291bnRzIGludG8gY29tbWVudHMgdG8gc3RheSB1bmRlciBWZXJjZWwgMTItZnVuY3Rpb24gbGltaXQKLSAyMWQzZTllNyBmaXg6IFBXRCBzdGVwIDMgKG1lZGljYWwgZG9uZSksIGRlZHVwZSBtZXNzYWdlcywgY2xlYXIgYmFkZ2Ugb24gdmlldwotIDkxYzUxNGU1IGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNS0wMQotIDcyMTRmNDM3IGZpeDogcmVtb3ZlIGNlbnRlcmluZyBmbGV4IGZyb20gcm9vdCwgYXBwIGZpbGxzIGZ1bGwgdmlld3BvcnQgd2lkdGgKLSBmZDM0NjQyMiBmaXg6IG1hdGNoIGJvZHkgYmFja2dyb3VuZCB0byBhcHAgdGhlbWUsIG5vIHdoaXRlIHNpZGUgYmxlZWQKLSA4ZWZlZGNkNyBmaXg6IGNvbnN0cmFpbiBTY3JlZW4gc2hlbGwgdG8gNDMwcHggbWF4LXdpZHRoIG9uIGRlc2t0b3AKLSA0ZTliMmM3YiBmaXgodGFsbHkpOiByZW1vdmUgcGhvbmUtZnJhbWUgc2hlbGwsIGZpeCBhbGwgaGFyZGNvZGVkIGFtb3VudHMKLSA3YjE3NGRkZCBkb2NzOiBhZGQgdGFsbHkgdG8gYXBwcyBtb25vcmVwbyBSRUFETUUKLSA0MmQyOWEwMiBmaXgodGFsbHkpOiBzdGFsZSBwYXkgZGF0ZSwgbWVzc2FnZXMgc3BhbSwgZG9jcyBidW1wIHRvIHYzLjEuMAotIGRiZmVmNjI5IGZlYXQodGFsbHkpOiBhcHBseSBuZXcgZGVzaWduIOKAlCBTcGFjZSBHcm90ZXNrLCBwYXJjaG1lbnQgcGFsZXR0ZSwgY2xycy5jYyBvcmFuZ2UsIGRlc2t0b3AgbGF5b3V0Ci0gNjZkZmI5MWQgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA0LTMwCi0gODk4MGUyMzggY2hvcmU6IHVwZGF0ZSBjYWRlbmNlIHJlZiDigJQgcGVyLXJlcG8gYnJlYWtkb3duICsgU3dpZnQgZml4Ci0gMDIwMjgwMmIgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA0LTMwCi0gMzUzNzMzNWUgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA0LTI5Ci0gOGExNGI3M2QgZml4OiBhZGQgdW5wa2cuY29tIHRvIENTUCBzY3JpcHQtc3JjCi0gMTVjZDBlNTIgZml4OiByZXNvbHZlIGJsYW5rIHdoaXRlIHBhZ2Ugb24gL2FwcCBhZnRlciBsb2dpbgotIDdmZDVjMzk3IGRvY3M6IGFkZCBhdmF0YXJfdXJsIG1pZ3JhdGlvbiBzdGVwIHRvIFJFQURNRQotIDVhMWIzM2FlIGZlYXQ6IHBpeGVsIGFydCBhdmF0YXIgZ2VuZXJhdG9yCi0gYmMyOGE2MGEgZmVhdChjbGF1ZGUtdXNhZ2UpOiBhZGQgYnVkZ2V0IHByb2dyZXNzIGJhcnMgYW5kICRYLyRZIGRpc3BsYXkKLSBlNWFhNDA3OCBmZWF0OiBhZGQgQ29uY2VydGEgdG8gZG9zZSBzdWJzdGFuY2VzIGxpc3QKLSBmM2U3NDc1ZSBmZWF0OiByZXBsYWNlIGRhc2hib2FyZCB3aXRoIG5ldyA0LXRhYiBSZWFjdCBVSSBmcm9tIGRlc2lnbiBoYW5kb2ZmCi0gODMwNmFjZDUgYXV0bzogZGFpbHkgc3luYyAyMDI2LTA0LTI4Ci0gYjNjOWVmODYgZG9jczogYnVtcCBDTEFVREUubWQgLS0gZnVsbCBhcHAgbGlzdCBvdmVyaGF1bAotIGMxYmZjYjkwIGxpZmUtaW9zOiBzeW5jIGJvdW5kYXJpZXMgZG9vciByZW1vdmFsIHBhcmFncmFwaAotIGY4YzMyYjk3IGxpZmU6IGFkZCBkb29yIHJlbW92YWwgYXQgMTYgdG8gYm91bmRhcmllcyBzZWN0aW9uCi0gNjY2MGYyM2YgY2hvcmU6IHJlbW92ZSBkZWFkLXdlaWdodCBzY2FmZm9sZHMKLSA2ZDc4MTdjNCBjaG9yZTogYnVtcCBjYWRlbmNlIHJlZiAoaU9TL21hY09TIEFQSSBmaXgpCi0gZGNiZTdhNzcgZG9jczogZml4IGljb24gdGFnLCBub3RlIGxpdmUgZGVwbG95Ci0gNzhiOTUyOGYgZmVhdCh0YWxseSk6IGFkZCBzcGFya2xpbmUgYmFycyB0byBDUkEgcGF5bWVudHMgbGlzdAotIDk0MGY1MmI0IGZlYXQ6IEVhc3kvTWVkaXVtL0hhcmQgZGlmZmljdWx0eSBzZWxlY3RvcgotIGRiOWZiMDc1IGRvY3MobGlmZSk6IGludGVncmF0ZSB0aGVyYXB5IHNlc3Npb24gbm90ZXMgLS0gcmVsaWdpb24sIGF1dGlzbSBzdGF0cywgR0ksIGhvdXNpbmcsIHdvcmxkdmlldwotIDU5ZjY2YmNkIGRvY3M6IHVwZGF0ZSByb2FkbWFwcyDigJQgbnljLXdlYiBkaWZmaWN1bHR5L2ExMXksIHNwYXJrIEFJIGJ1aWxkcywgZG9zZSB3ZWxsbmVzcwotIDViYmZkZTUwIGF1dG86IGRhaWx5IHN5bmMgMjAyNi0wNC0yNQotIDYxMmVlMzRlIGNob3JlOiB1cGRhdGUgc3VibW9kdWxlIHBvaW50ZXJzLCBkb3NlIGxvY2ssIHJvb3N0IGdpdGlnbm9yZQotIDA0YTQyOGQxIGZlYXQoZG9zZSk6IGFkZCBoZWFsdGggcHJvZmlsZSBwYWdlIHdpdGggY29uZGl0aW9ucywgcGVuZGluZyB0ZXN0cywgc3Vic3RhbmNlcwotIDZiMWY0MGU3IHZpYmU6IGFwcGx5IHBvcnRmb2xpbyBkZXNpZ24gdG8gc3BhcmsKLSAxZTRjMDgxZCB2aWJlOiBhcHBseSBwb3J0Zm9saW8gZGVzaWduIHRvIHJvb3N0Ci0gYTA0NTY5N2MgcmVmYWN0b3I6IGV4dHJhY3Qgc2hvcnREYXRlL3Nob3J0VGltZS9sb25nRGF0ZSB1dGlscyBpbiBkb3NlCi0gOWI1ZTEyNmEgcGVyZjogTyhuKSDihpIgTygxKSBmYXZvcml0ZSBsb29rdXBzIHZpYSBTZXQ7IGFkZCB2ZXJjZWwuanNvbiB3aXRoIHNlY3VyaXR5IGhlYWRlcnMKLSA1YjZkNGViOSBzZWN1cml0eTogYWRkIHNlY3VyaXR5IGhlYWRlcnMgKyBoYXJkZW4gLmdpdGlnbm9yZSBhY3Jvc3MgYWxsIGFwcHMKLSBhZjU2ZDlkYSByZWZhY3Rvcih0YWxseSk6IGV4dHJhY3QgcmVuZGVyVHJhY2tlcigpICsgVGltZWxpbmVDYXJkIHRvIGVsaW1pbmF0ZSBkdXBsaWNhdGlvbgo=
+# Changelog
+
+## [v0.0.1] — 2026-05-23
+
+- 212c2c22 chore: snow leopard pass (portfolio-ios)
+- 504bdc24 chore: snow leopard pass (nyc-web)
+- 7932d240 chore: snow leopard pass (nyc-ios)
+- f9518878 chore: snow leopard pass (nyc)
+- e0a6e02d chore: snow leopard pass (nimble-web)
+- 60648cb7 chore: snow leopard pass (nimble-ios)
+- 569c4f8e chore: snow leopard pass (nimble)
+- 5644eea3 chore: snow leopard pass (lingo-macos)
+- 30356f32 chore: snow leopard pass (lingo-ios)
+- 812023a2 chore: snow leopard pass (lingo)
+- 814315fd chore: snow leopard pass (life-ios)
+- 3873e7d8 chore: snow leopard pass (life)
+- ddb14c30 chore: snow leopard pass (supabase)
+- 770494b4 chore: snow leopard pass (brief)
+- b125116d chore: snow leopard pass (charters-ios)
+- ffbcd682 chore: snow leopard pass (bhaddie)
+- bac38d7c chore: snow leopard pass (wiretext-macos)
+- cc57d718 chore: snow leopard pass (wiretext)
+- cab9f3a1 chore(tally): reset to v1.0.0, trim changelog
+- d3443a9c docs(tally): bump to v3.7.0, document blob migration fix
+- c51f8c9b fix(tally): restore blob legacy path fallback + broaden payment amount regex
+- a005081a fix(brief): A+ gap — CASE-0002 bleed fixes, white theme, dead code cleanup, v6
+- 296a94bc feat(brief): CASE-0002 web + macOS toolbar label + Supabase journal removed
+- dff5e333 docs: fix stale README descriptions for life and lingo
+- 9ad0176c feat(brief): sync scenarios + comparables with updated projections
+- 2cf7e386 feat(brief): add lawyer contact details + biometric cooldown
+- fe1e0d4b auto: daily sync 2026-05-21
+- 84c14eb1 fix(brief): mark Paul Kent + DLA declined, add Harding & Chantler referrals
+- ce567408 chore: update school submodule (ignore .vercel)
+- 8383ed60 feat(charters): apply portfolio vibe — geist font, monochrome palette
+- 6efb4385 feat(charters): apple liquid glass ui + ios data complete (15 countries)
+- 711ac100 fix(charters): simplify vercel.json, remove unnecessary rewrites
+- 5fb76a70 feat(charters): v1.1.0 — compare mode, 4 new countries, iOS app
+- d17c2ad0 fix(brief): replace magic link with password auth, two-step login flow
+- 169a7bd4 fix(life-ios): repair broken section→chart mappings, bridge to A+
+- de9d33d3 feat(life): add conscience/MDMA/LSD/Concerta content, expand sexuality
+- 0424b205 auto: daily sync 2026-05-19
+- 4a0afdcd auto: daily sync 2026-05-19
+- 7aaea101 fix(tally): avatar validation + settings fallback + messages refresh on login
+- 8a0656e3 fix: avatar fallback, YTD accuracy, upcoming schedule amounts, iOS PWD timeline
+- 4651a541 feat(brief): add Face ID unlock + CASE-0002 two-case support
+- 975c291f fix: empty systemImage string in case picker Menu — use conditional Label instead
+- 13f38449 fix: case picker visible in all tabs, checklist + limitation banner branch on activeCase
+- dc84c2ad feat: add CASE-0002 Trommel v. Trommel — iOS + macOS case switching
+- 59e00c7c feat(charters): constitutional rights reference app
+- f96f726c fix(brief): full father statement + lawyer updates (CW email, AF voicemail+phone, KL address+phone) + 30s call script
+- 3db85b6c feat(brief): v3 script - full render + Supabase auth/sync, DOM-only (no innerHTML)
+- 6293dbb8 auto: daily sync 2026-05-17
+- da26039b docs: add Supabase auth migration to brief iOS/macOS roadmap
+- 11ff09e4 chore: update epiphany submodule
+- a6e6d4bc fix: unique avatar blob URL per upload to bust CDN cache
+- 563e54dc fix: remove expired blob migration fallback to halve list ops
+- 57f7e456 fix: cors isOriginAllowed returns true for no-origin same-origin requests; add parseSignInLink regression test for BC Self-Serve span pattern
+- 243ae7f7 auto: daily sync 2026-05-16
+- b302fad3 fix: move grapher icon.svg to public/ for Vite static serving
+- 33e93273 feat(brief): journal edit/delete, clean dead code, A+ pass (iOS + macOS)
+- 5f57e56d fix(brief): remove theme toggle, follow system automatically
+- a64bd159 feat(bhaddie): rename to Pulse, reframe concept, wire real data
+- 3b8a979c fix: surface real login error from server instead of generic session expired message
+- 7a8e41d4 feat(brief): auto system theme + lawyer status cycling (iOS + macOS)
+- f7a565c3 fix: raise login rate limit to 20/15min, add 429 error case on iOS
+- f2a1fb30 fix: silence try? warnings, opt into new Supabase session behavior; update docs
+- c5d1cd59 fix: resolve Swift 6 data race errors in Brief Store
+- 6e392b2e fix(brief): typed Encodable upserts + Foundation import for iOS/macOS
+- cc1d1810 feat(brief): Supabase auth + DB sync for iOS and macOS
+- 106bf21f auto: daily sync 2026-05-15
+- 70613933 feat(tally): PWD_DENIED/PWD_DENIED_DATE/PWD_RESUBMITTED env var overrides
+- 704f137c fix: npm audit fix — resolve high severity deps
+- 73e3f43e fix: npm audit fix — resolve high severity deps
+- 84fe5195 security: add Content-Security-Policy header
+- 9a9ef381 security: add Content-Security-Policy header
+- 198cc396 security: CSP header + rate limiting on write endpoints
+- de5f5e19 auto: daily sync 2026-05-15
+- 44174f6b fix(tally): avatar cache-bust, notification sync across platforms
+- 6efcc08e feat(brief): sync ios/macos — CRCC fix, checklist items 14-16, email-first strategy, canonical CaseData.json; macos symlinks ios CaseData.swift
+- 58cd8e55 docs: add brief-ios + school, fix life desc, Monica → Epiphany, remove fuse
+- 4de7ba8d feat: add brief/macos native app, restructure brief as cross-platform
+- fa83dcf3 chore(tally): add seed-pwd-status.js + seed joshuatrommel denied
+- 42587160 feat(tally): v3.6.0 — settings tab, per-user PWD status, upgraded avatar
+- 3e308902 feat(brief-ios): add Wang v. AG Canada to comparable cases table in MoneyTabView
+- 68ad014d feat: dark launch screen with scales icon (LaunchBG + LaunchLogo)
+- df0ab1b3 refactor: simplify brief-ios — extract SectionCard, drop dead ComparableCase + Priority.none, fix risk() color, new scales icon
+- 4ee83f85 feat: add AppIcon.png (1024x1024) to asset catalog
+- cecc4158 fix: UIRequiresFullScreen to suppress orientation warning
+- 008b941c fix: remove invalid @Observable local type hacks (Swift 6)
+- 9a29a704 fix: ShapeStyle extension + Ground init arg order
+- 881161db feat: Brief iOS native app v1.0.0
+- 40fddf75 chore: remove fuse, drop claude-usage, expand roost/spark vision
+- ef119f9c fix: Langley Hospital (not Lions Gate)
+- 3d95a626 feat(life): integrate 2019-2024 personal history across web + iOS
+- eb03eabf auto: daily sync 2026-05-11
+- 073cf0b3 feat: cross-platform message read state sync (v3.5.0)
+- 2e35507f fix: stable message IDs, per-message read, landing CSS cleanup
+- bd604b95 feat: messages read state fix, iOS MessagesView redesign, avatar disk cache
+- e9d4370f auto: daily sync 2026-05-10
+- 60f22306 feat(dose): refresh portfolio vibe — Plus Jakarta Sans headings, warm dark palette #161514/#edebe8
+- 66454a91 feat(nimble): add version display to macOS Settings + bump script
+- 6c660ebe chore: bump version to v1.2.0
+- d79892e6 chore: bump version to v3.1.0
+- 0fc14860 feat(dose): auto dark/light mode + iOS build fix
+- eaea09eb feat(nimble): vigorous NL query understanding + fix instant answer priority
+- aae4ac8a fix: tally login.html redesign (dark mode, tailwind)
+- 7a9380fe chore: gitignore node_modules, remove from tracking
+- 62f1d771 chore: gitignore node_modules, remove from tracking
+- 0dacca4f docs: v2.0.0 changelog, JWT rotation
+- a55e48b9 docs: v1.2.0, note ICS encryption
+- 3d0c9556 docs: v2.1.0, Supabase auth
+- 16301718 chore: bump cadence submodule (untrack xcodeproj)
+- a811c7ee chore: bump cadence + epiphany submodule pointers
+- 08b1204b fix: add GENERATE_INFOPLIST_FILE to wiretext-ios (resolve code signing)
+- 8153728a fix: add GENERATE_INFOPLIST_FILE to resolve code signing build error
+- 8e30b0b5 feat: swap localStorage auth for Supabase (email+password)
+- 90f04ea2 chore: bump cadence submodule (project.yml iOS/macOS build fix)
+- a81a3556 feat: encrypt ICS URLs in localStorage with AES-GCM
+- a44e69cf chore: bump cadence submodule to 9a3cf58 (per-repo breakdown)
+- ba990ccb style(school): vibe-clone tally aesthetic into school dashboard
+- 8c5919e8 fix(school): remove stale warning, refresh retrieved_at
+- 9a36e083 Revert "chore: remove school section entirely"
+- dffe0276 chore: remove school section entirely
+- 5a2f1fd6 fix(school): hide A&P 12, drop science quiz tab
+- d2212a70 auto: daily sync 2026-05-09
+- 83dede39 auto: daily sync 2026-05-08
+- 31a74708 refactor(school): remove dead code, fix shortName for blended course, DRY swift fetch+average
+- 571b6b82 feat: add spring blended Pre-Calc 12 (OU 198889), fix course names
+- 5f25b785 fix(ios): dark login screen + tally marks icon
+- 93e056d4 chore(ios): force-add LaunchIcon.png (PNG gitignored by pattern)
+- b3078c77 feat(ios): splash screen with tally marks + fix v2.4.1 version in project.yml
+- 23243567 fix(ios): regenerate app icon PNGs at proper 1024x1024 scale
+- 3d7ba1fc feat(nimble-ios): v1.2.0 — crash fix, design handoff, history, shimmer
+- 4ea3f500 feat(dose): add daily routine checklist
+- b0d51c8b feat: live search debounce + in-app SFSafariViewController browsing
+- c2984f3d fix: guard DDG URL construction in ResultDetailView
+- 59769dbc fix(ios): update app icon to orange tally design, bump README to v2.4.0
+- e9281d82 feat: flat redesign with clickable result detail views
+- 5de3bc1d fix(ios): sync login + splash style with rest of app
+- e520c753 fix(web): match login page to landing page theme (Space Grotesk, parchment palette, orange accent)
+- e569ac5c auto: daily sync 2026-05-07
+- 9256b38c auto: daily sync 2026-05-06
+- 10fa1cf6 feat(school): add structured math enrollment (Mon/Wed 3:30-6:30, 6 wks → UVic)
+- f77fc2f8 feat: node-graph avatar + iOS home parity
+- 194110a4 refactor: simplify + fix review findings from UI overhaul
+- 76fcb4b6 feat: iOS UI overhaul + landing page redesign + notification sync
+- 73add0e0 auto: daily sync 2026-05-05
+- d6ffc1b8 fix: pass reportMonths/pinSet/showPinSheet props to Screen — crash on render
+- b677fa27 feat: redesign icon with bold tally groups + bump to v3.2.2
+- b3018d16 fix: CORS delegate blocks direct navigation (no Origin header = 500)
+- 42094aff docs: bump to v3.2.1
+- 2a354035 docs: remove PIN value from changelog
+- f06336f2 feat: PIN stored per-user in encrypted Blob profile
+- 87509397 docs: bump to v3.2.0, document messages sync + status tab changes
+- b5316177 fix: messages sync + report status + account info in status tab
+- 3aad55b3 auto: daily sync 2026-05-04
+- 7f0f8171 fix: refresh school grades data (was 562h stale)
+- 39129164 feat: add grapher — Desmos-style graphing calculator
+- 35273319 feat: refresh D2L grades 2026-05-04
+- 8bf301d8 feat(nimble): implement prototype design across macOS, iOS, web
+- 0ef831a0 auto: daily sync 2026-05-03
+- 682e0310 refactor(wiretext): simplify inspector + toolbar UI
+- 22a3d415 auto: daily sync 2026-05-03
+- 8e920752 chore: delete hallucinated claude-usage + claude-usage-ios projects
+- 0382fbe7 feat: pixel art avatars, landing page parity, monthly report PIN prompt, SKN profile blob
+- f8b68acd fix: convert notifications to DOM methods, remove dead esc() helper
+- 1ff49b56 fix: security hardening across dose, roost, tally, nimble, epiphany
+- 72ef9ed7 auto: daily sync 2026-05-02
+- 333916b0 feat: sync nyc macOS with Apple Liquid Glass redesign (v0.4.0)
+- 764f2fd6 feat: Apple Liquid Glass redesign — nyc-web v2.2.0 + nyc-ios v0.4.0
+- 43dfc0bc feat: v1.1.0 — Geist font, iCal/Google Calendar integration, Settings tab
+- 7f108a2d chore: update epiphany submodule pointer
+- e703c5cc fix: merge comment-counts into comments to stay under Vercel 12-function limit
+- 21d3e9e7 fix: PWD step 3 (medical done), dedupe messages, clear badge on view
+- 91c514e5 auto: daily sync 2026-05-01
+- 7214f437 fix: remove centering flex from root, app fills full viewport width
+- fd346422 fix: match body background to app theme, no white side bleed
+- 8efedcd7 fix: constrain Screen shell to 430px max-width on desktop
+- 4e9b2c7b fix(tally): remove phone-frame shell, fix all hardcoded amounts
+- 7b174ddd docs: add tally to apps monorepo README
+- 42d29a02 fix(tally): stale pay date, messages spam, docs bump to v3.1.0
+- dbfef629 feat(tally): apply new design — Space Grotesk, parchment palette, clrs.cc orange, desktop layout
+- 66dfb91d auto: daily sync 2026-04-30
+- 8980e238 chore: update cadence ref — per-repo breakdown + Swift fix
+- 0202802b auto: daily sync 2026-04-30
+- 3537335e auto: daily sync 2026-04-29
+- 8a14b73d fix: add unpkg.com to CSP script-src
+- 15cd0e52 fix: resolve blank white page on /app after login
+- 7fd5c397 docs: add avatar_url migration step to README
+- 5a1b33ae feat: pixel art avatar generator
+- bc28a60a feat(claude-usage): add budget progress bars and $X/$Y display
+- e5aa4078 feat: add Concerta to dose substances list
+- f3e7475e feat: replace dashboard with new 4-tab React UI from design handoff
+- 8306acd5 auto: daily sync 2026-04-28
+- b3c9ef86 docs: bump CLAUDE.md -- full app list overhaul
+- c1bfcb90 life-ios: sync boundaries door removal paragraph
+- f8c32b97 life: add door removal at 16 to boundaries section
+- 6660f23f chore: remove dead-weight scaffolds
+- 6d7817c4 chore: bump cadence ref (iOS/macOS API fix)
+- dcbe7a77 docs: fix icon tag, note live deploy
+- 78b9528f feat(tally): add sparkline bars to CRA payments list
+- 940f52b4 feat: Easy/Medium/Hard difficulty selector
+- db9fb075 docs(life): integrate therapy session notes -- religion, autism stats, GI, housing, worldview
+- 59f66bcd docs: update roadmaps — nyc-web difficulty/a11y, spark AI builds, dose wellness
+- 5bbfde50 auto: daily sync 2026-04-25
+- 612ee34e chore: update submodule pointers, dose lock, roost gitignore
+- 04a428d1 feat(dose): add health profile page with conditions, pending tests, substances
+- 6b1f40e7 vibe: apply portfolio design to spark
+- 1e4c081d vibe: apply portfolio design to roost
+- a045697c refactor: extract shortDate/shortTime/longDate utils in dose
+- 9b5e126a perf: O(n) → O(1) favorite lookups via Set; add vercel.json with security headers
+- 5b6d4eb9 security: add security headers + harden .gitignore across all apps
+- af56d9da refactor(tally): extract renderTracker() + TimelineCard to eliminate duplication

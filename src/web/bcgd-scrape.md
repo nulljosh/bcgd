@@ -1,1 +1,171 @@
-IyBCQyBHYXJhZ2UgRG9vcnMgLSBGdWxsIFNpdGUgU2NyYXBlCgoqU2NyYXBlZDogRmVicnVhcnkgOSwgMjAyNioKKlNvdXJjZTogYmNnYXJhZ2Vkb29ycy5jYSoKCiMjIEJ1c2luZXNzIElkZW50aXR5CgotICoqTGVnYWwgTmFtZToqKiBCZXN0IENob2ljZSBHYXJhZ2UgRG9vciBTZXJ2aWNlcyBJbmMuCi0gKipUcmFkZSBOYW1lOioqIEJlc3QgQ2hvaWNlIEdhcmFnZSBEb29ycyAvIEJDIEdhcmFnZSBEb29ycwotICoqVHlwZToqKiBGYW1pbHktb3duZWQsIHRocmVlLWdlbmVyYXRpb24gYnVzaW5lc3MKLSAqKkZvdW5kZWQgYnk6KiogQnJpYW4gVHJvbW1lbCAobGVhcm5lZCB0cmFkZSBmcm9tIGhpcyBmYXRoZXItaW4tbGF3LCBzb24gbm93IGNvbnRpbnVpbmcpCi0gKipFeHBlcmllbmNlOioqIDMwKyB5ZWFycwotICoqRm9jdXM6KiogUmVwYWlyLW9ubHkgKGRvIE5PVCBpbnN0YWxsIG5ldyBkb29ycykKLSAqKlJhdGluZzoqKiA0LjkvNSBzdGFycyAoMTI4IHJldmlld3MpCi0gKipTcGVjaWFsdHkgYnJhbmQ6KiogTGlmdE1hc3RlcgoKIyMgQ29udGFjdAoKfCBEZXRhaWwgfCBWYWx1ZSB8CnwtLS0tLS0tLXwtLS0tLS0tfAp8IFBob25lIHwgKDYwNCkgMjQwLTAxODAgfAp8IEVtYWlsIHwgZXhwZXJ0QGJjZ2FyYWdlZG9vcnMuY2EgfAp8IEFkZHJlc3MgfCAyMDY5MCA0MHRoIEF2ZSwgTGFuZ2xleSwgQkMgVjNBIDJYNyB8CnwgQ29vcmRpbmF0ZXMgfCA0OS4yMDQ5MDUsIC0xMjIuNzAwOTcxIHwKfCBIb3VycyB8IDI0LzcgfAp8IEJvb2tpbmcgfCBKb3Rmb3JtIGF0IC9jb250YWN0LyB8CgojIyBTb2NpYWwgTWVkaWEKCi0gRmFjZWJvb2s6IGZhY2Vib29rLmNvbS9iZXN0Y2hvaWNlZ2FyYWdlLwotIEluc3RhZ3JhbTogaW5zdGFncmFtLmNvbS9iY2dhcmFnZWRvb3Jzb2ZmaWNpYWwvCi0gWC9Ud2l0dGVyOiB0d2l0dGVyLmNvbS9CQ0dhcmFnZURvb3JzCi0gWW91VHViZTogeW91dHViZS5jb20vdXNlci9CZXN0Q2hvaWNlR2FyYWdlRG9vcgotIEdvb2dsZSBNYXBzOiBnLmNvL2tncy9Id280cVZaCi0gWWVscDogeWVscC5jb20vYml6L2Jlc3QtY2hvaWNlLWdhcmFnZS1kb29yLWxhbmdsZXktMgoKIyMgU2VydmljZSBBcmVhcwoKTm9ydGggVmFuY291dmVyLCBXZXN0IFZhbmNvdXZlciwgVmFuY291dmVyLCBCdXJuYWJ5LCBDb3F1aXRsYW0sIFBvcnQgQ29xdWl0bGFtLCBQb3J0IE1vb2R5LCBQaXR0IE1lYWRvd3MsIE5ldyBXZXN0bWluc3RlciwgTWFwbGUgUmlkZ2UsIE1pc3Npb24sIFJpY2htb25kLCBTdXJyZXksIERlbHRhLCBMYWRuZXIsIFRzYXd3YXNzZW4sIExhbmdsZXksIEFiYm90c2ZvcmQKCiMjIFNpdGUgU3RydWN0dXJlCgojIyMgUGFnZXMKfCBQYWdlIHwgVVJMIHwKfC0tLS0tLXwtLS0tLXwKfCBIb21lIHwgLyB8CnwgU2VydmljZXMgfCAvc2VydmljZXMvIHwKfCBUaXBzIHwgL3RpcHMvIHwKfCBSZXZpZXdzIHwgL3Jldmlld3MvIHwKfCBTcGVjaWFscyB8IC9zcGVjaWFscy8gfAp8IENvbnRhY3QgfCAvY29udGFjdC8gfAp8IEFib3V0IFVzIHwgL2Fib3V0LXVzLyB8CnwgQmxvZ3MgfCAvYmxvZ3MgfAp8IFByaXZhY3kgUG9saWN5IHwgL3ByaXZhY3ktcG9saWN5LyB8CgojIyMgU2VydmljZSBQYWdlcyAoMTEpCjEuIEdhcmFnZSBEb29yIFJlcGFpciAtIC9nYXJhZ2UtZG9vci1yZXBhaXIvCjIuIEdhcmFnZSBEb29yIE1haW50ZW5hbmNlIC0gL2dhcmFnZS1kb29yLW1haW50ZW5hbmNlLwozLiBHYXJhZ2UgRG9vciBTcHJpbmdzIC0gL2dhcmFnZS1kb29yLXNwcmluZ3MvCjQuIEdhcmFnZSBEb29yIENhYmxlIC0gL2dhcmFnZS1kb29yLWNhYmxlLwo1LiBHYXJhZ2UgRG9vciBIaW5nZXMgLSAvZ2FyYWdlLWRvb3ItaGluZ2UvCjYuIEVtZXJnZW5jeSBSZXBhaXIgLSAvZW1lcmdlbmN5LWdhcmFnZS1kb29yLXJlcGFpci8KNy4gS2V5cGFkcyAtIC9nYXJhZ2UtZG9vci1rZXlwYWRzLwo4LiBDbGlja2Vycy9SZW1vdGVzIC0gL2dhcmFnZS1kb29yLWNsaWNrZXJzLwo5LiBQYW5lbCAmIFNlY3Rpb24gUmVwYWlyIC0gL2dhcmFnZS1kb29yLXBhbmVsLWFuZC1zZWN0aW9uLXJlcGFpci8KMTAuIEJvdHRvbSBXZWF0aGVyIFN0cmlwcyAtIC9nYXJhZ2UtZG9vci1ib3R0b20td2VhdGhlci1zdHJpcHMvCjExLiBSb2xsZXJzIC0gL2dhcmFnZS1kb29yLXJvbGxlcnMvCgojIyBTZXJ2aWNlcyBEZXRhaWwKCiMjIyBTcHJpbmdzCi0gRmFpbCBhZnRlciB+MTAsMDAwIGN5Y2xlcwotIFNpZ25zOiBkb29yIG9wZW5zIHRoZW4gc2xhbXMsIHVuZXZlbi9zYWdnaW5nLCBvcGVuZXIgc3RyYWlucywgdmlzaWJsZSBnYXBzIGluIGNvaWxzLCBmcmF5ZWQgY2FibGVzLCBkb29yIGZlZWxzIGhlYXZ5LCBsb3VkIHNuYXBwaW5nCi0gRElZIHN0cm9uZ2x5IGRpc2NvdXJhZ2VkIChpbmp1cnkgcmlzaykKCiMjIyBDYWJsZXMKLSBTaWduczogZG9vciBzYWdzIG9uIG9uZSBzaWRlLCBzbmFwcGluZy9wb3BwaW5nIG5vaXNlcywgamVya3kgbW92ZW1lbnQsIGZyYXllZCBjYWJsZXMgdmlzaWJsZSwgZG9vciBzdG9wcyBoYWxmd2F5Ci0gSGlnaC10ZW5zaW9uIHN5c3RlbSAtIHByb2Zlc3Npb25hbCBvbmx5CgojIyMgSGluZ2VzCi0gU2lnbnM6IGNyZWFraW5nL2JhbmdpbmcsIHBhbmVsIG1pc2FsaWdubWVudCwgdW5ldmVuIG9wZW5pbmcKLSBNb3N0IHJlcGFpcnMgZG9uZSBpbiBzaW5nbGUgdmlzaXQKCiMjIyBFbWVyZ2VuY3kKLSAyNC83IGF2YWlsYWJpbGl0eSwgY29uZmlybWVkIGJ5IHBob25lCi0gSGFuZGxlczogc3R1Y2sgZG9vcnMsIGJyb2tlbiBzcHJpbmdzL2NhYmxlcywgZG9vcnMgb2ZmLXRyYWNrLCBub24td29ya2luZyBrZXlwYWRzCgojIyMgS2V5cGFkcwotIEZpeGVzOiBub24tcmVzcG9uc2l2ZSBidXR0b25zLCBpbnRlcm1pdHRlbnQgZnVuY3Rpb24sIG1vaXN0dXJlIGRhbWFnZSwgbG9zdCBjb2RlcwotIExpZnRNYXN0ZXItY29tcGF0aWJsZSByZXBsYWNlbWVudHMKCiMjIyBDbGlja2Vycy9SZW1vdGVzCi0gRml4ZXM6IG5vIHJlc3BvbnNlLCBzaG9ydCByYW5nZSwgc3luYyBpc3N1ZXMsIGxvc3QvZGFtYWdlZCB1bml0cwotIEV4Y2x1c2l2ZSBMaWZ0TWFzdGVyIGJyYW5kCgojIyMgUGFuZWwgJiBTZWN0aW9uCi0gRml4ZXM6IGRlbnRzLCBjcmFja3MsIHdhcnBpbmcsIHJ1c3QKLSAiTmV2ZXIgdXBzZWxsIG9yIHN1Z2dlc3QgdW5uZWNlc3NhcnkgcmVwbGFjZW1lbnRzIgoKIyMjIFdlYXRoZXIgU3RyaXBzCi0gU2lnbnM6IHdhdGVyIGluc2lkZSBnYXJhZ2UsIGNvbGQgZHJhZnRzLCBkdXN0L2RlYnJpcywgdmlzaWJsZSBnYXBzLCBzdW5saWdodCB1bmRlciBkb29yCi0gTGlmdE1hc3Rlci1jb21wYXRpYmxlIGJvdHRvbSBzZWFsCgojIyMgUm9sbGVycwotIFJlY29tbWVuZHMgbnlsb24gcm9sbGVycyAobm8gYmVhcmluZ3MgdG8gd2VhciBvdXQpCi0gV0FSTklORzogIkRvIG5vdCB1c2UgV0QtNDAgLSBpdCBydWlucyBiZWFyaW5ncyIKLSBTaWduczogc3F1ZWFraW5nL2dyaW5kaW5nLCBqZXJreSBtb3ZlbWVudCwgY3JhY2tlZCByb2xsZXJzCgojIyBLZXkgTWVzc2FnaW5nCgoqKlRhZ2xpbmU6KiogIlRydXN0ZWQgR2FyYWdlIERvb3IgQ29tcGFueSBpbiBMYW5nbGV5LCBCQyIKCioqVmFsdWUgcHJvcHM6KioKLSBTaG93IHVwIG9uIHRpbWUKLSBFeHBsYWluIHdvcmsgaW4gcGxhaW4gbGFuZ3VhZ2UKLSBGaXggb25seSB3aGF0J3MgbmVlZGVkCi0gQ2hhcmdlIGZhaXIsIHVwZnJvbnQgcHJpY2VzCgoqKlByb2Nlc3M6KioKMS4gQm9vayBvbmxpbmUgKDYwIHNlY29uZHMpCjIuIFRpbWUgc2xvdCBjb25maXJtZWQsIHF1ZXN0aW9ucyBhc2tlZAozLiBTYW1lLWRheSByZXBhaXIsIG1vc3QgdW5kZXIgOTAgbWludXRlcwoKKipQaGlsb3NvcGh5OioqICJXZSB0cmVhdCBldmVyeSBjdXN0b21lciBsaWtlIGZhbWlseS4gTm8gcHJlc3N1cmUuIE5vIHNhbGVzIGdpbW1pY2tzLiIKCiMjIFJldmlld3MKCioqS2VuIFRob21hczoqKiBFbWVyZ2VuY3kgcmVwYWlyLCBncmVhdCBzZXJ2aWNlCioqUmljaGFyZCBKb3k6KiogIllvdXIgY3VzdG9tZXIgc2VydmljZSB3YXMgZ3JlYXQuLi4gV2lsbCBkZWZpbml0ZWx5IHJlY29tbWVuZCIKKipCcmFkIFNtaXRoOioqICJFeGNlbGxlbnQgc2VydmljZSwgZXhjZWxsZW50IHByaWNlLiBCcmlhbiBpcyBlZmZpY2llbnQsIHByb2Zlc3Npb25hbCIKKipCZXJuYWRldHRlIEUuOioqICJIb25lc3QgYW5kIGtub3dsZWRnZWFibGUuLi4gSSB3aWxsIGJlIGNhbGxpbmcgaGltIgoqKk1hcnkgS2FwZWx1czoqKiAiMTAvMTAuLi4gSGlzIHdvcmttYW5zaGlwIHdhcyBpbXBlY2NhYmxlIgoqKkwuRi46KiogIkJyaWFuIHdhcyBoZXJlIChQb3J0IE1vb2R5KSB3aXRoaW4gYW4gaG91ci4uLiBoYWQgdGhlIGpvYiBkb25lIHdpdGhpbiBhbm90aGVyIGhvdXIiCgojIyBCbG9nIFBvc3RzCjEuIEhvdyBEZWxheWluZyBDYWJsZSBSZXBhaXIgQ2hhbmdlcyBPdXRjb21lcyAoSmFuIDI4LCAyMDI2KQoyLiBXaGF0IEhhcHBlbnMgV2hlbiBDYWJsZXMgQmVnaW4gdG8gRmFpbCAoSmFuIDI4LCAyMDI2KQozLiBDYWJsZSBSZXBhaXIgUHJldmVudHMgU21hbGwgSXNzdWVzIEZyb20gQmVjb21pbmcgTWFqb3IgKEphbiAyOCwgMjAyNikKNC4gQ2FibGUgUmVwYWlyIE9mdGVuIFNvbHZlcyBNb3JlIFRoYW4gT25lIFByb2JsZW0gKEphbiAyOCwgMjAyNikKNS4gS2V5IFNpZ25zIG9mIFJlbGlhYmxlIE1haW50ZW5hbmNlIChEZWMgMTYsIDIwMjUpCjYuIFByb2Zlc3Npb25hbCBNYWludGVuYW5jZSBFbmhhbmNlcyBTYWZldHkgJiBWYWx1ZSAoRGVjIDE2LCAyMDI1KQoKIyMgSW1hZ2VzCnwgRGVzY3JpcHRpb24gfCBVUkwgfAp8LS0tLS0tLS0tLS0tLXwtLS0tLXwKfCBMb2dvIHwgL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI1LzA2L2JjZ2QtbG9nby5wbmcgfAp8IFNlcnZpY2UgQ2FsbCB8IC93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNi9DYWxsLUJlc3QtQ2hvaWNlLUdhcmFnZS1Eb29yLVJlcGFpcnMucG5nIHwKfCBUZWFtIHwgL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI1LzA2L2Jlc3RjaG9pY2VnYXJhZ2Vkb29ycy1pbWctMi5wbmcgfAp8IFRydWNrIHwgL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI1LzA3L2JjZ2FyYWdlZG9vcnMtaW1hZ2UtdHJ1Y2stMS0xMDI0eDUwMy5wbmcgfAp8IFN0YWZmIFBvcnRyYWl0IHwgL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI1LzA3L2Jlc3QtY2hvaWNlLWdhcmFnZS1pbWctMTQtNjgzeDEwMjQuanBnIHwKfCBTdGFmZiBXb3JrIHwgL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI1LzA3L2Jlc3QtY2hvaWNlLWdhcmFnZS1pbWctMTUtc2NhbGVkLmpwZyB8CnwgUmV2aWV3cyBCYWRnZSB8IC93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNi9yZXZpZXdzLnBuZyB8CnwgU3BlY2lhbHMgQmFkZ2UgfCAvd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDYvc2FsZXMtZGlzY291bnRzLnBuZyB8CgojIyBTcGVjaWFscwotIEZyZWUgc2FmZXR5IGNoZWNrIHdpdGggZXZlcnkgdmlzaXQKLSBQREYgY291cG9uczogbWFpbnRlbmFuY2UgY291cG9uICsgZ2VuZXJhbCBzZXJ2aWNlIGNvdXBvbgoKIyMgVGlwcyAoU2FmZXR5KQotIFBob3RvIGV5ZXMgbWFuZGF0b3J5IG9uIGFsbCBnYXJhZ2UgZG9vciBvcGVuZXJzIHNpbmNlIDE5OTEKLSBUaXAgMTogU3RvcCB1c2luZyBtaXNhbGlnbmVkIGRvb3IgaW1tZWRpYXRlbHkKLSBUaXAgMjogQ2hlY2sgZm9yIGJyb2tlbiBzcHJpbmcgd2hlbiBkb29yIHdvbid0IG9wZW4KLSBUaXAgMzogUHVsbCBlbWVyZ2VuY3kgcmVsZWFzZSB0byB0ZXN0IHdlaWdodCBiYWxhbmNlCi0gVGlwIDQ6IE1vdG9yIHJ1bnMgYnV0IGRvb3IgZG9lc24ndCBtb3ZlID0gc3RyaXBwZWQgZ2VhcgoKIyMgRkFRcwotIEZyZWUgc2FmZXR5IGNoZWNrPyBZZXMsIGV2ZXJ5IHZpc2l0Ci0gV2h5IG5vIG5ldyBkb29yIGluc3RhbGxzPyAiRm9jdXMgMTAwJSBvbiByZXBhaXJzLCBob25lc3Qgc2VydmljZSB3aXRob3V0IHNhbGVzIHByZXNzdXJlIgotIEhvdyBsb25nIGRvIHJlcGFpcnMgdGFrZT8gVW5kZXIgOTAgbWludXRlcywgcGFydHMgb24gdHJ1Y2sKLSBMaWNlbnNlZCBhbmQgaW5zdXJlZD8gWWVzLCB0aHJvdWdob3V0IEJDCi0gV2hhdCBicmFuZHM/IExpZnRNYXN0ZXIgc3BlY2lhbGlzdHMK
+# BC Garage Doors - Full Site Scrape
+
+*Scraped: February 9, 2026*
+*Source: bcgaragedoors.ca*
+
+## Business Identity
+
+- **Legal Name:** Best Choice Garage Door Services Inc.
+- **Trade Name:** Best Choice Garage Doors / BC Garage Doors
+- **Type:** Family-owned, three-generation business
+- **Founded by:** Brian Trommel (learned trade from his father-in-law, son now continuing)
+- **Experience:** 30+ years
+- **Focus:** Repair-only (do NOT install new doors)
+- **Rating:** 4.9/5 stars (128 reviews)
+- **Specialty brand:** LiftMaster
+
+## Contact
+
+| Detail | Value |
+|--------|-------|
+| Phone | (604) 240-0180 |
+| Email | expert@bcgaragedoors.ca |
+| Address | 20690 40th Ave, Langley, BC V3A 2X7 |
+| Coordinates | 49.204905, -122.700971 |
+| Hours | 24/7 |
+| Booking | Jotform at /contact/ |
+
+## Social Media
+
+- Facebook: facebook.com/bestchoicegarage/
+- Instagram: instagram.com/bcgaragedoorsofficial/
+- X/Twitter: twitter.com/BCGarageDoors
+- YouTube: youtube.com/user/BestChoiceGarageDoor
+- Google Maps: g.co/kgs/Hwo4qVZ
+- Yelp: yelp.com/biz/best-choice-garage-door-langley-2
+
+## Service Areas
+
+North Vancouver, West Vancouver, Vancouver, Burnaby, Coquitlam, Port Coquitlam, Port Moody, Pitt Meadows, New Westminster, Maple Ridge, Mission, Richmond, Surrey, Delta, Ladner, Tsawwassen, Langley, Abbotsford
+
+## Site Structure
+
+### Pages
+| Page | URL |
+|------|-----|
+| Home | / |
+| Services | /services/ |
+| Tips | /tips/ |
+| Reviews | /reviews/ |
+| Specials | /specials/ |
+| Contact | /contact/ |
+| About Us | /about-us/ |
+| Blogs | /blogs |
+| Privacy Policy | /privacy-policy/ |
+
+### Service Pages (11)
+1. Garage Door Repair - /garage-door-repair/
+2. Garage Door Maintenance - /garage-door-maintenance/
+3. Garage Door Springs - /garage-door-springs/
+4. Garage Door Cable - /garage-door-cable/
+5. Garage Door Hinges - /garage-door-hinge/
+6. Emergency Repair - /emergency-garage-door-repair/
+7. Keypads - /garage-door-keypads/
+8. Clickers/Remotes - /garage-door-clickers/
+9. Panel & Section Repair - /garage-door-panel-and-section-repair/
+10. Bottom Weather Strips - /garage-door-bottom-weather-strips/
+11. Rollers - /garage-door-rollers/
+
+## Services Detail
+
+### Springs
+- Fail after ~10,000 cycles
+- Signs: door opens then slams, uneven/sagging, opener strains, visible gaps in coils, frayed cables, door feels heavy, loud snapping
+- DIY strongly discouraged (injury risk)
+
+### Cables
+- Signs: door sags on one side, snapping/popping noises, jerky movement, frayed cables visible, door stops halfway
+- High-tension system - professional only
+
+### Hinges
+- Signs: creaking/banging, panel misalignment, uneven opening
+- Most repairs done in single visit
+
+### Emergency
+- 24/7 availability, confirmed by phone
+- Handles: stuck doors, broken springs/cables, doors off-track, non-working keypads
+
+### Keypads
+- Fixes: non-responsive buttons, intermittent function, moisture damage, lost codes
+- LiftMaster-compatible replacements
+
+### Clickers/Remotes
+- Fixes: no response, short range, sync issues, lost/damaged units
+- Exclusive LiftMaster brand
+
+### Panel & Section
+- Fixes: dents, cracks, warping, rust
+- "Never upsell or suggest unnecessary replacements"
+
+### Weather Strips
+- Signs: water inside garage, cold drafts, dust/debris, visible gaps, sunlight under door
+- LiftMaster-compatible bottom seal
+
+### Rollers
+- Recommends nylon rollers (no bearings to wear out)
+- WARNING: "Do not use WD-40 - it ruins bearings"
+- Signs: squeaking/grinding, jerky movement, cracked rollers
+
+## Key Messaging
+
+**Tagline:** "Trusted Garage Door Company in Langley, BC"
+
+**Value props:**
+- Show up on time
+- Explain work in plain language
+- Fix only what's needed
+- Charge fair, upfront prices
+
+**Process:**
+1. Book online (60 seconds)
+2. Time slot confirmed, questions asked
+3. Same-day repair, most under 90 minutes
+
+**Philosophy:** "We treat every customer like family. No pressure. No sales gimmicks."
+
+## Reviews
+
+**Ken Thomas:** Emergency repair, great service
+**Richard Joy:** "Your customer service was great... Will definitely recommend"
+**Brad Smith:** "Excellent service, excellent price. Brian is efficient, professional"
+**Bernadette E.:** "Honest and knowledgeable... I will be calling him"
+**Mary Kapelus:** "10/10... His workmanship was impeccable"
+**L.F.:** "Brian was here (Port Moody) within an hour... had the job done within another hour"
+
+## Blog Posts
+1. How Delaying Cable Repair Changes Outcomes (Jan 28, 2026)
+2. What Happens When Cables Begin to Fail (Jan 28, 2026)
+3. Cable Repair Prevents Small Issues From Becoming Major (Jan 28, 2026)
+4. Cable Repair Often Solves More Than One Problem (Jan 28, 2026)
+5. Key Signs of Reliable Maintenance (Dec 16, 2025)
+6. Professional Maintenance Enhances Safety & Value (Dec 16, 2025)
+
+## Images
+| Description | URL |
+|-------------|-----|
+| Logo | /wp-content/uploads/2025/06/bcgd-logo.png |
+| Service Call | /wp-content/uploads/2025/06/Call-Best-Choice-Garage-Door-Repairs.png |
+| Team | /wp-content/uploads/2025/06/bestchoicegaragedoors-img-2.png |
+| Truck | /wp-content/uploads/2025/07/bcgaragedoors-image-truck-1-1024x503.png |
+| Staff Portrait | /wp-content/uploads/2025/07/best-choice-garage-img-14-683x1024.jpg |
+| Staff Work | /wp-content/uploads/2025/07/best-choice-garage-img-15-scaled.jpg |
+| Reviews Badge | /wp-content/uploads/2025/06/reviews.png |
+| Specials Badge | /wp-content/uploads/2025/06/sales-discounts.png |
+
+## Specials
+- Free safety check with every visit
+- PDF coupons: maintenance coupon + general service coupon
+
+## Tips (Safety)
+- Photo eyes mandatory on all garage door openers since 1991
+- Tip 1: Stop using misaligned door immediately
+- Tip 2: Check for broken spring when door won't open
+- Tip 3: Pull emergency release to test weight balance
+- Tip 4: Motor runs but door doesn't move = stripped gear
+
+## FAQs
+- Free safety check? Yes, every visit
+- Why no new door installs? "Focus 100% on repairs, honest service without sales pressure"
+- How long do repairs take? Under 90 minutes, parts on truck
+- Licensed and insured? Yes, throughout BC
+- What brands? LiftMaster specialists

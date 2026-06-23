@@ -1,1 +1,3 @@
-ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTG9nbyh7IGhlaWdodCA9IDQ0IH0pIHsKICByZXR1cm4gPGltZyBzcmM9Ii9sb2dvLnBuZyIgYWx0PSJCZXN0IENob2ljZSBHYXJhZ2UgRG9vcnMiIGhlaWdodD17aGVpZ2h0fSAvPjsKfQo=
+export default function Logo({ height = 44 }) {
+  return <img src="/logo.png" alt="Best Choice Garage Doors" height={height} />;
+}

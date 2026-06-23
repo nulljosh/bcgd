@@ -1,1 +1,90 @@
-Y29uc3QgQ09MVU1OUyA9IFsKICB7IGtleTogJ25hbWUnLCBsYWJlbDogJ1BhcnQnLCBjbGFzc05hbWU6ICdjb2wtbmFtZScgfSwKICB7IGtleTogJ3NrdScsIGxhYmVsOiAnU0tVJywgY2xhc3NOYW1lOiAnY29sLXNrdScgfSwKICB7IGtleTogJ2NhdGVnb3J5JywgbGFiZWw6ICdDYXRlZ29yeScsIGNsYXNzTmFtZTogJ2NvbC1jYXRlZ29yeScgfSwKICB7IGtleTogJ3N1cHBsaWVyJywgbGFiZWw6ICdTdXBwbGllcicsIGNsYXNzTmFtZTogJ2NvbC1zdXBwbGllcicgfSwKICB7IGtleTogJ3F1YW50aXR5JywgbGFiZWw6ICdRdHknLCBjbGFzc05hbWU6ICdjb2wtcXR5JyB9LAogIHsga2V5OiAnY29zdCcsIGxhYmVsOiAnVW5pdCBDb3N0JywgY2xhc3NOYW1lOiAnY29sLWNvc3QnIH0sCiAgeyBrZXk6IG51bGwsIGxhYmVsOiAnVG90YWwnLCBjbGFzc05hbWU6ICdjb2wtdG90YWwnIH0sCiAgeyBrZXk6IG51bGwsIGxhYmVsOiAnJywgY2xhc3NOYW1lOiAnY29sLWFjdGlvbnMnIH0sCl07CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQYXJ0TGlzdCh7IHBhcnRzLCBvbkVkaXQsIG9uRGVsZXRlLCBvbkFkanVzdFF0eSwgc29ydEtleSwgc29ydERpciwgb25Tb3J0IH0pIHsKICBpZiAocGFydHMubGVuZ3RoID09PSAwKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iZW1wdHktc3RhdGUgYW5pbWF0ZV9fYW5pbWF0ZWQgYW5pbWF0ZV9fZmFkZUluIj4KICAgICAgICA8cD5ObyBwYXJ0cyBtYXRjaCB5b3VyIHNlYXJjaC48L3A+CiAgICAgIDwvZGl2PgogICAgKTsKICB9CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icGFydC1saXN0Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9InBhcnQtbGlzdC1oZWFkZXIiPgogICAgICAgIHtDT0xVTU5TLm1hcChjb2wgPT4gKAogICAgICAgICAgPHNwYW4KICAgICAgICAgICAga2V5PXtjb2wubGFiZWwgfHwgJ2FjdGlvbnMnfQogICAgICAgICAgICBjbGFzc05hbWU9e2Ake2NvbC5jbGFzc05hbWV9ICR7Y29sLmtleSA/ICdzb3J0YWJsZScgOiAnJ30gJHtzb3J0S2V5ID09PSBjb2wua2V5ID8gJ3NvcnRlZCcgOiAnJ31gfQogICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBjb2wua2V5ICYmIG9uU29ydChjb2wua2V5KX0KICAgICAgICAgID4KICAgICAgICAgICAge2NvbC5sYWJlbH0KICAgICAgICAgICAge3NvcnRLZXkgPT09IGNvbC5rZXkgJiYgKAogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ic29ydC1hcnJvdyI+e3NvcnREaXIgPT09ICdhc2MnID8gJyBcdTIxOTEnIDogJyBcdTIxOTMnfTwvc3Bhbj4KICAgICAgICAgICAgKX0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CgogICAgICB7cGFydHMubWFwKChwLCBpKSA9PiAoCiAgICAgICAgPGRpdgogICAgICAgICAga2V5PXtwLmlkfQogICAgICAgICAgY2xhc3NOYW1lPXtgcGFydC1yb3cgZ2xhc3MtY2FyZCBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW5VcCAke3AucXVhbnRpdHkgPD0gcC5taW5UaHJlc2hvbGQgPyAnbG93LXN0b2NrJyA6ICcnfWB9CiAgICAgICAgICBzdHlsZT17eyBhbmltYXRpb25EZWxheTogYCR7TWF0aC5taW4oaSAqIDAuMDIsIDAuMil9c2AgfX0KICAgICAgICA+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImNvbC1uYW1lIiBkYXRhLWxhYmVsPSJQYXJ0Ij4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJwYXJ0LW5hbWUiPntwLm5hbWV9PC9zcGFuPgogICAgICAgICAgPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjb2wtc2t1IG1vbm8iIGRhdGEtbGFiZWw9IlNLVSI+e3Auc2t1fTwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iY29sLWNhdGVnb3J5IiBkYXRhLWxhYmVsPSJDYXRlZ29yeSI+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iY2F0ZWdvcnktYmFkZ2UiPntwLmNhdGVnb3J5fTwvc3Bhbj4KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iY29sLXN1cHBsaWVyIiBkYXRhLWxhYmVsPSJTdXBwbGllciI+e3Auc3VwcGxpZXJ9PC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjb2wtcXR5IiBkYXRhLWxhYmVsPSJRdHkiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icXR5LWNvbnRyb2xzIj4KICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0icXR5LWJ0biIgb25DbGljaz17KCkgPT4gb25BZGp1c3RRdHkocC5pZCwgLTEpfSBhcmlhLWxhYmVsPSJEZWNyZWFzZSBxdWFudGl0eSI+LTwvYnV0dG9uPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17YHF0eS12YWx1ZSAke3AucXVhbnRpdHkgPD0gcC5taW5UaHJlc2hvbGQgPyAncXR5LWxvdycgOiAnJ31gfT4KICAgICAgICAgICAgICAgIHtwLnF1YW50aXR5fQogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0icXR5LWJ0biIgb25DbGljaz17KCkgPT4gb25BZGp1c3RRdHkocC5pZCwgMSl9IGFyaWEtbGFiZWw9IkluY3JlYXNlIHF1YW50aXR5Ij4rPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjb2wtY29zdCIgZGF0YS1sYWJlbD0iQ29zdCI+JHtwLmNvc3QudG9GaXhlZCgyKX08L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImNvbC10b3RhbCIgZGF0YS1sYWJlbD0iVG90YWwiPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRvdGFsLXZhbHVlIj4keyhNYXRoLnJvdW5kKHAucXVhbnRpdHkgKiBwLmNvc3QgKiAxMDApIC8gMTAwKS50b0xvY2FsZVN0cmluZygnZW4tVVMnLCB7IG1pbmltdW1GcmFjdGlvbkRpZ2l0czogMiwgbWF4aW11bUZyYWN0aW9uRGlnaXRzOiAyIH0pfTwvc3Bhbj4KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iY29sLWFjdGlvbnMiPgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iYnRuLWljb24iIG9uQ2xpY2s9eygpID0+IG9uRWRpdChwKX0gdGl0bGU9IkVkaXQiIGFyaWEtbGFiZWw9IkVkaXQgcGFydCI+CiAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTAuNSAxLjVMMTIuNSAzLjVMNC41IDExLjVMMS41IDEyLjVMMi41IDkuNVoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2VXaWR0aD0iMS4yIiBzdHJva2VMaW5lam9pbj0icm91bmQiLz4KICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJidG4taWNvbiBidG4tZGFuZ2VyIiBvbkNsaWNrPXsoKSA9PiBvbkRlbGV0ZShwLmlkKX0gdGl0bGU9IkRlbGV0ZSIgYXJpYS1sYWJlbD0iRGVsZXRlIHBhcnQiPgogICAgICAgICAgICAgIDxzdmcgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgMTQgMTQiIGZpbGw9Im5vbmUiPgogICAgICAgICAgICAgICAgPGxpbmUgeDE9IjMiIHkxPSIzIiB4Mj0iMTEiIHkyPSIxMSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZVdpZHRoPSIxLjIiIHN0cm9rZUxpbmVjYXA9InJvdW5kIi8+CiAgICAgICAgICAgICAgICA8bGluZSB4MT0iMTEiIHkxPSIzIiB4Mj0iMyIgeTI9IjExIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlV2lkdGg9IjEuMiIgc3Ryb2tlTGluZWNhcD0icm91bmQiLz4KICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgICkpfQoKICAgICAgPGRpdiBjbGFzc05hbWU9InBhcnQtbGlzdC1mb290ZXIgZ2xhc3MtY2FyZCI+CiAgICAgICAgPHNwYW4+e3BhcnRzLmxlbmd0aH0gcGFydHM8L3NwYW4+CiAgICAgICAgPHNwYW4+e3BhcnRzLnJlZHVjZSgocywgcCkgPT4gcyArIHAucXVhbnRpdHksIDApLnRvTG9jYWxlU3RyaW5nKCl9IHRvdGFsIHVuaXRzPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9vdGVyLXRvdGFsIj4KICAgICAgICAgIFRvdGFsIHZhbHVlOiAke3BhcnRzLnJlZHVjZSgocywgcCkgPT4gcyArIE1hdGgucm91bmQocC5xdWFudGl0eSAqIHAuY29zdCAqIDEwMCkgLyAxMDAsIDApLnRvTG9jYWxlU3RyaW5nKCdlbi1VUycsIHsgbWluaW11bUZyYWN0aW9uRGlnaXRzOiAyLCBtYXhpbXVtRnJhY3Rpb25EaWdpdHM6IDIgfSl9CiAgICAgICAgPC9zcGFuPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+const COLUMNS = [
+  { key: 'name', label: 'Part', className: 'col-name' },
+  { key: 'sku', label: 'SKU', className: 'col-sku' },
+  { key: 'category', label: 'Category', className: 'col-category' },
+  { key: 'supplier', label: 'Supplier', className: 'col-supplier' },
+  { key: 'quantity', label: 'Qty', className: 'col-qty' },
+  { key: 'cost', label: 'Unit Cost', className: 'col-cost' },
+  { key: null, label: 'Total', className: 'col-total' },
+  { key: null, label: '', className: 'col-actions' },
+];
+
+export default function PartList({ parts, onEdit, onDelete, onAdjustQty, sortKey, sortDir, onSort }) {
+  if (parts.length === 0) {
+    return (
+      <div className="empty-state animate__animated animate__fadeIn">
+        <p>No parts match your search.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="part-list">
+      <div className="part-list-header">
+        {COLUMNS.map(col => (
+          <span
+            key={col.label || 'actions'}
+            className={`${col.className} ${col.key ? 'sortable' : ''} ${sortKey === col.key ? 'sorted' : ''}`}
+            onClick={() => col.key && onSort(col.key)}
+          >
+            {col.label}
+            {sortKey === col.key && (
+              <span className="sort-arrow">{sortDir === 'asc' ? ' \u2191' : ' \u2193'}</span>
+            )}
+          </span>
+        ))}
+      </div>
+
+      {parts.map((p, i) => (
+        <div
+          key={p.id}
+          className={`part-row glass-card animate__animated animate__fadeInUp ${p.quantity <= p.minThreshold ? 'low-stock' : ''}`}
+          style={{ animationDelay: `${Math.min(i * 0.02, 0.2)}s` }}
+        >
+          <span className="col-name" data-label="Part">
+            <span className="part-name">{p.name}</span>
+          </span>
+          <span className="col-sku mono" data-label="SKU">{p.sku}</span>
+          <span className="col-category" data-label="Category">
+            <span className="category-badge">{p.category}</span>
+          </span>
+          <span className="col-supplier" data-label="Supplier">{p.supplier}</span>
+          <span className="col-qty" data-label="Qty">
+            <div className="qty-controls">
+              <button className="qty-btn" onClick={() => onAdjustQty(p.id, -1)} aria-label="Decrease quantity">-</button>
+              <span className={`qty-value ${p.quantity <= p.minThreshold ? 'qty-low' : ''}`}>
+                {p.quantity}
+              </span>
+              <button className="qty-btn" onClick={() => onAdjustQty(p.id, 1)} aria-label="Increase quantity">+</button>
+            </div>
+          </span>
+          <span className="col-cost" data-label="Cost">${p.cost.toFixed(2)}</span>
+          <span className="col-total" data-label="Total">
+            <span className="total-value">${(Math.round(p.quantity * p.cost * 100) / 100).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+          </span>
+          <span className="col-actions">
+            <button className="btn-icon" onClick={() => onEdit(p)} title="Edit" aria-label="Edit part">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M10.5 1.5L12.5 3.5L4.5 11.5L1.5 12.5L2.5 9.5Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button className="btn-icon btn-danger" onClick={() => onDelete(p.id)} title="Delete" aria-label="Delete part">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <line x1="3" y1="3" x2="11" y2="11" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+                <line x1="11" y1="3" x2="3" y2="11" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+              </svg>
+            </button>
+          </span>
+        </div>
+      ))}
+
+      <div className="part-list-footer glass-card">
+        <span>{parts.length} parts</span>
+        <span>{parts.reduce((s, p) => s + p.quantity, 0).toLocaleString()} total units</span>
+        <span className="footer-total">
+          Total value: ${parts.reduce((s, p) => s + Math.round(p.quantity * p.cost * 100) / 100, 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+        </span>
+      </div>
+    </div>
+  );
+}

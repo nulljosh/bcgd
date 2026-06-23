@@ -1,1 +1,18 @@
-PGltZyBzcmM9Imljb24uc3ZnIiB3aWR0aD0iODAiPgoKIyBCQyBHYXJhZ2UgRG9vcnMKCiFbdmVyc2lvbl0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS92ZXJzaW9uLXYyLjAuMC1ibHVlKQoKQ3VzdG9tZXItZmFjaW5nIHdlYnNpdGUgYW5kIG9wZXJhdGlvbnMgZGFzaGJvYXJkIGZvciBCZXN0IENob2ljZSBHYXJhZ2UgRG9vcnMgKGJjZ2FyYWdlZG9vcnMuY2EpLgoKIyMgUHJvamVjdHMKCnwgRGlyZWN0b3J5IHwgRGVzY3JpcHRpb24gfCBVUkwgfAp8LS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLXwKfCBgd2ViL2AgfCBDb252ZXJzaW9uIGxhbmRpbmcgcGFnZSB8IFtiY2dkLmhleWl0c21lam9zaC5jb21dKGh0dHBzOi8vYmNnZC5oZXlpdHNtZWpvc2guY29tKSB8CnwgYGRhc2hib2FyZC9gIHwgSW52ZW50b3J5IGFuZCBzdG9jayB0cmFja2VyIHwgW2JjZ2QtZGFzaGJvYXJkLmhleWl0c21lam9zaC5jb21dKGh0dHBzOi8vYmNnZC1kYXNoYm9hcmQuaGV5aXRzbWVqb3NoLmNvbSkgfAoKIyMgTGljZW5zZQoKTUlUIDIwMjYsIEpvc2h1YSBUcm9tbWVsCg==
+<img src="icon.svg" width="80">
+
+# BC Garage Doors
+
+![version](https://img.shields.io/badge/version-v2.0.0-blue)
+
+Customer-facing website and operations dashboard for Best Choice Garage Doors (bcgaragedoors.ca).
+
+## Projects
+
+| Directory | Description | URL |
+|-----------|-------------|-----|
+| `web/` | Conversion landing page | [bcgd.heyitsmejosh.com](https://bcgd.heyitsmejosh.com) |
+| `dashboard/` | Inventory and stock tracker | [bcgd-dashboard.heyitsmejosh.com](https://bcgd-dashboard.heyitsmejosh.com) |
+
+## License
+
+MIT 2026, Joshua Trommel

@@ -1,1 +1,42 @@
-IyBCZXN0IENob2ljZSBHYXJhZ2UgRG9vcnMKdjEuMS4wCgpJbnZlbnRvcnkgYW5kIHN0b2NrIHRyYWNraW5nIGRhc2hib2FyZCBmb3IgQmVzdCBDaG9pY2UgR2FyYWdlIERvb3JzIChiY2dhcmFnZWRvb3JzLmNhKS4KCiMjIFN0YWNrCi0gVml0ZSArIFJlYWN0IDE5Ci0gbG9jYWxTdG9yYWdlIHBlcnNpc3RlbmNlCi0gQW5pbWF0ZS5jc3MgZm9yIGVudHJhbmNlIGFuaW1hdGlvbnMKLSBBcHBsZSBMaXF1aWQgR2xhc3MgZGVzaWduIHN5c3RlbQotIE1vYmlsZS1maXJzdCBQV0EKCiMjIFN0cnVjdHVyZQotIGBzcmMvbWFpbi5qc3hgIC0tIFZpdGUgZW50cnkgcG9pbnQKLSBgc3JjL0FwcC5qc3hgIC0tIE1haW4gYXBwLCByb3V0aW5nLCBzdGF0ZSBtYW5hZ2VtZW50Ci0gYHNyYy9BcHAuY3NzYCAtLSBBbGwgc3R5bGVzLCBDU1MgdmFyaWFibGVzLCByZXNwb25zaXZlCi0gYHNyYy9jb21wb25lbnRzL0Rhc2hib2FyZC5qc3hgIC0tIFN0b2NrIG92ZXJ2aWV3LCBzdGF0cywgbG93IHN0b2NrIGFsZXJ0cywgY2F0ZWdvcnkgYnJlYWtkb3duCi0gYHNyYy9jb21wb25lbnRzL1BhcnRGb3JtLmpzeGAgLS0gQWRkL2VkaXQgcGFydCBmb3JtCi0gYHNyYy9jb21wb25lbnRzL1BhcnRMaXN0LmpzeGAgLS0gSW52ZW50b3J5IHRhYmxlIHdpdGggaW5saW5lIHF0eSBjb250cm9scwotIGBzcmMvY29tcG9uZW50cy9IaXN0b3J5TG9nLmpzeGAgLS0gU3RvY2sgY2hhbmdlIGhpc3RvcnkgbG9nCi0gYHNyYy9saWIvc3RvcmFnZS5qc2AgLS0gbG9jYWxTdG9yYWdlIENSVUQsIGhpc3RvcnksIGNhdGVnb3JpZXMsIElEIGdlbmVyYXRpb24KCiMjIEZlYXR1cmVzCi0gRGFzaGJvYXJkIHdpdGggdG90YWwgU0tVcywgdW5pdHMsIGludmVudG9yeSB2YWx1ZSwgbG93IHN0b2NrIGNvdW50Ci0gQWRkL2VkaXQvcmVtb3ZlIHBhcnRzIChuYW1lLCBTS1UsIGNhdGVnb3J5LCBxdWFudGl0eSwgbWluIHRocmVzaG9sZCwgY29zdCwgc3VwcGxpZXIpCi0gSW5saW5lIHF1YW50aXR5ICsvLSBjb250cm9scyB3aXRoIGhpc3RvcnkgbG9nZ2luZwotIExvdyBzdG9jayBhbGVydHMgKHF1YW50aXR5IDw9IG1pbiB0aHJlc2hvbGQpCi0gU2VhcmNoIGJ5IG5hbWUsIFNLVSwgb3Igc3VwcGxpZXIKLSBGaWx0ZXIgYnkgY2F0ZWdvcnkgKFNwcmluZ3MsIE9wZW5lcnMsIFBhbmVscywgSGFyZHdhcmUsIFJlbW90ZXMsIFdlYXRoZXJzdHJpcHBpbmcpCi0gRnVsbCBzdG9jayBjaGFuZ2UgaGlzdG9yeSB3aXRoIHRpbWVzdGFtcHMKCiMjIFJ1bgpgYGBiYXNoCm5wbSBpbnN0YWxsICYmIG5wbSBydW4gZGV2ICAgICMgVml0ZSBkZXYgc2VydmVyIG9uIDo1MTgwCm5wbSBydW4gYnVpbGQgICAgICAgICAgICAgICAgICMgUHJvZHVjdGlvbiBidWlsZApgYGAKCiMjIFJ1bGVzCi0gTm8gZW1vamlzCi0gTm8gZ3JhZGllbnRzIG9yIGRyb3Agc2hhZG93cwotIFNwcmluZyBwaHlzaWNzIG9uIGludGVyYWN0aXZlIGVsZW1lbnRzOiBjdWJpYy1iZXppZXIoMC4zNCwgMS41NiwgMC42NCwgMSkKLSBBbGwgZGF0YSBpbiBsb2NhbFN0b3JhZ2UgKGdhcmFnZV9wYXJ0cywgZ2FyYWdlX2hpc3RvcnkpCg==
+# Best Choice Garage Doors
+v1.1.0
+
+Inventory and stock tracking dashboard for Best Choice Garage Doors (bcgaragedoors.ca).
+
+## Stack
+- Vite + React 19
+- localStorage persistence
+- Animate.css for entrance animations
+- Apple Liquid Glass design system
+- Mobile-first PWA
+
+## Structure
+- `src/main.jsx` -- Vite entry point
+- `src/App.jsx` -- Main app, routing, state management
+- `src/App.css` -- All styles, CSS variables, responsive
+- `src/components/Dashboard.jsx` -- Stock overview, stats, low stock alerts, category breakdown
+- `src/components/PartForm.jsx` -- Add/edit part form
+- `src/components/PartList.jsx` -- Inventory table with inline qty controls
+- `src/components/HistoryLog.jsx` -- Stock change history log
+- `src/lib/storage.js` -- localStorage CRUD, history, categories, ID generation
+
+## Features
+- Dashboard with total SKUs, units, inventory value, low stock count
+- Add/edit/remove parts (name, SKU, category, quantity, min threshold, cost, supplier)
+- Inline quantity +/- controls with history logging
+- Low stock alerts (quantity <= min threshold)
+- Search by name, SKU, or supplier
+- Filter by category (Springs, Openers, Panels, Hardware, Remotes, Weatherstripping)
+- Full stock change history with timestamps
+
+## Run
+```bash
+npm install && npm run dev    # Vite dev server on :5180
+npm run build                 # Production build
+```
+
+## Rules
+- No emojis
+- No gradients or drop shadows
+- Spring physics on interactive elements: cubic-bezier(0.34, 1.56, 0.64, 1)
+- All data in localStorage (garage_parts, garage_history)

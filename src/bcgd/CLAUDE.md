@@ -1,1 +1,71 @@
-IyBCQyBHYXJhZ2UgRG9vcnMgKEJDR0QpCnYzLjAuMAoKTW9ub3JlcG8gZm9yIEJDIEdhcmFnZSBEb29ycyAtLSBjdXN0b21lci1mYWNpbmcgd2Vic2l0ZSwgaW50ZXJuYWwgb3BlcmF0aW9ucyBkYXNoYm9hcmQsIGFuZCBuYXRpdmUgY29tcGFuaW9uIGFwcHMuCgojIyBTdHJ1Y3R1cmUKLSBgd2ViL2AgLS0gU3RhdGljIEhUTUwgbGFuZGluZyBwYWdlLiBDb252ZXJzaW9uLWZvY3VzZWQsIGVtZXJnZW5jeS1maXJzdC4gTGl2ZTogYmNnZC5oZXlpdHNtZWpvc2guY29tCi0gYGRhc2hib2FyZC9gIC0tIFZpdGUgKyBSZWFjdCAxOSBvcGVyYXRpb25zIGRhc2hib2FyZC4gSW52ZW50b3J5LCBqb2JzIHBpcGVsaW5lLCBQSU4gYXV0aCwgYmFja3VwL3Jlc3RvcmUuIExpdmU6IGJjZ2QtZGFzaGJvYXJkLmhleWl0c21lam9zaC5jb20KLSBgaW9zL2AgLS0gKHBsYW5uZWQpIFN3aWZ0VUkgaVBob25lIGNvbXBhbmlvbiBhcHAKLSBgbWFjb3MvYCAtLSAocGxhbm5lZCkgU3dpZnRVSSBtYWNPUyBjb21wYW5pb24gYXBwCgojIyBTdGFjawotICoqd2ViLyoqOiBTdGF0aWMgSFRNTCwgbm8gYnVpbGQgc3RlcAotICoqZGFzaGJvYXJkLyoqOiBWaXRlICsgUmVhY3QgMTksIGxvY2FsU3RvcmFnZSBwZXJzaXN0ZW5jZSwgQW5pbWF0ZS5jc3MsIEFwcGxlIExpcXVpZCBHbGFzcyBkZXNpZ24KCiMjIEZlYXR1cmVzCi0gSW52ZW50b3J5IG1hbmFnZW1lbnQgKDI4IFNLVXMsIDYgY2F0ZWdvcmllcywgKy8tIHF0eSBjb250cm9scykKLSBMb3ctc3RvY2sgYWxlcnRzIHdpdGggcmVvcmRlciBlbWFpbCAobWFpbHRvKQotIEJyb3dzZXIgbm90aWZpY2F0aW9ucyBvbiBzdG9jayB0aHJlc2hvbGQgY3Jvc3NpbmcKLSBQSU4gYXV0aGVudGljYXRpb24gZ2F0ZSAoNC1kaWdpdCwgbG9jYWxTdG9yYWdlKQotIEpvYiBwaXBlbGluZSB0cmFja2VyIChMZWFkIC0+IFF1b3RlIC0+IFNjaGVkdWxlZCAtPiBDb21wbGV0ZSAtPiBQYWlkKQotIEJhY2t1cC9yZXN0b3JlIChKU09OIGV4cG9ydC9pbXBvcnQpCi0gU3RvY2sgY2hhbmdlIGhpc3Rvcnkgd2l0aCBhdWRpdCB0cmFpbAotIENTViBleHBvcnQKLSBTZXR0aW5ncyAoYWxlcnQgZW1haWwsIFBJTiwgYmFja3VwKQoKIyMgRGVwbG95CmBgYGJhc2gKIyBMYW5kaW5nIHBhZ2UKY2Qgd2ViICYmIG5weCB2ZXJjZWwgLS1wcm9kCgojIERhc2hib2FyZApjZCBkYXNoYm9hcmQgJiYgbnBtIHJ1biBidWlsZCAmJiBucHggdmVyY2VsIC0tcHJvZApgYGAKCiMjIERldgpgYGBiYXNoCmNkIGRhc2hib2FyZCAmJiBucG0gaW5zdGFsbCAmJiBucG0gcnVuIGRldiAgICAjIFZpdGUgb24gOjUxODAKYGBgCgojIyBSdWxlcwotIE5vIGVtb2ppcwotIE5vIGdyYWRpZW50cyBvciBkcm9wIHNoYWRvd3MKLSBTcHJpbmcgcGh5c2ljcyBvbiBpbnRlcmFjdGl2ZSBlbGVtZW50czogY3ViaWMtYmV6aWVyKDAuMzQsIDEuNTYsIDAuNjQsIDEpCi0gTW9iaWxlLWZpcnN0LCBBcHBsZSBMaXF1aWQgR2xhc3MgZGVzaWduIHN5c3RlbQoKIyMgUm9hZG1hcAoKIyMjIGlPUyBBcHAgKHBsYW5uZWQpClN3aWZ0VUksIGlQaG9uZSAxNyBQcm8gdGFyZ2V0LCBpT1MgMTcrLiBGb3VyIHRhYnM6Ci0gKipEYXNoYm9hcmQqKjogc3RhdHMgY2FyZHMsIGxvdyBzdG9jayBhbGVydHMsIGpvYiBzdGF0cyAobWlycm9ycyB3ZWIpCi0gKipJbnZlbnRvcnkqKjogcGFydCBsaXN0IHdpdGggKy8tIHF0eSBjb250cm9scywgc2VhcmNoLCBjYXRlZ29yeSBmaWx0ZXIKLSAqKkpvYnMqKjogcGlwZWxpbmUgbGlzdCB3aXRoIHN0YXR1cyBiYWRnZXMsIGFkdmFuY2UgYnV0dG9uLCBjcmVhdGUvZWRpdAotICoqU2V0dGluZ3MqKjogUElOLCBhbGVydCBlbWFpbCwgYmFja3VwL3Jlc3RvcmUKCkRhdGEgc3luYyB2aWEgc2hhcmVkIEFQSSBlbmRwb2ludCBvciBzdGFuZGFsb25lIGxvY2FsU3RvcmFnZSBlcXVpdmFsZW50LgpMb2NhdGVkIGF0IGBpb3MvYCB3aXRoIHhjb2RlZ2VuIHByb2plY3QueW1sLgoKIyMjIG1hY09TIEFwcCAocGxhbm5lZCkKU3dpZnRVSSwgbWFjT1MgMTQrLiBTYW1lIDQgdGFicyBidXQgc2lkZWJhciBuYXZpZ2F0aW9uIGxheW91dC4KLSBDbWQrSyBzZWFyY2ggc2hvcnRjdXQKLSBOYXRpdmUgbm90aWZpY2F0aW9ucyBmb3IgbG93IHN0b2NrIGFsZXJ0cwotIEtleWJvYXJkIHNob3J0Y3V0cyBtYXRjaGluZyB3ZWIgKEFsdCsxLTUgbmF2KQoKTG9jYXRlZCBhdCBgbWFjb3MvYCB3aXRoIHhjb2RlZ2VuIHByb2plY3QueW1sLgoKIyMjIEZ1dHVyZQotIFF1aWNrLXF1b3RlIGNhbGN1bGF0b3IgKGRvb3Igc2l6ZSArIHNwcmluZyB0eXBlICsgbGFib3IgPSBlc3RpbWF0ZSkKLSBDdXN0b21lciBzZXJ2aWNlIGhpc3RvcnkgKG5hbWUsIGFkZHJlc3MsIHdvcmsgZG9uZSwgd2hlbikKLSBFc3RpbWF0ZSBmdW5uZWwgZW5naW5lIChDVEEgdHJhY2tpbmcpCi0gTWlzc2VkLWNhbGwgcmVjb3ZlcnkgYXV0b3BpbG90Cg==
+# BC Garage Doors (BCGD)
+v3.0.0
+
+Monorepo for BC Garage Doors -- customer-facing website, internal operations dashboard, and native companion apps.
+
+## Structure
+- `web/` -- Static HTML landing page. Conversion-focused, emergency-first. Live: bcgd.heyitsmejosh.com
+- `dashboard/` -- Vite + React 19 operations dashboard. Inventory, jobs pipeline, PIN auth, backup/restore. Live: bcgd-dashboard.heyitsmejosh.com
+- `ios/` -- (planned) SwiftUI iPhone companion app
+- `macos/` -- (planned) SwiftUI macOS companion app
+
+## Stack
+- **web/**: Static HTML, no build step
+- **dashboard/**: Vite + React 19, localStorage persistence, Animate.css, Apple Liquid Glass design
+
+## Features
+- Inventory management (28 SKUs, 6 categories, +/- qty controls)
+- Low-stock alerts with reorder email (mailto)
+- Browser notifications on stock threshold crossing
+- PIN authentication gate (4-digit, localStorage)
+- Job pipeline tracker (Lead -> Quote -> Scheduled -> Complete -> Paid)
+- Backup/restore (JSON export/import)
+- Stock change history with audit trail
+- CSV export
+- Settings (alert email, PIN, backup)
+
+## Deploy
+```bash
+# Landing page
+cd web && npx vercel --prod
+
+# Dashboard
+cd dashboard && npm run build && npx vercel --prod
+```
+
+## Dev
+```bash
+cd dashboard && npm install && npm run dev    # Vite on :5180
+```
+
+## Rules
+- No emojis
+- No gradients or drop shadows
+- Spring physics on interactive elements: cubic-bezier(0.34, 1.56, 0.64, 1)
+- Mobile-first, Apple Liquid Glass design system
+
+## Roadmap
+
+### iOS App (planned)
+SwiftUI, iPhone 17 Pro target, iOS 17+. Four tabs:
+- **Dashboard**: stats cards, low stock alerts, job stats (mirrors web)
+- **Inventory**: part list with +/- qty controls, search, category filter
+- **Jobs**: pipeline list with status badges, advance button, create/edit
+- **Settings**: PIN, alert email, backup/restore
+
+Data sync via shared API endpoint or standalone localStorage equivalent.
+Located at `ios/` with xcodegen project.yml.
+
+### macOS App (planned)
+SwiftUI, macOS 14+. Same 4 tabs but sidebar navigation layout.
+- Cmd+K search shortcut
+- Native notifications for low stock alerts
+- Keyboard shortcuts matching web (Alt+1-5 nav)
+
+Located at `macos/` with xcodegen project.yml.
+
+### Future
+- Quick-quote calculator (door size + spring type + labor = estimate)
+- Customer service history (name, address, work done, when)
+- Estimate funnel engine (CTA tracking)
+- Missed-call recovery autopilot

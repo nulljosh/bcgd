@@ -1,1 +1,150 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZVJlZiB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgZ2V0UGluLCBzZXRQaW4gYXMgc2F2ZVBpbiwgZXhwb3J0QWxsLCBpbXBvcnRBbGwgfSBmcm9tICcuLi9saWIvc3RvcmFnZSc7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTZXR0aW5ncyh7IHNldHRpbmdzLCBvblNhdmUgfSkgewogIGNvbnN0IFtmb3JtLCBzZXRGb3JtXSA9IHVzZVN0YXRlKHNldHRpbmdzKTsKICBjb25zdCBbcGluSW5wdXQsIHNldFBpbklucHV0XSA9IHVzZVN0YXRlKCcnKTsKICBjb25zdCBbcGluTXNnLCBzZXRQaW5Nc2ddID0gdXNlU3RhdGUoJycpOwogIGNvbnN0IFtoYXNQaW4sIHNldEhhc1Bpbl0gPSB1c2VTdGF0ZSghIWdldFBpbigpKTsKICBjb25zdCBbYmFja3VwTXNnLCBzZXRCYWNrdXBNc2ddID0gdXNlU3RhdGUoJycpOwogIGNvbnN0IGZpbGVSZWYgPSB1c2VSZWYobnVsbCk7CgogIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IChlKSA9PiB7CiAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgICBvblNhdmUoZm9ybSk7CiAgfTsKCiAgY29uc3QgaGFuZGxlU2V0UGluID0gKCkgPT4gewogICAgaWYgKHBpbklucHV0Lmxlbmd0aCAhPT0gNCB8fCAhL15cZHs0fSQvLnRlc3QocGluSW5wdXQpKSB7CiAgICAgIHNldFBpbk1zZygnUElOIG11c3QgYmUgZXhhY3RseSA0IGRpZ2l0cycpOwogICAgICByZXR1cm47CiAgICB9CiAgICBzYXZlUGluKHBpbklucHV0KTsKICAgIHNldEhhc1Bpbih0cnVlKTsKICAgIHNldFBpbklucHV0KCcnKTsKICAgIHNldFBpbk1zZygnUElOIHNldCcpOwogICAgc2V0VGltZW91dCgoKSA9PiBzZXRQaW5Nc2coJycpLCAyMDAwKTsKICB9OwoKICBjb25zdCBoYW5kbGVSZW1vdmVQaW4gPSAoKSA9PiB7CiAgICBzYXZlUGluKG51bGwpOwogICAgc2V0SGFzUGluKGZhbHNlKTsKICAgIHNldFBpbklucHV0KCcnKTsKICAgIHNldFBpbk1zZygnUElOIHJlbW92ZWQnKTsKICAgIHNldFRpbWVvdXQoKCkgPT4gc2V0UGluTXNnKCcnKSwgMjAwMCk7CiAgfTsKCiAgY29uc3QgaGFuZGxlRG93bmxvYWRCYWNrdXAgPSAoKSA9PiB7CiAgICBjb25zdCBqc29uID0gZXhwb3J0QWxsKCk7CiAgICBjb25zdCBibG9iID0gbmV3IEJsb2IoW2pzb25dLCB7IHR5cGU6ICdhcHBsaWNhdGlvbi9qc29uJyB9KTsKICAgIGNvbnN0IHVybCA9IFVSTC5jcmVhdGVPYmplY3RVUkwoYmxvYik7CiAgICBjb25zdCBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYScpOwogICAgYS5ocmVmID0gdXJsOwogICAgYS5kb3dubG9hZCA9IGBiY2dkLWJhY2t1cC0ke25ldyBEYXRlKCkudG9JU09TdHJpbmcoKS5zcGxpdCgnVCcpWzBdfS5qc29uYDsKICAgIGEuY2xpY2soKTsKICAgIFVSTC5yZXZva2VPYmplY3RVUkwodXJsKTsKICB9OwoKICBjb25zdCBoYW5kbGVSZXN0b3JlQmFja3VwID0gKGUpID0+IHsKICAgIGNvbnN0IGZpbGUgPSBlLnRhcmdldC5maWxlc1swXTsKICAgIGlmICghZmlsZSkgcmV0dXJuOwogICAgY29uc3QgcmVhZGVyID0gbmV3IEZpbGVSZWFkZXIoKTsKICAgIHJlYWRlci5vbmxvYWQgPSAoZXYpID0+IHsKICAgICAgdHJ5IHsKICAgICAgICBpbXBvcnRBbGwoZXYudGFyZ2V0LnJlc3VsdCk7CiAgICAgICAgc2V0QmFja3VwTXNnKCdCYWNrdXAgcmVzdG9yZWQuIFJlbG9hZGluZy4uLicpOwogICAgICAgIHNldFRpbWVvdXQoKCkgPT4gd2luZG93LmxvY2F0aW9uLnJlbG9hZCgpLCAxMDAwKTsKICAgICAgfSBjYXRjaCB7CiAgICAgICAgc2V0QmFja3VwTXNnKCdJbnZhbGlkIGJhY2t1cCBmaWxlJyk7CiAgICAgICAgc2V0VGltZW91dCgoKSA9PiBzZXRCYWNrdXBNc2coJycpLCAzMDAwKTsKICAgICAgfQogICAgfTsKICAgIHJlYWRlci5yZWFkQXNUZXh0KGZpbGUpOwogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ic2V0dGluZ3MgYW5pbWF0ZV9fYW5pbWF0ZWQgYW5pbWF0ZV9fZmFkZUluIj4KICAgICAgPGgyIGNsYXNzTmFtZT0ic2VjdGlvbi10aXRsZSI+QWxlcnQgU2V0dGluZ3M8L2gyPgogICAgICA8Zm9ybSBjbGFzc05hbWU9InNldHRpbmdzLWZvcm0gZ2xhc3MtY2FyZCIgb25TdWJtaXQ9e2hhbmRsZVN1Ym1pdH0+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvcm0tZmllbGQiPgogICAgICAgICAgPGxhYmVsPkFsZXJ0IEVtYWlsPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICB0eXBlPSJlbWFpbCIKICAgICAgICAgICAgdmFsdWU9e2Zvcm0uYWxlcnRFbWFpbH0KICAgICAgICAgICAgb25DaGFuZ2U9e2UgPT4gc2V0Rm9ybShwcmV2ID0+ICh7IC4uLnByZXYsIGFsZXJ0RW1haWw6IGUudGFyZ2V0LnZhbHVlIH0pKX0KICAgICAgICAgICAgcGxhY2Vob2xkZXI9ImV4cGVydEBiY2dhcmFnZWRvb3JzLmNhIgogICAgICAgICAgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9ybS1oaW50Ij5SZW9yZGVyIGVtYWlscyB3aWxsIGJlIHByZS1hZGRyZXNzZWQgdG8gdGhpcyByZWNpcGllbnQ8L3NwYW4+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JtLWZpZWxkIj4KICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9InRvZ2dsZS1sYWJlbCI+CiAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgIHR5cGU9ImNoZWNrYm94IgogICAgICAgICAgICAgIGNoZWNrZWQ9e2Zvcm0uYWxlcnRzRW5hYmxlZH0KICAgICAgICAgICAgICBvbkNoYW5nZT17ZSA9PiBzZXRGb3JtKHByZXYgPT4gKHsgLi4ucHJldiwgYWxlcnRzRW5hYmxlZDogZS50YXJnZXQuY2hlY2tlZCB9KSl9CiAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDxzcGFuPlNob3cgbG93LXN0b2NrIHJlb3JkZXIgcHJvbXB0czwvc3Bhbj4KICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JtLWFjdGlvbnMiPgogICAgICAgICAgPGJ1dHRvbiB0eXBlPSJzdWJtaXQiIGNsYXNzTmFtZT0iYnRuIGJ0bi1wcmltYXJ5Ij5TYXZlIFNldHRpbmdzPC9idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZm9ybT4KCiAgICAgIDxoMiBjbGFzc05hbWU9InNlY3Rpb24tdGl0bGUiIHN0eWxlPXt7IG1hcmdpblRvcDogJzI4cHgnIH19PlNlY3VyaXR5PC9oMj4KICAgICAgPGRpdiBjbGFzc05hbWU9InNldHRpbmdzLWZvcm0gZ2xhc3MtY2FyZCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvcm0tZmllbGQiPgogICAgICAgICAgPGxhYmVsPntoYXNQaW4gPyAnQ2hhbmdlIFBJTicgOiAnU2V0IFBJTid9PC9sYWJlbD4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBnYXA6ICc4cHgnLCBhbGlnbkl0ZW1zOiAnY2VudGVyJyB9fT4KICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgdHlwZT0icGFzc3dvcmQiCiAgICAgICAgICAgICAgbWF4TGVuZ3RoPXs0fQogICAgICAgICAgICAgIHZhbHVlPXtwaW5JbnB1dH0KICAgICAgICAgICAgICBvbkNoYW5nZT17ZSA9PiBzZXRQaW5JbnB1dChlLnRhcmdldC52YWx1ZS5yZXBsYWNlKC9cRC9nLCAnJykpfQogICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSI0LWRpZ2l0IFBJTiIKICAgICAgICAgICAgICBpbnB1dE1vZGU9Im51bWVyaWMiCiAgICAgICAgICAgICAgcGF0dGVybj0iWzAtOV0qIgogICAgICAgICAgICAgIHN0eWxlPXt7IG1heFdpZHRoOiAnMTQwcHgnIH19CiAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzc05hbWU9ImJ0biBidG4tcHJpbWFyeSIgb25DbGljaz17aGFuZGxlU2V0UGlufT4KICAgICAgICAgICAgICB7aGFzUGluID8gJ1VwZGF0ZScgOiAnU2V0IFBJTid9CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICB7aGFzUGluICYmICgKICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3NOYW1lPSJidG4gYnRuLWRlbGV0ZSIgb25DbGljaz17aGFuZGxlUmVtb3ZlUGlufT4KICAgICAgICAgICAgICAgIFJlbW92ZSBQSU4KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICAge3Bpbk1zZyAmJiA8c3BhbiBjbGFzc05hbWU9ImZvcm0taGludCIgc3R5bGU9e3sgY29sb3I6IHBpbk1zZy5pbmNsdWRlcygnbXVzdCcpID8gJ3ZhcigtLXJlZCknIDogJ3ZhcigtLWdyZWVuKScgfX0+e3Bpbk1zZ308L3NwYW4+fQogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmb3JtLWhpbnQiPldoZW4gc2V0LCBhIFBJTiBpcyByZXF1aXJlZCB0byBhY2Nlc3MgdGhlIGRhc2hib2FyZDwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICA8aDIgY2xhc3NOYW1lPSJzZWN0aW9uLXRpdGxlIiBzdHlsZT17eyBtYXJnaW5Ub3A6ICcyOHB4JyB9fT5EYXRhPC9oMj4KICAgICAgPGRpdiBjbGFzc05hbWU9InNldHRpbmdzLWZvcm0gZ2xhc3MtY2FyZCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZvcm0tZmllbGQiPgogICAgICAgICAgPGxhYmVsPkJhY2t1cDwvbGFiZWw+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZ2FwOiAnOHB4JywgYWxpZ25JdGVtczogJ2NlbnRlcicsIGZsZXhXcmFwOiAnd3JhcCcgfX0+CiAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBjbGFzc05hbWU9ImJ0biBidG4tcHJpbWFyeSIgb25DbGljaz17aGFuZGxlRG93bmxvYWRCYWNrdXB9PgogICAgICAgICAgICAgIERvd25sb2FkIEJhY2t1cAogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGNsYXNzTmFtZT0iYnRuIGJ0bi1zZWNvbmRhcnkiIG9uQ2xpY2s9eygpID0+IGZpbGVSZWYuY3VycmVudD8uY2xpY2soKX0+CiAgICAgICAgICAgICAgUmVzdG9yZSBmcm9tIEJhY2t1cAogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgcmVmPXtmaWxlUmVmfQogICAgICAgICAgICAgIHR5cGU9ImZpbGUiCiAgICAgICAgICAgICAgYWNjZXB0PSIuanNvbiIKICAgICAgICAgICAgICBvbkNoYW5nZT17aGFuZGxlUmVzdG9yZUJhY2t1cH0KICAgICAgICAgICAgICBzdHlsZT17eyBkaXNwbGF5OiAnbm9uZScgfX0KICAgICAgICAgICAgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAge2JhY2t1cE1zZyAmJiA8c3BhbiBjbGFzc05hbWU9ImZvcm0taGludCIgc3R5bGU9e3sgY29sb3I6IGJhY2t1cE1zZy5pbmNsdWRlcygnSW52YWxpZCcpID8gJ3ZhcigtLXJlZCknIDogJ3ZhcigtLWdyZWVuKScgfX0+e2JhY2t1cE1zZ308L3NwYW4+fQogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmb3JtLWhpbnQiPkV4cG9ydCBhbGwgaW52ZW50b3J5LCBqb2JzLCBoaXN0b3J5LCBhbmQgc2V0dGluZ3MgYXMgSlNPTjwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9Cg==
+import { useState, useRef } from 'react';
+import { getPin, setPin as savePin, exportAll, importAll } from '../lib/storage';
+
+export default function Settings({ settings, onSave }) {
+  const [form, setForm] = useState(settings);
+  const [pinInput, setPinInput] = useState('');
+  const [pinMsg, setPinMsg] = useState('');
+  const [hasPin, setHasPin] = useState(!!getPin());
+  const [backupMsg, setBackupMsg] = useState('');
+  const fileRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSave(form);
+  };
+
+  const handleSetPin = () => {
+    if (pinInput.length !== 4 || !/^\d{4}$/.test(pinInput)) {
+      setPinMsg('PIN must be exactly 4 digits');
+      return;
+    }
+    savePin(pinInput);
+    setHasPin(true);
+    setPinInput('');
+    setPinMsg('PIN set');
+    setTimeout(() => setPinMsg(''), 2000);
+  };
+
+  const handleRemovePin = () => {
+    savePin(null);
+    setHasPin(false);
+    setPinInput('');
+    setPinMsg('PIN removed');
+    setTimeout(() => setPinMsg(''), 2000);
+  };
+
+  const handleDownloadBackup = () => {
+    const json = exportAll();
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `bcgd-backup-${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleRestoreBackup = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        importAll(ev.target.result);
+        setBackupMsg('Backup restored. Reloading...');
+        setTimeout(() => window.location.reload(), 1000);
+      } catch {
+        setBackupMsg('Invalid backup file');
+        setTimeout(() => setBackupMsg(''), 3000);
+      }
+    };
+    reader.readAsText(file);
+  };
+
+  return (
+    <div className="settings animate__animated animate__fadeIn">
+      <h2 className="section-title">Alert Settings</h2>
+      <form className="settings-form glass-card" onSubmit={handleSubmit}>
+        <div className="form-field">
+          <label>Alert Email</label>
+          <input
+            type="email"
+            value={form.alertEmail}
+            onChange={e => setForm(prev => ({ ...prev, alertEmail: e.target.value }))}
+            placeholder="expert@bcgaragedoors.ca"
+          />
+          <span className="form-hint">Reorder emails will be pre-addressed to this recipient</span>
+        </div>
+
+        <div className="form-field">
+          <label className="toggle-label">
+            <input
+              type="checkbox"
+              checked={form.alertsEnabled}
+              onChange={e => setForm(prev => ({ ...prev, alertsEnabled: e.target.checked }))}
+            />
+            <span>Show low-stock reorder prompts</span>
+          </label>
+        </div>
+
+        <div className="form-actions">
+          <button type="submit" className="btn btn-primary">Save Settings</button>
+        </div>
+      </form>
+
+      <h2 className="section-title" style={{ marginTop: '28px' }}>Security</h2>
+      <div className="settings-form glass-card">
+        <div className="form-field">
+          <label>{hasPin ? 'Change PIN' : 'Set PIN'}</label>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <input
+              type="password"
+              maxLength={4}
+              value={pinInput}
+              onChange={e => setPinInput(e.target.value.replace(/\D/g, ''))}
+              placeholder="4-digit PIN"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              style={{ maxWidth: '140px' }}
+            />
+            <button type="button" className="btn btn-primary" onClick={handleSetPin}>
+              {hasPin ? 'Update' : 'Set PIN'}
+            </button>
+            {hasPin && (
+              <button type="button" className="btn btn-delete" onClick={handleRemovePin}>
+                Remove PIN
+              </button>
+            )}
+          </div>
+          {pinMsg && <span className="form-hint" style={{ color: pinMsg.includes('must') ? 'var(--red)' : 'var(--green)' }}>{pinMsg}</span>}
+          <span className="form-hint">When set, a PIN is required to access the dashboard</span>
+        </div>
+      </div>
+
+      <h2 className="section-title" style={{ marginTop: '28px' }}>Data</h2>
+      <div className="settings-form glass-card">
+        <div className="form-field">
+          <label>Backup</label>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <button type="button" className="btn btn-primary" onClick={handleDownloadBackup}>
+              Download Backup
+            </button>
+            <button type="button" className="btn btn-secondary" onClick={() => fileRef.current?.click()}>
+              Restore from Backup
+            </button>
+            <input
+              ref={fileRef}
+              type="file"
+              accept=".json"
+              onChange={handleRestoreBackup}
+              style={{ display: 'none' }}
+            />
+          </div>
+          {backupMsg && <span className="form-hint" style={{ color: backupMsg.includes('Invalid') ? 'var(--red)' : 'var(--green)' }}>{backupMsg}</span>}
+          <span className="form-hint">Export all inventory, jobs, history, and settings as JSON</span>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,1 +1,173 @@
-Y29uc3QgUEFSVFNfS0VZID0gJ2dhcmFnZV9wYXJ0cyc7CmNvbnN0IEhJU1RPUllfS0VZID0gJ2dhcmFnZV9oaXN0b3J5JzsKY29uc3QgU0VFRF9WRVJTSU9OID0gJ2dhcmFnZV9zZWVkX3YzJzsKCmV4cG9ydCBmdW5jdGlvbiBnZXRQYXJ0cygpIHsKICB0cnkgewogICAgLy8gRm9yY2UgcmUtc2VlZCB3aGVuIHZlcnNpb24gY2hhbmdlcyAoY2xlYXJzIG9sZCBkZW1vIGRhdGEpCiAgICBpZiAoIWxvY2FsU3RvcmFnZS5nZXRJdGVtKFNFRURfVkVSU0lPTikpIHsKICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oUEFSVFNfS0VZKTsKICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oSElTVE9SWV9LRVkpOwogICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnZ2FyYWdlX3NlZWRlZCcpOwogICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShTRUVEX1ZFUlNJT04sICcxJyk7CiAgICAgIHNhdmVQYXJ0cyhSRUFMX0lOVkVOVE9SWSk7CiAgICAgIHJldHVybiBbLi4uUkVBTF9JTlZFTlRPUlldOwogICAgfQogICAgY29uc3Qgc3RvcmVkID0gSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbShQQVJUU19LRVkpKTsKICAgIGlmIChzdG9yZWQgJiYgc3RvcmVkLmxlbmd0aCA+IDApIHJldHVybiBzdG9yZWQ7CiAgICBzYXZlUGFydHMoUkVBTF9JTlZFTlRPUlkpOwogICAgcmV0dXJuIFsuLi5SRUFMX0lOVkVOVE9SWV07CiAgfSBjYXRjaCB7CiAgICByZXR1cm4gW107CiAgfQp9CgpleHBvcnQgZnVuY3Rpb24gc2F2ZVBhcnRzKHBhcnRzKSB7CiAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oUEFSVFNfS0VZLCBKU09OLnN0cmluZ2lmeShwYXJ0cykpOwp9CgpleHBvcnQgZnVuY3Rpb24gZ2V0SGlzdG9yeSgpIHsKICB0cnkgewogICAgcmV0dXJuIEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oSElTVE9SWV9LRVkpKSB8fCBbXTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBbXTsKICB9Cn0KCmV4cG9ydCBmdW5jdGlvbiBhZGRIaXN0b3J5KGVudHJ5KSB7CiAgY29uc3QgaGlzdG9yeSA9IGdldEhpc3RvcnkoKTsKICBoaXN0b3J5LnVuc2hpZnQoeyAuLi5lbnRyeSwgdGltZXN0YW1wOiBEYXRlLm5vdygpIH0pOwogIGlmIChoaXN0b3J5Lmxlbmd0aCA+IDUwMCkgaGlzdG9yeS5sZW5ndGggPSA1MDA7CiAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oSElTVE9SWV9LRVksIEpTT04uc3RyaW5naWZ5KGhpc3RvcnkpKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGdlbmVyYXRlSWQoKSB7CiAgcmV0dXJuIERhdGUubm93KCkudG9TdHJpbmcoMzYpICsgTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc2xpY2UoMiwgOCk7Cn0KCmV4cG9ydCBjb25zdCBDQVRFR09SSUVTID0gWwogICdTcHJpbmdzJywKICAnUm9sbGVycycsCiAgJ0hhcmR3YXJlJywKICAnUmVtb3RlcycsCiAgJ1dlYXRoZXJzdHJpcHBpbmcnLAogICdQb3dlcicsCl07Cgpjb25zdCBTRVRUSU5HU19LRVkgPSAnZ2FyYWdlX3NldHRpbmdzJzsKCmV4cG9ydCBmdW5jdGlvbiBnZXRTZXR0aW5ncygpIHsKICB0cnkgewogICAgcmV0dXJuIEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oU0VUVElOR1NfS0VZKSkgfHwgewogICAgICBhbGVydEVtYWlsOiAnZXhwZXJ0QGJjZ2FyYWdlZG9vcnMuY2EnLAogICAgICBhbGVydHNFbmFibGVkOiB0cnVlLAogICAgfTsKICB9IGNhdGNoIHsKICAgIHJldHVybiB7IGFsZXJ0RW1haWw6ICdleHBlcnRAYmNnYXJhZ2Vkb29ycy5jYScsIGFsZXJ0c0VuYWJsZWQ6IHRydWUgfTsKICB9Cn0KCmV4cG9ydCBmdW5jdGlvbiBzYXZlU2V0dGluZ3Moc2V0dGluZ3MpIHsKICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShTRVRUSU5HU19LRVksIEpTT04uc3RyaW5naWZ5KHNldHRpbmdzKSk7Cn0KCmV4cG9ydCBmdW5jdGlvbiBidWlsZFJlb3JkZXJNYWlsdG8ocGFydCwgYWxlcnRFbWFpbCkgewogIGNvbnN0IHRvID0gYWxlcnRFbWFpbCB8fCAnJzsKICBjb25zdCBzdWJqZWN0ID0gZW5jb2RlVVJJQ29tcG9uZW50KGBSZW9yZGVyOiAke3BhcnQubmFtZX0gKCR7cGFydC5za3V9KWApOwogIGNvbnN0IGJvZHkgPSBlbmNvZGVVUklDb21wb25lbnQoCiAgICBgTG93IHN0b2NrIGFsZXJ0IGZvciBCZXN0IENob2ljZSBHYXJhZ2UgRG9vcnM6XG5cbmAgKwogICAgYFBhcnQ6ICR7cGFydC5uYW1lfVxuYCArCiAgICBgU0tVOiAke3BhcnQuc2t1fVxuYCArCiAgICBgQ2F0ZWdvcnk6ICR7cGFydC5jYXRlZ29yeX1cbmAgKwogICAgYEN1cnJlbnQgU3RvY2s6ICR7cGFydC5xdWFudGl0eX1cbmAgKwogICAgYE1pbmltdW0gVGhyZXNob2xkOiAke3BhcnQubWluVGhyZXNob2xkfVxuYCArCiAgICBgU3VwcGxpZXI6ICR7cGFydC5zdXBwbGllciB8fCAnTm90IHNwZWNpZmllZCd9XG5cbmAgKwogICAgYFBsZWFzZSByZW9yZGVyIHRoaXMgaXRlbS5gCiAgKTsKICByZXR1cm4gYG1haWx0bzoke3RvfT9zdWJqZWN0PSR7c3ViamVjdH0mYm9keT0ke2JvZHl9YDsKfQoKLy8gLS0tLSBQSU4gLS0tLQoKZXhwb3J0IGZ1bmN0aW9uIGdldFBpbigpIHsgcmV0dXJuIGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdnYXJhZ2VfcGluJyk7IH0KZXhwb3J0IGZ1bmN0aW9uIHNldFBpbihwaW4pIHsKICBpZiAoIXBpbikgeyBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnZ2FyYWdlX3BpbicpOyByZXR1cm47IH0KICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnZ2FyYWdlX3BpbicsIHBpbik7Cn0KZXhwb3J0IGZ1bmN0aW9uIGNoZWNrUGluKGlucHV0KSB7IHJldHVybiBpbnB1dCA9PT0gZ2V0UGluKCk7IH0KCi8vIC0tLS0gSm9icyAtLS0tCgpjb25zdCBKT0JTX0tFWSA9ICdnYXJhZ2Vfam9icyc7CmV4cG9ydCBjb25zdCBKT0JfU1RBVFVTRVMgPSBbJ0xlYWQnLCAnUXVvdGUnLCAnU2NoZWR1bGVkJywgJ0NvbXBsZXRlJywgJ1BhaWQnXTsKCmV4cG9ydCBmdW5jdGlvbiBnZXRKb2JzKCkgewogIHRyeSB7IHJldHVybiBKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKEpPQlNfS0VZKSkgfHwgW107IH0gY2F0Y2ggeyByZXR1cm4gW107IH0KfQpleHBvcnQgZnVuY3Rpb24gc2F2ZUpvYnMoam9icykgeyBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShKT0JTX0tFWSwgSlNPTi5zdHJpbmdpZnkoam9icykpOyB9CgovLyAtLS0tIEJhY2t1cCAvIFJlc3RvcmUgLS0tLQoKZXhwb3J0IGZ1bmN0aW9uIGV4cG9ydEFsbCgpIHsKICByZXR1cm4gSlNPTi5zdHJpbmdpZnkoewogICAgcGFydHM6IGdldFBhcnRzKCksCiAgICBoaXN0b3J5OiBnZXRIaXN0b3J5KCksCiAgICBzZXR0aW5nczogZ2V0U2V0dGluZ3MoKSwKICAgIGpvYnM6IGdldEpvYnMoKSwKICAgIGV4cG9ydGVkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSwKICB9KTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGltcG9ydEFsbChqc29uU3RyKSB7CiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoanNvblN0cik7CiAgaWYgKGRhdGEucGFydHMpIHNhdmVQYXJ0cyhkYXRhLnBhcnRzKTsKICBpZiAoZGF0YS5oaXN0b3J5KSBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShISVNUT1JZX0tFWSwgSlNPTi5zdHJpbmdpZnkoZGF0YS5oaXN0b3J5KSk7CiAgaWYgKGRhdGEuc2V0dGluZ3MpIHNhdmVTZXR0aW5ncyhkYXRhLnNldHRpbmdzKTsKICBpZiAoZGF0YS5qb2JzKSBzYXZlSm9icyhkYXRhLmpvYnMpOwp9CgpleHBvcnQgY29uc3QgUkVBTF9JTlZFTlRPUlkgPSBbCiAgLy8gU3ByaW5ncyAtLSBjb2xvci1jb2RlZCBieSB3aXJlIGdhdWdlLCByZWQvYmxhY2sgY29uZSBlbmRzCiAgeyBpZDogJ3IwMScsIG5hbWU6ICdUb3JzaW9uIFNwcmluZyAtIFllbGxvdyAvIFJlZCcsIHNrdTogJ1NQUi1ZTFctUkVEJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogMzUsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMDInLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBZZWxsb3cgLyBCbGFjaycsIHNrdTogJ1NQUi1ZTFctQkxLJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogMzUsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMDMnLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBXaGl0ZSAvIFJlZCcsIHNrdTogJ1NQUi1XSFQtUkVEJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogMzgsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMDQnLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBXaGl0ZSAvIEJsYWNrJywgc2t1OiAnU1BSLVdIVC1CTEsnLCBjYXRlZ29yeTogJ1NwcmluZ3MnLCBxdWFudGl0eTogMiwgbWluVGhyZXNob2xkOiAxLCBjb3N0OiAzOCwgc3VwcGxpZXI6ICcnIH0sCiAgeyBpZDogJ3IwNScsIG5hbWU6ICdUb3JzaW9uIFNwcmluZyAtIFJlZCAvIFJlZCcsIHNrdTogJ1NQUi1SRUQtUkVEJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogNDIsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMDYnLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBSZWQgLyBCbGFjaycsIHNrdTogJ1NQUi1SRUQtQkxLJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogNDIsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMDcnLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBCcm93biAvIFJlZCcsIHNrdTogJ1NQUi1CUk4tUkVEJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogNDAsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMDgnLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBCcm93biAvIEJsYWNrJywgc2t1OiAnU1BSLUJSTi1CTEsnLCBjYXRlZ29yeTogJ1NwcmluZ3MnLCBxdWFudGl0eTogMiwgbWluVGhyZXNob2xkOiAxLCBjb3N0OiA0MCwgc3VwcGxpZXI6ICcnIH0sCiAgeyBpZDogJ3IwOScsIG5hbWU6ICdUb3JzaW9uIFNwcmluZyAtIEdyZWVuIC8gUmVkJywgc2t1OiAnU1BSLUdSTi1SRUQnLCBjYXRlZ29yeTogJ1NwcmluZ3MnLCBxdWFudGl0eTogMiwgbWluVGhyZXNob2xkOiAxLCBjb3N0OiA0NSwgc3VwcGxpZXI6ICcnIH0sCiAgeyBpZDogJ3IxMCcsIG5hbWU6ICdUb3JzaW9uIFNwcmluZyAtIEdyZWVuIC8gQmxhY2snLCBza3U6ICdTUFItR1JOLUJMSycsIGNhdGVnb3J5OiAnU3ByaW5ncycsIHF1YW50aXR5OiAyLCBtaW5UaHJlc2hvbGQ6IDEsIGNvc3Q6IDQ1LCBzdXBwbGllcjogJycgfSwKICB7IGlkOiAncjExJywgbmFtZTogJ1RvcnNpb24gU3ByaW5nIC0gR29sZCAvIFJlZCcsIHNrdTogJ1NQUi1HTEQtUkVEJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogNDgsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMTInLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBHb2xkIC8gQmxhY2snLCBza3U6ICdTUFItR0xELUJMSycsIGNhdGVnb3J5OiAnU3ByaW5ncycsIHF1YW50aXR5OiAyLCBtaW5UaHJlc2hvbGQ6IDEsIGNvc3Q6IDQ4LCBzdXBwbGllcjogJycgfSwKICB7IGlkOiAncjEzJywgbmFtZTogJ1RvcnNpb24gU3ByaW5nIC0gQmx1ZSAvIFJlZCcsIHNrdTogJ1NQUi1CTFUtUkVEJywgY2F0ZWdvcnk6ICdTcHJpbmdzJywgcXVhbnRpdHk6IDIsIG1pblRocmVzaG9sZDogMSwgY29zdDogNTAsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMTQnLCBuYW1lOiAnVG9yc2lvbiBTcHJpbmcgLSBCbHVlIC8gQmxhY2snLCBza3U6ICdTUFItQkxVLUJMSycsIGNhdGVnb3J5OiAnU3ByaW5ncycsIHF1YW50aXR5OiAyLCBtaW5UaHJlc2hvbGQ6IDEsIGNvc3Q6IDUwLCBzdXBwbGllcjogJycgfSwKCiAgLy8gUm9sbGVycwogIHsgaWQ6ICdyMTUnLCBuYW1lOiAnTnlsb24gUm9sbGVycyAoaGFsZiBidWNrZXQpJywgc2t1OiAnUk9MLU5ZTC1TVEQnLCBjYXRlZ29yeTogJ1JvbGxlcnMnLCBxdWFudGl0eTogNzUsIG1pblRocmVzaG9sZDogMjAsIGNvc3Q6IDIuNTAsIHN1cHBsaWVyOiAnJyB9LAoKICAvLyBSZW1vdGVzICYgS2V5cGFkcwogIHsgaWQ6ICdyMTYnLCBuYW1lOiAnTGlmdE1hc3RlciA5NzlMTSBLZXlwYWQnLCBza3U6ICdSTVQtOTc5TE0nLCBjYXRlZ29yeTogJ1JlbW90ZXMnLCBxdWFudGl0eTogNSwgbWluVGhyZXNob2xkOiAyLCBjb3N0OiA0NSwgc3VwcGxpZXI6ICdMaWZ0TWFzdGVyJyB9LAogIHsgaWQ6ICdyMTcnLCBuYW1lOiAnTGlmdE1hc3RlciA5OTJMTSBSZW1vdGUnLCBza3U6ICdSTVQtOTkyTE0nLCBjYXRlZ29yeTogJ1JlbW90ZXMnLCBxdWFudGl0eTogNCwgbWluVGhyZXNob2xkOiAyLCBjb3N0OiAzNSwgc3VwcGxpZXI6ICdMaWZ0TWFzdGVyJyB9LAogIHsgaWQ6ICdyMTgnLCBuYW1lOiAnTGlmdE1hc3RlciAzODdMTSBLZXlwYWQnLCBza3U6ICdSTVQtMzg3TE0nLCBjYXRlZ29yeTogJ1JlbW90ZXMnLCBxdWFudGl0eTogMiwgbWluVGhyZXNob2xkOiAxLCBjb3N0OiA1MCwgc3VwcGxpZXI6ICdMaWZ0TWFzdGVyJyB9LAogIHsgaWQ6ICdyMTknLCBuYW1lOiAnTGlmdE1hc3RlciA2NTgwTE0nLCBza3U6ICdSTVQtNjU4MExNJywgY2F0ZWdvcnk6ICdSZW1vdGVzJywgcXVhbnRpdHk6IDYsIG1pblRocmVzaG9sZDogMiwgY29zdDogNDAsIHN1cHBsaWVyOiAnTGlmdE1hc3RlcicgfSwKCiAgLy8gSGFyZHdhcmUKICB7IGlkOiAncjIwJywgbmFtZTogJ0dlYXIgYW5kIFNwcm9ja2V0IEtpdCcsIHNrdTogJ0hEVy1HTlMtS0lUJywgY2F0ZWdvcnk6ICdIYXJkd2FyZScsIHF1YW50aXR5OiAxMywgbWluVGhyZXNob2xkOiA0LCBjb3N0OiAyNSwgc3VwcGxpZXI6ICcnIH0sCiAgeyBpZDogJ3IyMScsIG5hbWU6ICdGdWxsIFNlY3Rpb24gT3BlcmF0b3IgQnJhY2tldCcsIHNrdTogJ0hEVy1GU08tQktUJywgY2F0ZWdvcnk6ICdIYXJkd2FyZScsIHF1YW50aXR5OiA4LCBtaW5UaHJlc2hvbGQ6IDMsIGNvc3Q6IDE4LCBzdXBwbGllcjogJycgfSwKICB7IGlkOiAncjIyJywgbmFtZTogJ0hpbmdlICMyJywgc2t1OiAnSERXLUhORy0wMDInLCBjYXRlZ29yeTogJ0hhcmR3YXJlJywgcXVhbnRpdHk6IDIwLCBtaW5UaHJlc2hvbGQ6IDYsIGNvc3Q6IDQuNTAsIHN1cHBsaWVyOiAnJyB9LAogIHsgaWQ6ICdyMjMnLCBuYW1lOiAnSGluZ2UgIzMnLCBza3U6ICdIRFctSE5HLTAwMycsIGNhdGVnb3J5OiAnSGFyZHdhcmUnLCBxdWFudGl0eTogMTQsIG1pblRocmVzaG9sZDogNiwgY29zdDogNSwgc3VwcGxpZXI6ICcnIH0sCiAgeyBpZDogJ3IyNCcsIG5hbWU6ICdIaW5nZSAjNCcsIHNrdTogJ0hEVy1ITkctMDA0JywgY2F0ZWdvcnk6ICdIYXJkd2FyZScsIHF1YW50aXR5OiAyMCwgbWluVGhyZXNob2xkOiA2LCBjb3N0OiA1LjUwLCBzdXBwbGllcjogJycgfSwKCiAgLy8gUG93ZXIKICB7IGlkOiAncjI1JywgbmFtZTogJ0JhY2t1cCBCYXR0ZXJ5IChMaWZ0TWFzdGVyIDQ4NUxNKScsIHNrdTogJ1BXUi00ODVMTScsIGNhdGVnb3J5OiAnUG93ZXInLCBxdWFudGl0eTogMiwgbWluVGhyZXNob2xkOiAyLCBjb3N0OiAzMCwgc3VwcGxpZXI6ICdMaWZ0TWFzdGVyJyB9LAogIHsgaWQ6ICdyMjYnLCBuYW1lOiAnQ1IyMDMyIEJhdHRlcnknLCBza3U6ICdQV1ItQ1IyMDMyJywgY2F0ZWdvcnk6ICdQb3dlcicsIHF1YW50aXR5OiAxNiwgbWluVGhyZXNob2xkOiA1LCBjb3N0OiAwLjc1LCBzdXBwbGllcjogJycgfSwKCiAgLy8gV2VhdGhlcnN0cmlwcGluZwogIHsgaWQ6ICdyMjcnLCBuYW1lOiAnV29vZCBEb29yIEJvdHRvbSBSdWJiZXIgKHJvbGwpJywgc2t1OiAnV1RSLVdEQi1ST0wnLCBjYXRlZ29yeTogJ1dlYXRoZXJzdHJpcHBpbmcnLCBxdWFudGl0eTogMSwgbWluVGhyZXNob2xkOiAxLCBjb3N0OiAzNSwgc3VwcGxpZXI6ICcnIH0sCiAgeyBpZDogJ3IyOCcsIG5hbWU6ICdTdGVlbCBDcmFmdCBCb3R0b20gUnViYmVyIChoYWxmIHJvbGwpJywgc2t1OiAnV1RSLVNDUi1ITEYnLCBjYXRlZ29yeTogJ1dlYXRoZXJzdHJpcHBpbmcnLCBxdWFudGl0eTogMSwgbWluVGhyZXNob2xkOiAxLCBjb3N0OiAyOCwgc3VwcGxpZXI6ICcnIH0sCl07Cg==
+const PARTS_KEY = 'garage_parts';
+const HISTORY_KEY = 'garage_history';
+const SEED_VERSION = 'garage_seed_v3';
+
+export function getParts() {
+  try {
+    // Force re-seed when version changes (clears old demo data)
+    if (!localStorage.getItem(SEED_VERSION)) {
+      localStorage.removeItem(PARTS_KEY);
+      localStorage.removeItem(HISTORY_KEY);
+      localStorage.removeItem('garage_seeded');
+      localStorage.setItem(SEED_VERSION, '1');
+      saveParts(REAL_INVENTORY);
+      return [...REAL_INVENTORY];
+    }
+    const stored = JSON.parse(localStorage.getItem(PARTS_KEY));
+    if (stored && stored.length > 0) return stored;
+    saveParts(REAL_INVENTORY);
+    return [...REAL_INVENTORY];
+  } catch {
+    return [];
+  }
+}
+
+export function saveParts(parts) {
+  localStorage.setItem(PARTS_KEY, JSON.stringify(parts));
+}
+
+export function getHistory() {
+  try {
+    return JSON.parse(localStorage.getItem(HISTORY_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+
+export function addHistory(entry) {
+  const history = getHistory();
+  history.unshift({ ...entry, timestamp: Date.now() });
+  if (history.length > 500) history.length = 500;
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+}
+
+export function generateId() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+}
+
+export const CATEGORIES = [
+  'Springs',
+  'Rollers',
+  'Hardware',
+  'Remotes',
+  'Weatherstripping',
+  'Power',
+];
+
+const SETTINGS_KEY = 'garage_settings';
+
+export function getSettings() {
+  try {
+    return JSON.parse(localStorage.getItem(SETTINGS_KEY)) || {
+      alertEmail: 'expert@bcgaragedoors.ca',
+      alertsEnabled: true,
+    };
+  } catch {
+    return { alertEmail: 'expert@bcgaragedoors.ca', alertsEnabled: true };
+  }
+}
+
+export function saveSettings(settings) {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+}
+
+export function buildReorderMailto(part, alertEmail) {
+  const to = alertEmail || '';
+  const subject = encodeURIComponent(`Reorder: ${part.name} (${part.sku})`);
+  const body = encodeURIComponent(
+    `Low stock alert for Best Choice Garage Doors:\n\n` +
+    `Part: ${part.name}\n` +
+    `SKU: ${part.sku}\n` +
+    `Category: ${part.category}\n` +
+    `Current Stock: ${part.quantity}\n` +
+    `Minimum Threshold: ${part.minThreshold}\n` +
+    `Supplier: ${part.supplier || 'Not specified'}\n\n` +
+    `Please reorder this item.`
+  );
+  return `mailto:${to}?subject=${subject}&body=${body}`;
+}
+
+// ---- PIN ----
+
+export function getPin() { return localStorage.getItem('garage_pin'); }
+export function setPin(pin) {
+  if (!pin) { localStorage.removeItem('garage_pin'); return; }
+  localStorage.setItem('garage_pin', pin);
+}
+export function checkPin(input) { return input === getPin(); }
+
+// ---- Jobs ----
+
+const JOBS_KEY = 'garage_jobs';
+export const JOB_STATUSES = ['Lead', 'Quote', 'Scheduled', 'Complete', 'Paid'];
+
+export function getJobs() {
+  try { return JSON.parse(localStorage.getItem(JOBS_KEY)) || []; } catch { return []; }
+}
+export function saveJobs(jobs) { localStorage.setItem(JOBS_KEY, JSON.stringify(jobs)); }
+
+// ---- Backup / Restore ----
+
+export function exportAll() {
+  return JSON.stringify({
+    parts: getParts(),
+    history: getHistory(),
+    settings: getSettings(),
+    jobs: getJobs(),
+    exportedAt: new Date().toISOString(),
+  });
+}
+
+export function importAll(jsonStr) {
+  const data = JSON.parse(jsonStr);
+  if (data.parts) saveParts(data.parts);
+  if (data.history) localStorage.setItem(HISTORY_KEY, JSON.stringify(data.history));
+  if (data.settings) saveSettings(data.settings);
+  if (data.jobs) saveJobs(data.jobs);
+}
+
+export const REAL_INVENTORY = [
+  // Springs -- color-coded by wire gauge, red/black cone ends
+  { id: 'r01', name: 'Torsion Spring - Yellow / Red', sku: 'SPR-YLW-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 35, supplier: '' },
+  { id: 'r02', name: 'Torsion Spring - Yellow / Black', sku: 'SPR-YLW-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 35, supplier: '' },
+  { id: 'r03', name: 'Torsion Spring - White / Red', sku: 'SPR-WHT-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 38, supplier: '' },
+  { id: 'r04', name: 'Torsion Spring - White / Black', sku: 'SPR-WHT-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 38, supplier: '' },
+  { id: 'r05', name: 'Torsion Spring - Red / Red', sku: 'SPR-RED-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 42, supplier: '' },
+  { id: 'r06', name: 'Torsion Spring - Red / Black', sku: 'SPR-RED-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 42, supplier: '' },
+  { id: 'r07', name: 'Torsion Spring - Brown / Red', sku: 'SPR-BRN-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 40, supplier: '' },
+  { id: 'r08', name: 'Torsion Spring - Brown / Black', sku: 'SPR-BRN-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 40, supplier: '' },
+  { id: 'r09', name: 'Torsion Spring - Green / Red', sku: 'SPR-GRN-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 45, supplier: '' },
+  { id: 'r10', name: 'Torsion Spring - Green / Black', sku: 'SPR-GRN-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 45, supplier: '' },
+  { id: 'r11', name: 'Torsion Spring - Gold / Red', sku: 'SPR-GLD-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 48, supplier: '' },
+  { id: 'r12', name: 'Torsion Spring - Gold / Black', sku: 'SPR-GLD-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 48, supplier: '' },
+  { id: 'r13', name: 'Torsion Spring - Blue / Red', sku: 'SPR-BLU-RED', category: 'Springs', quantity: 2, minThreshold: 1, cost: 50, supplier: '' },
+  { id: 'r14', name: 'Torsion Spring - Blue / Black', sku: 'SPR-BLU-BLK', category: 'Springs', quantity: 2, minThreshold: 1, cost: 50, supplier: '' },
+
+  // Rollers
+  { id: 'r15', name: 'Nylon Rollers (half bucket)', sku: 'ROL-NYL-STD', category: 'Rollers', quantity: 75, minThreshold: 20, cost: 2.50, supplier: '' },
+
+  // Remotes & Keypads
+  { id: 'r16', name: 'LiftMaster 979LM Keypad', sku: 'RMT-979LM', category: 'Remotes', quantity: 5, minThreshold: 2, cost: 45, supplier: 'LiftMaster' },
+  { id: 'r17', name: 'LiftMaster 992LM Remote', sku: 'RMT-992LM', category: 'Remotes', quantity: 4, minThreshold: 2, cost: 35, supplier: 'LiftMaster' },
+  { id: 'r18', name: 'LiftMaster 387LM Keypad', sku: 'RMT-387LM', category: 'Remotes', quantity: 2, minThreshold: 1, cost: 50, supplier: 'LiftMaster' },
+  { id: 'r19', name: 'LiftMaster 6580LM', sku: 'RMT-6580LM', category: 'Remotes', quantity: 6, minThreshold: 2, cost: 40, supplier: 'LiftMaster' },
+
+  // Hardware
+  { id: 'r20', name: 'Gear and Sprocket Kit', sku: 'HDW-GNS-KIT', category: 'Hardware', quantity: 13, minThreshold: 4, cost: 25, supplier: '' },
+  { id: 'r21', name: 'Full Section Operator Bracket', sku: 'HDW-FSO-BKT', category: 'Hardware', quantity: 8, minThreshold: 3, cost: 18, supplier: '' },
+  { id: 'r22', name: 'Hinge #2', sku: 'HDW-HNG-002', category: 'Hardware', quantity: 20, minThreshold: 6, cost: 4.50, supplier: '' },
+  { id: 'r23', name: 'Hinge #3', sku: 'HDW-HNG-003', category: 'Hardware', quantity: 14, minThreshold: 6, cost: 5, supplier: '' },
+  { id: 'r24', name: 'Hinge #4', sku: 'HDW-HNG-004', category: 'Hardware', quantity: 20, minThreshold: 6, cost: 5.50, supplier: '' },
+
+  // Power
+  { id: 'r25', name: 'Backup Battery (LiftMaster 485LM)', sku: 'PWR-485LM', category: 'Power', quantity: 2, minThreshold: 2, cost: 30, supplier: 'LiftMaster' },
+  { id: 'r26', name: 'CR2032 Battery', sku: 'PWR-CR2032', category: 'Power', quantity: 16, minThreshold: 5, cost: 0.75, supplier: '' },
+
+  // Weatherstripping
+  { id: 'r27', name: 'Wood Door Bottom Rubber (roll)', sku: 'WTR-WDB-ROL', category: 'Weatherstripping', quantity: 1, minThreshold: 1, cost: 35, supplier: '' },
+  { id: 'r28', name: 'Steel Craft Bottom Rubber (half roll)', sku: 'WTR-SCR-HLF', category: 'Weatherstripping', quantity: 1, minThreshold: 1, cost: 28, supplier: '' },
+  { id: 'r29', name: 'NWD Bottom Rubber (half roll)', sku: 'WTR-NWD-HLF', category: 'Weatherstripping', quantity: 1, minThreshold: 1, cost: 28, supplier: '' },
+
+  // Bottom Brackets
+  { id: 'r30', name: 'Bottom Corner Brackets (pair)', sku: 'HDW-BCB-PR', category: 'Hardware', quantity: 2, minThreshold: 1, cost: 12, supplier: '' },
+];

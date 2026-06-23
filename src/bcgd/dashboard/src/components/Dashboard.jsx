@@ -1,1 +1,175 @@
-aW1wb3J0IHsgQ0FURUdPUklFUywgZ2V0SGlzdG9yeSwgYnVpbGRSZW9yZGVyTWFpbHRvIH0gZnJvbSAnLi4vbGliL3N0b3JhZ2UnOwoKZnVuY3Rpb24gcGx1cmFsKG4sIHdvcmQpIHsKICByZXR1cm4gYCR7bn0gJHt3b3JkfSR7biA9PT0gMSA/ICcnIDogJ3MnfWA7Cn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIERhc2hib2FyZCh7IHBhcnRzLCBsb3dTdG9ja1BhcnRzLCBvblZpZXdJbnZlbnRvcnksIG9uRWRpdFBhcnQsIGFsZXJ0RW1haWwsIGpvYnMgfSkgewogIGNvbnN0IHRvdGFsUGFydHMgPSBwYXJ0cy5sZW5ndGg7CiAgY29uc3QgdG90YWxVbml0cyA9IHBhcnRzLnJlZHVjZSgocywgcCkgPT4gcyArIHAucXVhbnRpdHksIDApOwogIGNvbnN0IHRvdGFsVmFsdWUgPSBwYXJ0cy5yZWR1Y2UoKHMsIHApID0+IHMgKyBNYXRoLnJvdW5kKHAucXVhbnRpdHkgKiBwLmNvc3QgKiAxMDApIC8gMTAwLCAwKTsKICBjb25zdCBoaXN0b3J5ID0gZ2V0SGlzdG9yeSgpOwogIGNvbnN0IHJlY2VudEhpc3RvcnkgPSBoaXN0b3J5LnNsaWNlKDAsIDUpOwoKICBjb25zdCBvcGVuTGVhZHMgPSBqb2JzLmZpbHRlcihqID0+IGouc3RhdHVzID09PSAnTGVhZCcpLmxlbmd0aDsKICBjb25zdCBzY2hlZHVsZWRKb2JzID0gam9icy5maWx0ZXIoaiA9PiBqLnN0YXR1cyA9PT0gJ1NjaGVkdWxlZCcpLmxlbmd0aDsKICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpOwogIGNvbnN0IG1vbnRoU3RhcnQgPSBuZXcgRGF0ZShub3cuZ2V0RnVsbFllYXIoKSwgbm93LmdldE1vbnRoKCksIDEpOwogIGNvbnN0IHJldmVudWVUaGlzTW9udGggPSBqb2JzCiAgICAuZmlsdGVyKGogPT4gai5zdGF0dXMgPT09ICdQYWlkJyAmJiBqLmRhdGUgJiYgbmV3IERhdGUoai5kYXRlKSA+PSBtb250aFN0YXJ0KQogICAgLnJlZHVjZSgocywgaikgPT4gcyArIE1hdGgucm91bmQoTnVtYmVyKGoudmFsdWUgfHwgMCkgKiAxMDApIC8gMTAwLCAwKTsKCiAgY29uc3QgY2F0ZWdvcnlCcmVha2Rvd24gPSBDQVRFR09SSUVTLm1hcChjYXQgPT4gewogICAgY29uc3QgY2F0UGFydHMgPSBwYXJ0cy5maWx0ZXIocCA9PiBwLmNhdGVnb3J5ID09PSBjYXQpOwogICAgcmV0dXJuIHsKICAgICAgbmFtZTogY2F0LAogICAgICBjb3VudDogY2F0UGFydHMubGVuZ3RoLAogICAgICB1bml0czogY2F0UGFydHMucmVkdWNlKChzLCBwKSA9PiBzICsgcC5xdWFudGl0eSwgMCksCiAgICB9OwogIH0pLmZpbHRlcihjID0+IGMuY291bnQgPiAwKTsKCiAgLy8gVG9wIHN0b2NrZWQgaXRlbXMKICBjb25zdCB0b3BTdG9ja2VkID0gWy4uLnBhcnRzXS5zb3J0KChhLCBiKSA9PiBiLnF1YW50aXR5IC0gYS5xdWFudGl0eSkuc2xpY2UoMCwgNSk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZGFzaGJvYXJkIj4KICAgICAgPGRpdiBjbGFzc05hbWU9InN0YXRzLXJvdyBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW5VcCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InN0YXQtY2FyZCBnbGFzcy1jYXJkIj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ic3RhdC1sYWJlbCI+VG90YWwgU0tVczwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ic3RhdC12YWx1ZSI+e3RvdGFsUGFydHN9PC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzdGF0LWNhcmQgZ2xhc3MtY2FyZCI+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0YXQtbGFiZWwiPlRvdGFsIFVuaXRzPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdGF0LXZhbHVlIj57dG90YWxVbml0cy50b0xvY2FsZVN0cmluZygpfTwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3RhdC1jYXJkIGdsYXNzLWNhcmQiPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdGF0LWxhYmVsIj5JbnZlbnRvcnkgVmFsdWUgKGVzdC4pPC9zcGFuPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdGF0LXZhbHVlIj4KICAgICAgICAgICAge3RvdGFsVmFsdWUgPiAwCiAgICAgICAgICAgICAgPyBgfiQke3RvdGFsVmFsdWUudG9Mb2NhbGVTdHJpbmcoJ2VuLVVTJywgeyBtaW5pbXVtRnJhY3Rpb25EaWdpdHM6IDIsIG1heGltdW1GcmFjdGlvbkRpZ2l0czogMiB9KX1gCiAgICAgICAgICAgICAgOiAnLS0nfQogICAgICAgICAgPC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgc3RhdC1jYXJkIGdsYXNzLWNhcmQgJHtsb3dTdG9ja1BhcnRzLmxlbmd0aCA+IDAgPyAnYWxlcnQnIDogJyd9YH0+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0YXQtbGFiZWwiPkxvdyBTdG9jayBBbGVydHM8L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0YXQtdmFsdWUiPntsb3dTdG9ja1BhcnRzLmxlbmd0aH08L3NwYW4+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAge2xvd1N0b2NrUGFydHMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFsZXJ0LXNlY3Rpb24gYW5pbWF0ZV9fYW5pbWF0ZWQgYW5pbWF0ZV9fZmFkZUluVXAiIHN0eWxlPXt7IGFuaW1hdGlvbkRlbGF5OiAnMC4xcycgfX0+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJzZWN0aW9uLXRpdGxlIj5Mb3cgU3RvY2sgQWxlcnRzPC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhbGVydC1saXN0IGdsYXNzLWNhcmQiPgogICAgICAgICAgICB7bG93U3RvY2tQYXJ0cy5tYXAocCA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e3AuaWR9IGNsYXNzTmFtZT0iYWxlcnQtcm93Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhbGVydC1pbmZvIiBvbkNsaWNrPXsoKSA9PiBvbkVkaXRQYXJ0KHApfT4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJhbGVydC1uYW1lIj57cC5uYW1lfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJhbGVydC1za3UiPntwLnNrdX08L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhbGVydC1hY3Rpb25zIj4KICAgICAgICAgICAgICAgICAgPGEKICAgICAgICAgICAgICAgICAgICBocmVmPXtidWlsZFJlb3JkZXJNYWlsdG8ocCwgYWxlcnRFbWFpbCl9CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJidG4gYnRuLXJlb3JkZXIiCiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17ZSA9PiBlLnN0b3BQcm9wYWdhdGlvbigpfQogICAgICAgICAgICAgICAgICAgIHRpdGxlPSJTZW5kIHJlb3JkZXIgZW1haWwiCiAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICBSZW9yZGVyCiAgICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFsZXJ0LXF0eSI+CiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJxdHktY3VycmVudCI+e3AucXVhbnRpdHl9PC9zcGFuPgogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0icXR5LXNlcCI+Lzwvc3Bhbj4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InF0eS1taW4iPntwLm1pblRocmVzaG9sZH08L3NwYW4+CiAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZGFzaGJvYXJkLWdyaWQgYW5pbWF0ZV9fYW5pbWF0ZWQgYW5pbWF0ZV9fZmFkZUluVXAiIHN0eWxlPXt7IGFuaW1hdGlvbkRlbGF5OiAnMC4xNXMnIH19PgogICAgICAgIHsvKiBDYXRlZ29yaWVzICovfQogICAgICAgIHtjYXRlZ29yeUJyZWFrZG93bi5sZW5ndGggPiAwICYmICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJkYXNoYm9hcmQtc2VjdGlvbiI+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InNlY3Rpb24tdGl0bGUiPkNhdGVnb3JpZXM8L2gyPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iY2F0ZWdvcnktZ3JpZCI+CiAgICAgICAgICAgICAge2NhdGVnb3J5QnJlYWtkb3duLm1hcChjYXQgPT4gKAogICAgICAgICAgICAgICAgPGRpdiBrZXk9e2NhdC5uYW1lfSBjbGFzc05hbWU9ImNhdGVnb3J5LWNhcmQgZ2xhc3MtY2FyZCIgb25DbGljaz17b25WaWV3SW52ZW50b3J5fT4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjYXRlZ29yeS1uYW1lIj57Y2F0Lm5hbWV9PC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImNhdGVnb3J5LWNvdW50Ij57cGx1cmFsKGNhdC5jb3VudCwgJ1NLVScpfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJjYXRlZ29yeS11bml0cyI+e3BsdXJhbChjYXQudW5pdHMsICd1bml0Jyl9PC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKX0KCiAgICAgICAgey8qIFRvcCBzdG9ja2VkICovfQogICAgICAgIHt0b3BTdG9ja2VkLmxlbmd0aCA+IDAgJiYgKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImRhc2hib2FyZC1zZWN0aW9uIj4KICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0ic2VjdGlvbi10aXRsZSI+VG9wIFN0b2NrZWQ8L2gyPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idG9wLWxpc3QgZ2xhc3MtY2FyZCI+CiAgICAgICAgICAgICAge3RvcFN0b2NrZWQubWFwKHAgPT4gKAogICAgICAgICAgICAgICAgPGRpdiBrZXk9e3AuaWR9IGNsYXNzTmFtZT0idG9wLXJvdyI+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idG9wLW5hbWUiPntwLm5hbWV9PC9zcGFuPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRvcC1xdHkiPntwLnF1YW50aXR5fTwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICl9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIEpvYnMgb3ZlcnZpZXcgKi99CiAgICAgIHtqb2JzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW5VcCIgc3R5bGU9e3sgYW5pbWF0aW9uRGVsYXk6ICcwLjE4cycsIG1hcmdpbkJvdHRvbTogJzI0cHgnIH19PgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0ic2VjdGlvbi10aXRsZSI+Sm9iczwvaDI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3RhdHMtcm93IiBzdHlsZT17eyBncmlkVGVtcGxhdGVDb2x1bW5zOiAncmVwZWF0KDMsIDFmciknIH19PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic3RhdC1jYXJkIGdsYXNzLWNhcmQiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ic3RhdC1sYWJlbCI+T3BlbiBMZWFkczwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0YXQtdmFsdWUiPntvcGVuTGVhZHN9PC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InN0YXQtY2FyZCBnbGFzcy1jYXJkIj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0YXQtbGFiZWwiPlNjaGVkdWxlZDwvc3Bhbj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InN0YXQtdmFsdWUiPntzY2hlZHVsZWRKb2JzfTwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzdGF0LWNhcmQgZ2xhc3MtY2FyZCI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdGF0LWxhYmVsIj5SZXZlbnVlIFRoaXMgTW9udGg8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdGF0LXZhbHVlIj4KICAgICAgICAgICAgICAgIHtyZXZlbnVlVGhpc01vbnRoID4gMAogICAgICAgICAgICAgICAgICA/IGAkJHtyZXZlbnVlVGhpc01vbnRoLnRvTG9jYWxlU3RyaW5nKCdlbi1VUycsIHsgbWluaW11bUZyYWN0aW9uRGlnaXRzOiAyLCBtYXhpbXVtRnJhY3Rpb25EaWdpdHM6IDIgfSl9YAogICAgICAgICAgICAgICAgICA6ICctLSd9CiAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAgey8qIFJlY2VudCBhY3Rpdml0eSAqL30KICAgICAge3JlY2VudEhpc3RvcnkubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImRhc2hib2FyZC1zZWN0aW9uIGFuaW1hdGVfX2FuaW1hdGVkIGFuaW1hdGVfX2ZhZGVJblVwIiBzdHlsZT17eyBhbmltYXRpb25EZWxheTogJzAuMnMnIH19PgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0ic2VjdGlvbi10aXRsZSI+UmVjZW50IEFjdGl2aXR5PC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhY3Rpdml0eS1saXN0IGdsYXNzLWNhcmQiPgogICAgICAgICAgICB7cmVjZW50SGlzdG9yeS5tYXAoKGVudHJ5LCBpKSA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e2VudHJ5LnRpbWVzdGFtcCArIGl9IGNsYXNzTmFtZT0iYWN0aXZpdHktcm93Ij4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYWN0aXZpdHktYWN0aW9uIiBkYXRhLWFjdGlvbj17ZW50cnkuYWN0aW9ufT57ZW50cnkuYWN0aW9ufTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYWN0aXZpdHktbmFtZSI+e2VudHJ5LnBhcnROYW1lfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYWN0aXZpdHktZGV0YWlscyI+e2VudHJ5LmRldGFpbHN9PC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAge3RvdGFsUGFydHMgPT09IDAgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJlbXB0eS1zdGF0ZSBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW4iPgogICAgICAgICAgPGgyPk5vIGludmVudG9yeSB5ZXQ8L2gyPgogICAgICAgICAgPHA+QWRkIHlvdXIgZmlyc3QgcGFydCB0byBnZXQgc3RhcnRlZCB0cmFja2luZyBzdG9jay48L3A+CiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iYnRuIGJ0bi1wcmltYXJ5IiBvbkNsaWNrPXtvblZpZXdJbnZlbnRvcnl9PgogICAgICAgICAgICBHbyB0byBJbnZlbnRvcnkKICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICApfQogICAgPC9kaXY+CiAgKTsKfQo=
+import { CATEGORIES, getHistory, buildReorderMailto } from '../lib/storage';
+
+function plural(n, word) {
+  return `${n} ${word}${n === 1 ? '' : 's'}`;
+}
+
+export default function Dashboard({ parts, lowStockParts, onViewInventory, onEditPart, alertEmail, jobs }) {
+  const totalParts = parts.length;
+  const totalUnits = parts.reduce((s, p) => s + p.quantity, 0);
+  const totalValue = parts.reduce((s, p) => s + Math.round(p.quantity * p.cost * 100) / 100, 0);
+  const history = getHistory();
+  const recentHistory = history.slice(0, 5);
+
+  const openLeads = jobs.filter(j => j.status === 'Lead').length;
+  const scheduledJobs = jobs.filter(j => j.status === 'Scheduled').length;
+  const now = new Date();
+  const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
+  const revenueThisMonth = jobs
+    .filter(j => j.status === 'Paid' && j.date && new Date(j.date) >= monthStart)
+    .reduce((s, j) => s + Math.round(Number(j.value || 0) * 100) / 100, 0);
+
+  const categoryBreakdown = CATEGORIES.map(cat => {
+    const catParts = parts.filter(p => p.category === cat);
+    return {
+      name: cat,
+      count: catParts.length,
+      units: catParts.reduce((s, p) => s + p.quantity, 0),
+    };
+  }).filter(c => c.count > 0);
+
+  // Top stocked items
+  const topStocked = [...parts].sort((a, b) => b.quantity - a.quantity).slice(0, 5);
+
+  return (
+    <div className="dashboard">
+      <div className="stats-row animate__animated animate__fadeInUp">
+        <div className="stat-card glass-card">
+          <span className="stat-label">Total SKUs</span>
+          <span className="stat-value">{totalParts}</span>
+        </div>
+        <div className="stat-card glass-card">
+          <span className="stat-label">Total Units</span>
+          <span className="stat-value">{totalUnits.toLocaleString()}</span>
+        </div>
+        <div className="stat-card glass-card">
+          <span className="stat-label">Inventory Value (est.)</span>
+          <span className="stat-value">
+            {totalValue > 0
+              ? `~$${totalValue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+              : '--'}
+          </span>
+        </div>
+        <div className={`stat-card glass-card ${lowStockParts.length > 0 ? 'alert' : ''}`}>
+          <span className="stat-label">Low Stock Alerts</span>
+          <span className="stat-value">{lowStockParts.length}</span>
+        </div>
+      </div>
+
+      {lowStockParts.length > 0 && (
+        <div className="alert-section animate__animated animate__fadeInUp" style={{ animationDelay: '0.1s' }}>
+          <h2 className="section-title">Low Stock Alerts</h2>
+          <div className="alert-list glass-card">
+            {lowStockParts.map(p => (
+              <div key={p.id} className="alert-row">
+                <div className="alert-info" onClick={() => onEditPart(p)}>
+                  <span className="alert-name">{p.name}</span>
+                  <span className="alert-sku">{p.sku}</span>
+                </div>
+                <div className="alert-actions">
+                  <a
+                    href={buildReorderMailto(p, alertEmail)}
+                    className="btn btn-reorder"
+                    onClick={e => e.stopPropagation()}
+                    title="Send reorder email"
+                  >
+                    Reorder
+                  </a>
+                  <div className="alert-qty">
+                    <span className="qty-current">{p.quantity}</span>
+                    <span className="qty-sep">/</span>
+                    <span className="qty-min">{p.minThreshold}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div className="dashboard-grid animate__animated animate__fadeInUp" style={{ animationDelay: '0.15s' }}>
+        {/* Categories */}
+        {categoryBreakdown.length > 0 && (
+          <div className="dashboard-section">
+            <h2 className="section-title">Categories</h2>
+            <div className="category-grid">
+              {categoryBreakdown.map(cat => (
+                <div key={cat.name} className="category-card glass-card" onClick={onViewInventory}>
+                  <span className="category-name">{cat.name}</span>
+                  <span className="category-count">{plural(cat.count, 'SKU')}</span>
+                  <span className="category-units">{plural(cat.units, 'unit')}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Top stocked */}
+        {topStocked.length > 0 && (
+          <div className="dashboard-section">
+            <h2 className="section-title">Top Stocked</h2>
+            <div className="top-list glass-card">
+              {topStocked.map(p => (
+                <div key={p.id} className="top-row">
+                  <span className="top-name">{p.name}</span>
+                  <span className="top-qty">{p.quantity}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Jobs overview */}
+      {jobs.length > 0 && (
+        <div className="animate__animated animate__fadeInUp" style={{ animationDelay: '0.18s', marginBottom: '24px' }}>
+          <h2 className="section-title">Jobs</h2>
+          <div className="stats-row" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+            <div className="stat-card glass-card">
+              <span className="stat-label">Open Leads</span>
+              <span className="stat-value">{openLeads}</span>
+            </div>
+            <div className="stat-card glass-card">
+              <span className="stat-label">Scheduled</span>
+              <span className="stat-value">{scheduledJobs}</span>
+            </div>
+            <div className="stat-card glass-card">
+              <span className="stat-label">Revenue This Month</span>
+              <span className="stat-value">
+                {revenueThisMonth > 0
+                  ? `$${revenueThisMonth.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+                  : '--'}
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Recent activity */}
+      {recentHistory.length > 0 && (
+        <div className="dashboard-section animate__animated animate__fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <h2 className="section-title">Recent Activity</h2>
+          <div className="activity-list glass-card">
+            {recentHistory.map((entry, i) => (
+              <div key={entry.timestamp + i} className="activity-row">
+                <span className="activity-action" data-action={entry.action}>{entry.action}</span>
+                <span className="activity-name">{entry.partName}</span>
+                <span className="activity-details">{entry.details}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {totalParts === 0 && (
+        <div className="empty-state animate__animated animate__fadeIn">
+          <h2>No inventory yet</h2>
+          <p>Add your first part to get started tracking stock.</p>
+          <button className="btn btn-primary" onClick={onViewInventory}>
+            Go to Inventory
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}

@@ -1,1 +1,97 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IEpPQl9TVEFUVVNFUyB9IGZyb20gJy4uL2xpYi9zdG9yYWdlJzsKCmNvbnN0IFNUQVRVU19DT0xPUlMgPSB7CiAgTGVhZDogJyMwMDcxZTMnLAogIFF1b3RlOiAnI2ZmOTUwMCcsCiAgU2NoZWR1bGVkOiAnIzM0Yzc1OScsCiAgQ29tcGxldGU6ICcjMmQ2YjZiJywKICBQYWlkOiAnIzM0Yzc1OScsCn07CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBKb2JMaXN0KHsgam9icywgb25FZGl0LCBvbkRlbGV0ZSwgb25BZHZhbmNlIH0pIHsKICBjb25zdCBbc3RhdHVzRmlsdGVyLCBzZXRTdGF0dXNGaWx0ZXJdID0gdXNlU3RhdGUoJ0FsbCcpOwoKICBjb25zdCBmaWx0ZXJlZCA9IHN0YXR1c0ZpbHRlciA9PT0gJ0FsbCcKICAgID8gam9icwogICAgOiBqb2JzLmZpbHRlcihqID0+IGouc3RhdHVzID09PSBzdGF0dXNGaWx0ZXIpOwoKICBpZiAoam9icy5sZW5ndGggPT09IDApIHsKICAgIHJldHVybiAoCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJlbXB0eS1zdGF0ZSBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW4iPgogICAgICAgIDxoMj5ObyBqb2JzIHlldDwvaDI+CiAgICAgICAgPHA+QWRkIHlvdXIgZmlyc3Qgam9iIHRvIHN0YXJ0IHRyYWNraW5nIHdvcmsuPC9wPgogICAgICA8L2Rpdj4KICAgICk7CiAgfQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImpvYi1saXN0Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9ImpvYi1maWx0ZXItYmFyIj4KICAgICAgICA8c2VsZWN0CiAgICAgICAgICB2YWx1ZT17c3RhdHVzRmlsdGVyfQogICAgICAgICAgb25DaGFuZ2U9e2UgPT4gc2V0U3RhdHVzRmlsdGVyKGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgIGNsYXNzTmFtZT0iY2F0ZWdvcnktc2VsZWN0IgogICAgICAgID4KICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkFsbCI+QWxsIFN0YXR1c2VzPC9vcHRpb24+CiAgICAgICAgICB7Sk9CX1NUQVRVU0VTLm1hcChzID0+IDxvcHRpb24ga2V5PXtzfSB2YWx1ZT17c30+e3N9PC9vcHRpb24+KX0KICAgICAgICA8L3NlbGVjdD4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImpvYi1maWx0ZXItY291bnQiPntmaWx0ZXJlZC5sZW5ndGh9IGpvYntmaWx0ZXJlZC5sZW5ndGggIT09IDEgPyAncycgOiAnJ308L3NwYW4+CiAgICAgIDwvZGl2PgoKICAgICAge2ZpbHRlcmVkLm1hcCgoaiwgaSkgPT4gKAogICAgICAgIDxkaXYKICAgICAgICAgIGtleT17ai5pZH0KICAgICAgICAgIGNsYXNzTmFtZT0iam9iLXJvdyBnbGFzcy1jYXJkIGFuaW1hdGVfX2FuaW1hdGVkIGFuaW1hdGVfX2ZhZGVJblVwIgogICAgICAgICAgc3R5bGU9e3sgYW5pbWF0aW9uRGVsYXk6IGAke01hdGgubWluKGkgKiAwLjAzLCAwLjIpfXNgIH19CiAgICAgICAgPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImpvYi1yb3ctbWFpbiI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJqb2Itcm93LWxlZnQiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iam9iLWNsaWVudCI+e2ouY2xpZW50fTwvc3Bhbj4KICAgICAgICAgICAgICB7ai5zZXJ2aWNlICYmIDxzcGFuIGNsYXNzTmFtZT0iam9iLXNlcnZpY2UiPntqLnNlcnZpY2V9PC9zcGFuPn0KICAgICAgICAgICAgICB7ai5waG9uZSAmJiA8c3BhbiBjbGFzc05hbWU9ImpvYi1waG9uZSBtb25vIj57ai5waG9uZX08L3NwYW4+fQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImpvYi1yb3ctcmlnaHQiPgogICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImpvYi1zdGF0dXMtYmFkZ2UiCiAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiBgJHtTVEFUVVNfQ09MT1JTW2ouc3RhdHVzXX0xOGAsCiAgICAgICAgICAgICAgICAgIGNvbG9yOiBTVEFUVVNfQ09MT1JTW2ouc3RhdHVzXSwKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2ouc3RhdHVzfQogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICB7ai52YWx1ZSA+IDAgJiYgKAogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJqb2ItdmFsdWUiPiR7TnVtYmVyKGoudmFsdWUpLnRvTG9jYWxlU3RyaW5nKCdlbi1VUycsIHsgbWluaW11bUZyYWN0aW9uRGlnaXRzOiAyIH0pfTwvc3Bhbj4KICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIHtqLmRhdGUgJiYgPHNwYW4gY2xhc3NOYW1lPSJqb2ItZGF0ZSBtb25vIj57ai5kYXRlfTwvc3Bhbj59CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICB7ai5ub3RlcyAmJiA8cCBjbGFzc05hbWU9ImpvYi1ub3RlcyI+e2oubm90ZXN9PC9wPn0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJqb2Itcm93LWFjdGlvbnMiPgogICAgICAgICAgICB7ai5zdGF0dXMgIT09IEpPQl9TVEFUVVNFU1tKT0JfU1RBVFVTRVMubGVuZ3RoIC0gMV0gJiYgKAogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYnRuIGpvYi1hZHZhbmNlLWJ0biIKICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IG9uQWR2YW5jZShqLmlkKX0KICAgICAgICAgICAgICAgIHRpdGxlPXtgQWR2YW5jZSB0byAke0pPQl9TVEFUVVNFU1tKT0JfU1RBVFVTRVMuaW5kZXhPZihqLnN0YXR1cykgKyAxXX1gfQogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIEFkdmFuY2UKICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgKX0KICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImJ0bi1pY29uIiBvbkNsaWNrPXsoKSA9PiBvbkVkaXQoail9IHRpdGxlPSJFZGl0IiBhcmlhLWxhYmVsPSJFZGl0IGpvYiI+CiAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTAuNSAxLjVMMTIuNSAzLjVMNC41IDExLjVMMS41IDEyLjVMMi41IDkuNVoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2VXaWR0aD0iMS4yIiBzdHJva2VMaW5lam9pbj0icm91bmQiLz4KICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJidG4taWNvbiBidG4tZGFuZ2VyIiBvbkNsaWNrPXsoKSA9PiBvbkRlbGV0ZShqLmlkKX0gdGl0bGU9IkRlbGV0ZSIgYXJpYS1sYWJlbD0iRGVsZXRlIGpvYiI+CiAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSI+CiAgICAgICAgICAgICAgICA8bGluZSB4MT0iMyIgeTE9IjMiIHgyPSIxMSIgeTI9IjExIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlV2lkdGg9IjEuMiIgc3Ryb2tlTGluZWNhcD0icm91bmQiLz4KICAgICAgICAgICAgICAgIDxsaW5lIHgxPSIxMSIgeTE9IjMiIHgyPSIzIiB5Mj0iMTEiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2VXaWR0aD0iMS4yIiBzdHJva2VMaW5lY2FwPSJyb3VuZCIvPgogICAgICAgICAgICAgIDwvc3ZnPgogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApKX0KICAgIDwvZGl2PgogICk7Cn0K
+import { useState } from 'react';
+import { JOB_STATUSES } from '../lib/storage';
+
+const STATUS_COLORS = {
+  Lead: '#0071e3',
+  Quote: '#ff9500',
+  Scheduled: '#34c759',
+  Complete: '#2d6b6b',
+  Paid: '#34c759',
+};
+
+export default function JobList({ jobs, onEdit, onDelete, onAdvance }) {
+  const [statusFilter, setStatusFilter] = useState('All');
+
+  const filtered = statusFilter === 'All'
+    ? jobs
+    : jobs.filter(j => j.status === statusFilter);
+
+  if (jobs.length === 0) {
+    return (
+      <div className="empty-state animate__animated animate__fadeIn">
+        <h2>No jobs yet</h2>
+        <p>Add your first job to start tracking work.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="job-list">
+      <div className="job-filter-bar">
+        <select
+          value={statusFilter}
+          onChange={e => setStatusFilter(e.target.value)}
+          className="category-select"
+        >
+          <option value="All">All Statuses</option>
+          {JOB_STATUSES.map(s => <option key={s} value={s}>{s}</option>)}
+        </select>
+        <span className="job-filter-count">{filtered.length} job{filtered.length !== 1 ? 's' : ''}</span>
+      </div>
+
+      {filtered.map((j, i) => (
+        <div
+          key={j.id}
+          className="job-row glass-card animate__animated animate__fadeInUp"
+          style={{ animationDelay: `${Math.min(i * 0.03, 0.2)}s` }}
+        >
+          <div className="job-row-main">
+            <div className="job-row-left">
+              <span className="job-client">{j.client}</span>
+              {j.service && <span className="job-service">{j.service}</span>}
+              {j.phone && <span className="job-phone mono">{j.phone}</span>}
+            </div>
+            <div className="job-row-right">
+              <span
+                className="job-status-badge"
+                style={{
+                  background: `${STATUS_COLORS[j.status]}18`,
+                  color: STATUS_COLORS[j.status],
+                }}
+              >
+                {j.status}
+              </span>
+              {j.value > 0 && (
+                <span className="job-value">${Number(j.value).toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
+              )}
+              {j.date && <span className="job-date mono">{j.date}</span>}
+            </div>
+          </div>
+          {j.notes && <p className="job-notes">{j.notes}</p>}
+          <div className="job-row-actions">
+            {j.status !== JOB_STATUSES[JOB_STATUSES.length - 1] && (
+              <button
+                className="btn job-advance-btn"
+                onClick={() => onAdvance(j.id)}
+                title={`Advance to ${JOB_STATUSES[JOB_STATUSES.indexOf(j.status) + 1]}`}
+              >
+                Advance
+              </button>
+            )}
+            <button className="btn-icon" onClick={() => onEdit(j)} title="Edit" aria-label="Edit job">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M10.5 1.5L12.5 3.5L4.5 11.5L1.5 12.5L2.5 9.5Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button className="btn-icon btn-danger" onClick={() => onDelete(j.id)} title="Delete" aria-label="Delete job">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <line x1="3" y1="3" x2="11" y2="11" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+                <line x1="11" y1="3" x2="3" y2="11" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

@@ -1,1 +1,73 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IGdldEhpc3RvcnkgfSBmcm9tICcuLi9saWIvc3RvcmFnZSc7CgpmdW5jdGlvbiBmb3JtYXRUaW1lKHRzKSB7CiAgY29uc3QgZCA9IG5ldyBEYXRlKHRzKTsKICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpOwogIGNvbnN0IGRpZmYgPSBub3cgLSBkOwoKICBpZiAoZGlmZiA8IDYwMDAwKSByZXR1cm4gJ0p1c3Qgbm93JzsKICBpZiAoZGlmZiA8IDM2MDAwMDApIHJldHVybiBgJHtNYXRoLmZsb29yKGRpZmYgLyA2MDAwMCl9bSBhZ29gOwogIGlmIChkaWZmIDwgODY0MDAwMDApIHJldHVybiBgJHtNYXRoLmZsb29yKGRpZmYgLyAzNjAwMDAwKX1oIGFnb2A7CgogIHJldHVybiBkLnRvTG9jYWxlRGF0ZVN0cmluZygnZW4tVVMnLCB7CiAgICBtb250aDogJ3Nob3J0JywKICAgIGRheTogJ251bWVyaWMnLAogICAgaG91cjogJ251bWVyaWMnLAogICAgbWludXRlOiAnMi1kaWdpdCcsCiAgfSk7Cn0KCmNvbnN0IEFDVElPTl9DT0xPUlMgPSB7CiAgYWRkZWQ6ICcjMzRjNzU5JywKICB1cGRhdGVkOiAnIzAwNzFlMycsCiAgcmVtb3ZlZDogJyNmZjNiMzAnLAogIHJlc3RvY2tlZDogJyMzNGM3NTknLAogIHVzZWQ6ICcjZmY5NTAwJywKfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhpc3RvcnlMb2coeyBsaW1pdCA9IDAgfSkgewogIGNvbnN0IGhpc3RvcnkgPSBnZXRIaXN0b3J5KCk7CiAgY29uc3QgW2V4cGFuZGVkLCBzZXRFeHBhbmRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7CgogIGlmIChoaXN0b3J5Lmxlbmd0aCA9PT0gMCkgewogICAgcmV0dXJuIDxwIGNsYXNzTmFtZT0iZW1wdHktaGludCI+Tm8gc3RvY2sgY2hhbmdlcyB5ZXQuPC9wPjsKICB9CgogIGNvbnN0IHNob3dBbGwgPSAhbGltaXQgfHwgZXhwYW5kZWQ7CiAgY29uc3QgdmlzaWJsZSA9IHNob3dBbGwgPyBoaXN0b3J5IDogaGlzdG9yeS5zbGljZSgwLCBsaW1pdCk7CiAgY29uc3QgaGFzTW9yZSA9IGxpbWl0ID4gMCAmJiBoaXN0b3J5Lmxlbmd0aCA+IGxpbWl0OwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Imhpc3RvcnktbG9nIj4KICAgICAgPGRpdiBjbGFzc05hbWU9Imhpc3RvcnktbGlzdCI+CiAgICAgICAge3Zpc2libGUubWFwKChlbnRyeSwgaSkgPT4gKAogICAgICAgICAgPGRpdgogICAgICAgICAgICBrZXk9e2VudHJ5LnRpbWVzdGFtcCArIGl9CiAgICAgICAgICAgIGNsYXNzTmFtZT0iaGlzdG9yeS1yb3cgZ2xhc3MtY2FyZCBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW5VcCIKICAgICAgICAgICAgc3R5bGU9e3sgYW5pbWF0aW9uRGVsYXk6IGAke01hdGgubWluKGkgKiAwLjAzLCAwLjMpfXNgIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJoaXN0b3J5LWFjdGlvbiIKICAgICAgICAgICAgICBzdHlsZT17eyBjb2xvcjogQUNUSU9OX0NPTE9SU1tlbnRyeS5hY3Rpb25dIHx8ICcjODY4NjhiJyB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2VudHJ5LmFjdGlvbn0KICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9Imhpc3RvcnktbmFtZSI+e2VudHJ5LnBhcnROYW1lfTwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJoaXN0b3J5LXNrdSBtb25vIj57ZW50cnkuc2t1fTwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJoaXN0b3J5LWRldGFpbHMiPntlbnRyeS5kZXRhaWxzfTwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJoaXN0b3J5LXRpbWUiPntmb3JtYXRUaW1lKGVudHJ5LnRpbWVzdGFtcCl9PC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgogICAgICB7aGFzTW9yZSAmJiAoCiAgICAgICAgPGJ1dHRvbgogICAgICAgICAgY2xhc3NOYW1lPSJidG4gYnRuLXNlY29uZGFyeSBidG4tc20gc2hvdy1tb3JlLWJ0biIKICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEV4cGFuZGVkKGUgPT4gIWUpfQogICAgICAgID4KICAgICAgICAgIHtleHBhbmRlZCA/ICdTaG93IGxlc3MnIDogYFNob3cgYWxsICR7aGlzdG9yeS5sZW5ndGh9IGVudHJpZXNgfQogICAgICAgIDwvYnV0dG9uPgogICAgICApfQogICAgPC9kaXY+CiAgKTsKfQo=
+import { useState } from 'react';
+import { getHistory } from '../lib/storage';
+
+function formatTime(ts) {
+  const d = new Date(ts);
+  const now = new Date();
+  const diff = now - d;
+
+  if (diff < 60000) return 'Just now';
+  if (diff < 3600000) return `${Math.floor(diff / 60000)}m ago`;
+  if (diff < 86400000) return `${Math.floor(diff / 3600000)}h ago`;
+
+  return d.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+  });
+}
+
+const ACTION_COLORS = {
+  added: '#34c759',
+  updated: '#0071e3',
+  removed: '#ff3b30',
+  restocked: '#34c759',
+  used: '#ff9500',
+};
+
+export default function HistoryLog({ limit = 0 }) {
+  const history = getHistory();
+  const [expanded, setExpanded] = useState(false);
+
+  if (history.length === 0) {
+    return <p className="empty-hint">No stock changes yet.</p>;
+  }
+
+  const showAll = !limit || expanded;
+  const visible = showAll ? history : history.slice(0, limit);
+  const hasMore = limit > 0 && history.length > limit;
+
+  return (
+    <div className="history-log">
+      <div className="history-list">
+        {visible.map((entry, i) => (
+          <div
+            key={entry.timestamp + i}
+            className="history-row glass-card animate__animated animate__fadeInUp"
+            style={{ animationDelay: `${Math.min(i * 0.03, 0.3)}s` }}
+          >
+            <span
+              className="history-action"
+              style={{ color: ACTION_COLORS[entry.action] || '#86868b' }}
+            >
+              {entry.action}
+            </span>
+            <span className="history-name">{entry.partName}</span>
+            <span className="history-sku mono">{entry.sku}</span>
+            <span className="history-details">{entry.details}</span>
+            <span className="history-time">{formatTime(entry.timestamp)}</span>
+          </div>
+        ))}
+      </div>
+      {hasMore && (
+        <button
+          className="btn btn-secondary btn-sm show-more-btn"
+          onClick={() => setExpanded(e => !e)}
+        >
+          {expanded ? 'Show less' : `Show all ${history.length} entries`}
+        </button>
+      )}
+    </div>
+  );
+}

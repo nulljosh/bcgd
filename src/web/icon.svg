@@ -1,1 +1,19 @@
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIzMiIgZmlsbD0iI2Y1ZjVmNyIvPgogIDwhLS0gU2hpZWxkIHNoYXBlIC0tPgogIDxwYXRoIGQ9Ik0xMDAgMzAgTDE1MCA1NSBMMTUwIDExMCBRMTUwIDE1MCAxMDAgMTc1IFE1MCAxNTAgNTAgMTEwIEw1MCA1NSBaIiBmaWxsPSJub25lIiBzdHJva2U9IiMxYTVhOTYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xMDAgNDIgTDE0MiA2MiBMMTQyIDEwOCBRMTQyIDE0MiAxMDAgMTYzIFE1OCAxNDIgNTggMTA4IEw1OCA2MiBaIiBmaWxsPSIjMWE1YTk2IiBvcGFjaXR5PSIwLjA4Ii8+CiAgPCEtLSBEaWdpdGFsIGdyaWQgaW5zaWRlIHNoaWVsZCAtLT4KICA8bGluZSB4MT0iNzUiIHkxPSI3NSIgeDI9IjEyNSIgeTI9Ijc1IiBzdHJva2U9IiMxYTVhOTYiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjMiLz4KICA8bGluZSB4MT0iNzUiIHkxPSI5NSIgeDI9IjEyNSIgeTI9Ijk1IiBzdHJva2U9IiMxYTVhOTYiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjMiLz4KICA8bGluZSB4MT0iNzUiIHkxPSIxMTUiIHgyPSIxMjUiIHkyPSIxMTUiIHN0cm9rZT0iIzFhNWE5NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMyIvPgogIDxsaW5lIHgxPSI4NSIgeTE9IjY1IiB4Mj0iODUiIHkyPSIxMzAiIHN0cm9rZT0iIzFhNWE5NiIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMyIvPgogIDxsaW5lIHgxPSIxMDAiIHkxPSI2NSIgeDI9IjEwMCIgeTI9IjE0MCIgc3Ryb2tlPSIjMWE1YTk2IiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zIi8+CiAgPGxpbmUgeDE9IjExNSIgeTE9IjY1IiB4Mj0iMTE1IiB5Mj0iMTMwIiBzdHJva2U9IiMxYTVhOTYiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjMiLz4KICA8IS0tIEJDIHRleHQgLS0+CiAgPHRleHQgeD0iMTAwIiB5PSIxMDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSItYXBwbGUtc3lzdGVtLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxYTVhOTYiPkJDPC90ZXh0PgogIDwhLS0gR2FyYWdlIGRvb3IgbGluZXMgYXQgYm90dG9tIC0tPgogIDxyZWN0IHg9IjgwIiB5PSIxMjUiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzIiByeD0iMSIgZmlsbD0iIzI0NzJiMiIgb3BhY2l0eT0iMC41Ii8+CiAgPHJlY3QgeD0iODAiIHk9IjEzMSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMiIHJ4PSIxIiBmaWxsPSIjMjQ3MmIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cmVjdCB4PSI4MCIgeT0iMTM3IiB3aWR0aD0iNDAiIGhlaWdodD0iMyIgcng9IjEiIGZpbGw9IiMyNDcyYjIiIG9wYWNpdHk9IjAuMyIvPgo8L3N2Zz4K
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="32" fill="#f5f5f7"/>
+  <!-- Shield shape -->
+  <path d="M100 30 L150 55 L150 110 Q150 150 100 175 Q50 150 50 110 L50 55 Z" fill="none" stroke="#1a5a96" stroke-width="3"/>
+  <path d="M100 42 L142 62 L142 108 Q142 142 100 163 Q58 142 58 108 L58 62 Z" fill="#1a5a96" opacity="0.08"/>
+  <!-- Digital grid inside shield -->
+  <line x1="75" y1="75" x2="125" y2="75" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
+  <line x1="75" y1="95" x2="125" y2="95" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
+  <line x1="75" y1="115" x2="125" y2="115" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
+  <line x1="85" y1="65" x2="85" y2="130" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
+  <line x1="100" y1="65" x2="100" y2="140" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
+  <line x1="115" y1="65" x2="115" y2="130" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
+  <!-- BC text -->
+  <text x="100" y="102" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="28" font-weight="800" fill="#1a5a96">BC</text>
+  <!-- Garage door lines at bottom -->
+  <rect x="80" y="125" width="40" height="3" rx="1" fill="#2472b2" opacity="0.5"/>
+  <rect x="80" y="131" width="40" height="3" rx="1" fill="#2472b2" opacity="0.4"/>
+  <rect x="80" y="137" width="40" height="3" rx="1" fill="#2472b2" opacity="0.3"/>
+</svg>

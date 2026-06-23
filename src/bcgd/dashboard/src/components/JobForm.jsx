@@ -1,1 +1,120 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7CmltcG9ydCB7IGdlbmVyYXRlSWQsIEpPQl9TVEFUVVNFUyB9IGZyb20gJy4uL2xpYi9zdG9yYWdlJzsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEpvYkZvcm0oeyBqb2IsIG9uU2F2ZSwgb25DYW5jZWwgfSkgewogIGNvbnN0IFtmb3JtLCBzZXRGb3JtXSA9IHVzZVN0YXRlKGpvYiB8fCB7CiAgICBpZDogZ2VuZXJhdGVJZCgpLAogICAgY2xpZW50OiAnJywKICAgIHBob25lOiAnJywKICAgIHNlcnZpY2U6ICcnLAogICAgc3RhdHVzOiBKT0JfU1RBVFVTRVNbMF0sCiAgICB2YWx1ZTogMCwKICAgIGRhdGU6ICcnLAogICAgbm90ZXM6ICcnLAogIH0pOwoKICBjb25zdCB1cGRhdGUgPSAoZmllbGQsIHZhbHVlKSA9PiBzZXRGb3JtKHByZXYgPT4gKHsgLi4ucHJldiwgW2ZpZWxkXTogdmFsdWUgfSkpOwoKICBjb25zdCBoYW5kbGVTdWJtaXQgPSAoZSkgPT4gewogICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgaWYgKCFmb3JtLmNsaWVudC50cmltKCkpIHJldHVybjsKICAgIG9uU2F2ZSh7CiAgICAgIC4uLmZvcm0sCiAgICAgIHZhbHVlOiBOdW1iZXIoZm9ybS52YWx1ZSksCiAgICB9KTsKICB9OwoKICByZXR1cm4gKAogICAgPGZvcm0gY2xhc3NOYW1lPSJwYXJ0LWZvcm0gZ2xhc3MtY2FyZCBhbmltYXRlX19hbmltYXRlZCBhbmltYXRlX19mYWRlSW5Eb3duIiBvblN1Ym1pdD17aGFuZGxlU3VibWl0fT4KICAgICAgPGgzIGNsYXNzTmFtZT0iZm9ybS10aXRsZSI+e2pvYiA/ICdFZGl0IEpvYicgOiAnTmV3IEpvYid9PC9oMz4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JtLWdyaWQiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JtLWZpZWxkIj4KICAgICAgICAgIDxsYWJlbD5DbGllbnQgTmFtZTwvbGFiZWw+CiAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgdHlwZT0idGV4dCIKICAgICAgICAgICAgdmFsdWU9e2Zvcm0uY2xpZW50fQogICAgICAgICAgICBvbkNoYW5nZT17ZSA9PiB1cGRhdGUoJ2NsaWVudCcsIGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgICAgcGxhY2Vob2xkZXI9IkpvaG4gU21pdGgiCiAgICAgICAgICAgIHJlcXVpcmVkCiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+UGhvbmU8L2xhYmVsPgogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIHR5cGU9InRlbCIKICAgICAgICAgICAgdmFsdWU9e2Zvcm0ucGhvbmV9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgncGhvbmUnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIHBsYWNlaG9sZGVyPSI2MDQtNTU1LTEyMzQiCiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+U2VydmljZSBUeXBlPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICB0eXBlPSJ0ZXh0IgogICAgICAgICAgICB2YWx1ZT17Zm9ybS5zZXJ2aWNlfQogICAgICAgICAgICBvbkNoYW5nZT17ZSA9PiB1cGRhdGUoJ3NlcnZpY2UnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJTcHJpbmcgcmVwbGFjZW1lbnQiCiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+U3RhdHVzPC9sYWJlbD4KICAgICAgICAgIDxzZWxlY3QgdmFsdWU9e2Zvcm0uc3RhdHVzfSBvbkNoYW5nZT17ZSA9PiB1cGRhdGUoJ3N0YXR1cycsIGUudGFyZ2V0LnZhbHVlKX0+CiAgICAgICAgICAgIHtKT0JfU1RBVFVTRVMubWFwKHMgPT4gPG9wdGlvbiBrZXk9e3N9IHZhbHVlPXtzfT57c308L29wdGlvbj4pfQogICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JtLWZpZWxkIj4KICAgICAgICAgIDxsYWJlbD5Fc3RpbWF0ZWQgVmFsdWUgKCQpPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICB0eXBlPSJudW1iZXIiCiAgICAgICAgICAgIG1pbj0iMCIKICAgICAgICAgICAgc3RlcD0iMC4wMSIKICAgICAgICAgICAgdmFsdWU9e2Zvcm0udmFsdWV9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgndmFsdWUnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1maWVsZCI+CiAgICAgICAgICA8bGFiZWw+U2NoZWR1bGVkIERhdGU8L2xhYmVsPgogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIHR5cGU9ImRhdGUiCiAgICAgICAgICAgIHZhbHVlPXtmb3JtLmRhdGV9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgnZGF0ZScsIGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgIC8+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmb3JtLWZpZWxkIiBzdHlsZT17eyBncmlkQ29sdW1uOiAnMSAvIC0xJyB9fT4KICAgICAgICAgIDxsYWJlbD5Ob3RlczwvbGFiZWw+CiAgICAgICAgICA8dGV4dGFyZWEKICAgICAgICAgICAgdmFsdWU9e2Zvcm0ubm90ZXN9CiAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHVwZGF0ZSgnbm90ZXMnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJBZGRpdGlvbmFsIGRldGFpbHMuLi4iCiAgICAgICAgICAgIHJvd3M9ezN9CiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgd2lkdGg6ICcxMDAlJywKICAgICAgICAgICAgICBwYWRkaW5nOiAnOXB4IDEycHgnLAogICAgICAgICAgICAgIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywKICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6ICd2YXIoLS1yYWRpdXMtc20pJywKICAgICAgICAgICAgICBmb250U2l6ZTogJzAuODhyZW0nLAogICAgICAgICAgICAgIGZvbnRGYW1pbHk6ICdpbmhlcml0JywKICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiAncmdiYSgyNTUsIDI1NSwgMjU1LCAwLjUpJywKICAgICAgICAgICAgICBvdXRsaW5lOiAnbm9uZScsCiAgICAgICAgICAgICAgcmVzaXplOiAndmVydGljYWwnLAogICAgICAgICAgICB9fQogICAgICAgICAgLz4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZm9ybS1hY3Rpb25zIj4KICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgY2xhc3NOYW1lPSJidG4gYnRuLXNlY29uZGFyeSIgb25DbGljaz17b25DYW5jZWx9PkNhbmNlbDwvYnV0dG9uPgogICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0IiBjbGFzc05hbWU9ImJ0biBidG4tcHJpbWFyeSI+CiAgICAgICAgICB7am9iID8gJ1NhdmUgQ2hhbmdlcycgOiAnQWRkIEpvYid9CiAgICAgICAgPC9idXR0b24+CiAgICAgIDwvZGl2PgogICAgPC9mb3JtPgogICk7Cn0K
+import { useState } from 'react';
+import { generateId, JOB_STATUSES } from '../lib/storage';
+
+export default function JobForm({ job, onSave, onCancel }) {
+  const [form, setForm] = useState(job || {
+    id: generateId(),
+    client: '',
+    phone: '',
+    service: '',
+    status: JOB_STATUSES[0],
+    value: 0,
+    date: '',
+    notes: '',
+  });
+
+  const update = (field, value) => setForm(prev => ({ ...prev, [field]: value }));
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!form.client.trim()) return;
+    onSave({
+      ...form,
+      value: Number(form.value),
+    });
+  };
+
+  return (
+    <form className="part-form glass-card animate__animated animate__fadeInDown" onSubmit={handleSubmit}>
+      <h3 className="form-title">{job ? 'Edit Job' : 'New Job'}</h3>
+
+      <div className="form-grid">
+        <div className="form-field">
+          <label>Client Name</label>
+          <input
+            type="text"
+            value={form.client}
+            onChange={e => update('client', e.target.value)}
+            placeholder="John Smith"
+            required
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Phone</label>
+          <input
+            type="tel"
+            value={form.phone}
+            onChange={e => update('phone', e.target.value)}
+            placeholder="604-555-1234"
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Service Type</label>
+          <input
+            type="text"
+            value={form.service}
+            onChange={e => update('service', e.target.value)}
+            placeholder="Spring replacement"
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Status</label>
+          <select value={form.status} onChange={e => update('status', e.target.value)}>
+            {JOB_STATUSES.map(s => <option key={s} value={s}>{s}</option>)}
+          </select>
+        </div>
+
+        <div className="form-field">
+          <label>Estimated Value ($)</label>
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            value={form.value}
+            onChange={e => update('value', e.target.value)}
+          />
+        </div>
+
+        <div className="form-field">
+          <label>Scheduled Date</label>
+          <input
+            type="date"
+            value={form.date}
+            onChange={e => update('date', e.target.value)}
+          />
+        </div>
+
+        <div className="form-field" style={{ gridColumn: '1 / -1' }}>
+          <label>Notes</label>
+          <textarea
+            value={form.notes}
+            onChange={e => update('notes', e.target.value)}
+            placeholder="Additional details..."
+            rows={3}
+            style={{
+              width: '100%',
+              padding: '9px 12px',
+              border: '1px solid var(--border)',
+              borderRadius: 'var(--radius-sm)',
+              fontSize: '0.88rem',
+              fontFamily: 'inherit',
+              background: 'rgba(255, 255, 255, 0.5)',
+              outline: 'none',
+              resize: 'vertical',
+            }}
+          />
+        </div>
+      </div>
+
+      <div className="form-actions">
+        <button type="button" className="btn btn-secondary" onClick={onCancel}>Cancel</button>
+        <button type="submit" className="btn btn-primary">
+          {job ? 'Save Changes' : 'Add Job'}
+        </button>
+      </div>
+    </form>
+  );
+}

@@ -1,1 +1,26 @@
-PGltZyBzcmM9InB1YmxpYy9sb2dvLnBuZyIgd2lkdGg9IjEyMCI+CgojIEJlc3QgQ2hvaWNlIEdhcmFnZSBEb29ycwoKIVt2ZXJzaW9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL3ZlcnNpb24tdjEuMS4wLWJsdWUpCgpJbnZlbnRvcnkgYW5kIHN0b2NrIHRyYWNraW5nIGZvciBnYXJhZ2UgZG9vciBzZXJ2aWNlcy4gVHJhY2sgcGFydHMsIFNLVXMsIHF1YW50aXRpZXMsIGNvc3RzLCBzdXBwbGllcnMsIGFuZCBzdG9jayBoaXN0b3J5LgoKIyMgRmVhdHVyZXMKCi0gRGFzaGJvYXJkIHdpdGggc3RvY2sgb3ZlcnZpZXcgYW5kIGxvdy1zdG9jayBhbGVydHMKLSBGdWxsIENSVUQgZm9yIHBhcnRzIGludmVudG9yeQotIElubGluZSBxdWFudGl0eSBhZGp1c3RtZW50cyB3aXRoIGhpc3RvcnkgbG9nZ2luZwotIFNlYXJjaCBhbmQgZmlsdGVyIGJ5IGNhdGVnb3J5Ci0gQ2F0ZWdvcmllczogU3ByaW5ncywgT3BlbmVycywgUGFuZWxzLCBIYXJkd2FyZSwgUmVtb3RlcywgV2VhdGhlcnN0cmlwcGluZwotIE1vYmlsZS1maXJzdCBQV0EKCiMjIFJ1bgoKYGBgYmFzaApucG0gaW5zdGFsbCAmJiBucG0gcnVuIGRldgpgYGAKCiMjIExpY2Vuc2UKCk1JVCAyMDI2LCBKb3NodWEgVHJvbW1lbAo=
+<img src="public/logo.png" width="120">
+
+# Best Choice Garage Doors
+
+![version](https://img.shields.io/badge/version-v1.1.0-blue)
+
+Inventory and stock tracking for garage door services. Track parts, SKUs, quantities, costs, suppliers, and stock history.
+
+## Features
+
+- Dashboard with stock overview and low-stock alerts
+- Full CRUD for parts inventory
+- Inline quantity adjustments with history logging
+- Search and filter by category
+- Categories: Springs, Openers, Panels, Hardware, Remotes, Weatherstripping
+- Mobile-first PWA
+
+## Run
+
+```bash
+npm install && npm run dev
+```
+
+## License
+
+MIT 2026, Joshua Trommel
