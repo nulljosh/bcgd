@@ -2,7 +2,7 @@
 
 # BC Garage Doors
 
-![version](https://img.shields.io/badge/version-v2.0.0-blue)
+![version](https://img.shields.io/badge/version-v3.0.0-blue)
 
 Customer-facing website and operations dashboard for Best Choice Garage Doors (bcgaragedoors.ca).
 
