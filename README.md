@@ -1,4 +1,4 @@
-<img src="icon.svg" width="80">
+<img src="src/icon.svg" width="80">
 
 # BC Garage Doors
 
