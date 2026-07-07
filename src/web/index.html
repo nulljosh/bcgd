@@ -8,7 +8,7 @@
     <title>BC Garage Doors | Trusted Garage Door Repair in Langley, BC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after {
             margin: 0;
@@ -17,26 +17,26 @@
         }
 
         :root {
-            --glass-bg: rgba(255, 255, 255, 0.04);
-            --glass-bg-heavy: rgba(255, 255, 255, 0.07);
-            --glass-border: rgba(255, 255, 255, 0.06);
-            --glass-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-            --glass-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --glass-bg: #ffffff;
+            --glass-bg-heavy: #ffffff;
+            --glass-border: rgba(0, 0, 0, 0.08);
+            --glass-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            --glass-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.14);
             --blur: blur(20px);
             --blur-heavy: blur(40px);
-            --page-bg: #000000;
-            --bg-secondary: #111111;
-            --text-primary: #f5f5f7;
-            --text-secondary: #98989d;
-            --text-tertiary: #636366;
-            --apple-blue: #1f3b35;
-            --apple-blue-hover: #16291f;
-            --apple-green: #30d158;
-            --apple-red: #ff453a;
-            --border-color: rgba(255, 255, 255, 0.06);
-            --accent-sage: #8aa9a0;
-            --header-bg: #8aa9a0;
-            --accent-deep-green: #1f3b35;
+            --page-bg: #F2F2F2;
+            --bg-secondary: #ffffff;
+            --text-primary: #3A3E40;
+            --text-secondary: #5c6266;
+            --text-tertiary: #868c95;
+            --apple-blue: #1B5959;
+            --apple-blue-hover: #134040;
+            --apple-green: #1B5959;
+            --apple-red: #dc4955;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --accent-sage: #8DA6A6;
+            --header-bg: #1B5959;
+            --accent-deep-green: #134040;
             --section-padding: 60px 0;
             --card-radius: 12px;
             --small-radius: 8px;
@@ -49,12 +49,12 @@
         }
 
         body {
-            font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 0;
             color: var(--text-primary);
-            background-color: #000000;
+            background-color: var(--page-bg);
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -64,6 +64,14 @@
         body > * {
             position: relative;
             z-index: 1;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Barlow Condensed', 'Open Sans', sans-serif;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
         }
 
         /* ========== TOP BRAND BAR ========== */
@@ -258,9 +266,9 @@
 
 
         .hotline-strip {
-            background: #111;
+            background: #134040;
             color: #fff;
-            border-bottom: 1px solid #2a2a2a;
+            border-bottom: none;
         }
 
         .hotline-inner {
@@ -274,7 +282,7 @@
             font-size: 13px;
         }
 
-        .hotline-inner strong { color: #ff5a5f; }
+        .hotline-inner strong { color: #8DA6A6; }
 
         .hotline-actions { display: flex; gap: 10px; }
 
@@ -283,13 +291,13 @@
             font-weight: 700;
             color: #fff;
             text-decoration: none;
-            border: 1px solid #3a3a3a;
+            border: 1px solid rgba(255,255,255,0.35);
             padding: 7px 10px;
             border-radius: 6px;
-            background: #1a1a1a;
+            background: transparent;
         }
 
-        .hotline-btn.primary { background: #dc3545; border-color: #dc3545; }
+        .hotline-btn.primary { background: #dc4955; border-color: #dc4955; }
 
         /* ========== HERO ========== */
         .hero {
@@ -449,9 +457,9 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255,255,255,0.1);
-            border: 2px solid rgba(255,255,255,0.3);
-            color: var(--text-primary);
+            background: #ffffff;
+            border: 2px solid var(--apple-blue);
+            color: var(--apple-blue);
             font-size: 16px;
             font-weight: 600;
             padding: 12px 24px;
@@ -464,7 +472,7 @@
         }
 
         .btn-secondary:hover {
-            background: rgba(255,255,255,0.2);
+            background: var(--apple-blue);
             color: white;
         }
 
@@ -570,7 +578,7 @@
             width: 44px;
             height: 44px;
             margin: 0 auto 16px;
-            background: rgba(255,255,255,0.08);
+            background: rgba(27, 89, 89, 0.08);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -637,7 +645,7 @@
             font-size: 12px;
             font-weight: 500;
             color: var(--apple-blue);
-            background: rgba(10,132,255,0.12);
+            background: rgba(27, 89, 89, 0.12);
             padding: 4px 10px;
             border-radius: 6px;
         }
@@ -743,7 +751,7 @@
         .about-stat {
             text-align: center;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(0, 0, 0, 0.04);
             border-radius: var(--small-radius);
         }
 
@@ -875,7 +883,7 @@
 
         /* ========== SPECIALS ========== */
         .specials-section {
-            background: rgba(255,255,255,0.03);
+            background: #ffffff;
         }
 
         .specials-content {
@@ -969,7 +977,7 @@
             flex-shrink: 0;
             width: 36px;
             height: 36px;
-            background: rgba(10,132,255,0.12);
+            background: rgba(27, 89, 89, 0.12);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -1034,14 +1042,14 @@
             font-size: 12px;
             font-weight: 500;
             color: var(--apple-blue);
-            background: rgba(10,132,255,0.12);
+            background: rgba(27, 89, 89, 0.12);
             padding: 4px 10px;
             border-radius: 6px;
         }
 
         /* ========== SERVICE AREAS ========== */
         .areas-bg {
-            background: rgba(255,255,255,0.03);
+            background: #ffffff;
         }
 
         .areas-list {
@@ -1100,7 +1108,7 @@
         }
 
         .faq-question:hover {
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(0, 0, 0, 0.04);
         }
 
         .faq-chevron {
@@ -1237,7 +1245,7 @@
         .cta-banner {
             padding: 80px 24px;
             text-align: center;
-            background: rgba(10,132,255,0.05);
+            background: rgba(27, 89, 89, 0.05);
         }
 
         .cta-banner h2 {
@@ -1257,8 +1265,8 @@
         /* ========== FOOTER ========== */
         .footer {
             padding: 48px 24px 24px;
-            background: #111111;
-            border-top: 1px solid rgba(255,255,255,0.06);
+            background: #134040;
+            border-top: none;
         }
 
         .footer-inner {
@@ -1347,7 +1355,7 @@
 
         /* ========== SECTION ALT BG ========== */
         .section-alt-bg {
-            background: rgba(255,255,255,0.03);
+            background: #ffffff;
         }
 
         /* ========== READING PROGRESS BAR ========== */
@@ -1364,11 +1372,11 @@
 
         /* ========== EMERGENCY TICKER ========== */
         .ticker-strip {
-            background: #1a1a1a;
+            background: #134040;
             color: #fff;
             overflow: hidden;
             white-space: nowrap;
-            border-bottom: 1px solid #2a2a2a;
+            border-bottom: none;
         }
 
         .ticker-track {
@@ -1448,7 +1456,7 @@
             font-size: 14px;
             padding: 6px 12px;
             border-bottom: none;
-            background: rgba(10,132,255,0.12);
+            background: rgba(27, 89, 89, 0.12);
             border-radius: 6px;
             color: var(--apple-blue);
         }
@@ -1526,7 +1534,7 @@
         .section + .section,
         .trust-bar + .values,
         .values + .section {
-            border-top: 1px solid rgba(255,255,255,0.04);
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .contact-btn-spacing {
@@ -1541,7 +1549,7 @@
             left: 0;
             right: 0;
             z-index: 9998;
-            background: #0a84ff;
+            background: var(--apple-blue);
             padding: 14px 24px;
             text-align: center;
         }
@@ -1568,7 +1576,7 @@
             background: var(--glass-bg-heavy);
             backdrop-filter: var(--blur);
             -webkit-backdrop-filter: var(--blur);
-            border: 1px solid rgba(255,255,255,0.12);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: var(--card-radius);
             padding: 32px;
             margin: 0;
@@ -1577,7 +1585,7 @@
         .booking-form h3 {
             font-size: 17px;
             font-weight: 600;
-            color: white;
+            color: var(--text-primary);
             margin-bottom: 16px;
             text-align: center;
         }
@@ -1637,7 +1645,7 @@
 
         /* ========== SMART SCHEDULING ========== */
         .smart-scheduling {
-            background: rgba(10, 132, 255, 0.05);
+            background: rgba(27, 89, 89, 0.05);
         }
 
         .smart-grid {
