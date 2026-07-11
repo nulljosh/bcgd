@@ -6,7 +6,7 @@ Monorepo for BC Garage Doors -- customer-facing website, internal operations das
 ## Structure
 - `web/` -- Static HTML landing page. Conversion-focused, emergency-first. Live: bcgd.heyitsmejosh.com
 - `dashboard/` -- Vite + React 19 operations dashboard. Inventory, jobs pipeline, PIN auth, backup/restore. Live: bcgd-dashboard.heyitsmejosh.com
-- `ios/` -- (planned) SwiftUI iPhone companion app
+- `ios/` -- SwiftUI iPhone companion app (4 tabs, local persistence, builds + runs on sim)
 - `macos/` -- (planned) SwiftUI macOS companion app
 
 ## Stack
