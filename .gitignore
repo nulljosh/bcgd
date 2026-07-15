@@ -2,3 +2,5 @@ src/ios/BCGD.xcodeproj/
 
 src/.asc/artifacts/
 src/.asc/runs/
+src/.asc/release/
+src/.asc/reports/
