@@ -1,19 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" rx="32" fill="#f5f5f7"/>
-  <!-- Shield shape -->
-  <path d="M100 30 L150 55 L150 110 Q150 150 100 175 Q50 150 50 110 L50 55 Z" fill="none" stroke="#1a5a96" stroke-width="3"/>
-  <path d="M100 42 L142 62 L142 108 Q142 142 100 163 Q58 142 58 108 L58 62 Z" fill="#1a5a96" opacity="0.08"/>
-  <!-- Digital grid inside shield -->
-  <line x1="75" y1="75" x2="125" y2="75" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
-  <line x1="75" y1="95" x2="125" y2="95" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
-  <line x1="75" y1="115" x2="125" y2="115" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
-  <line x1="85" y1="65" x2="85" y2="130" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
-  <line x1="100" y1="65" x2="100" y2="140" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
-  <line x1="115" y1="65" x2="115" y2="130" stroke="#1a5a96" stroke-width="0.8" opacity="0.3"/>
-  <!-- BC text -->
-  <text x="100" y="102" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="28" font-weight="800" fill="#1a5a96">BC</text>
-  <!-- Garage door lines at bottom -->
-  <rect x="80" y="125" width="40" height="3" rx="1" fill="#2472b2" opacity="0.5"/>
-  <rect x="80" y="131" width="40" height="3" rx="1" fill="#2472b2" opacity="0.4"/>
-  <rect x="80" y="137" width="40" height="3" rx="1" fill="#2472b2" opacity="0.3"/>
+  <rect width="200" height="200" rx="32" style="fill:#e87722"/>
+  <!-- Garage opening (dark) -->
+  <rect x="30" y="34" width="140" height="136" rx="8" style="fill:#1a1a1a"/>
+  <!-- Door panels (bright, raised) -->
+  <rect x="40" y="44" width="120" height="26" rx="4" style="fill:#ffffff"/>
+  <!-- Window panes in top panel -->
+  <rect x="50" y="50" width="22" height="14" rx="3" style="fill:#e87722"/>
+  <rect x="78" y="50" width="22" height="14" rx="3" style="fill:#e87722"/>
+  <rect x="106" y="50" width="22" height="14" rx="3" style="fill:#e87722"/>
+  <rect x="134" y="50" width="16" height="14" rx="3" style="fill:#e87722"/>
+  <rect x="40" y="76" width="120" height="26" rx="4" style="fill:#f2f2f2"/>
+  <rect x="40" y="108" width="120" height="26" rx="4" style="fill:#e8e8e8"/>
+  <rect x="40" y="140" width="120" height="26" rx="4" style="fill:#dedede"/>
+  <!-- Handle -->
+  <rect x="90" y="150" width="20" height="5" rx="2.5" style="fill:#1a1a1a"/>
 </svg>
