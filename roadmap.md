@@ -5,4 +5,4 @@
 
 ## Ingested 2026-07-25
 - [ ] Compare bcgd.heyitsmejosh.com against source site bcgaragedoors.ca — identify missing components, build a design system synthesizing both.
-- [ ] Footer text not very legible — fix contrast/styling.
+- [x] Footer text not very legible — fix contrast/styling. Done 2026-07-25: root cause was the footer's dark teal (#134040) background inheriting the light-theme text tokens (#5c6266/#868c95, ~2:1). Scoped light-on-dark `--text-*`/`--apple-blue` overrides onto `.footer` in `src/web/index.html` (all 5.5–11.4:1, AA verified) + bumped the `.footer-bottom` divider to 0.16 alpha.

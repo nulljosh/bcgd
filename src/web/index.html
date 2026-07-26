@@ -1267,6 +1267,12 @@
             padding: 48px 24px 24px;
             background: #134040;
             border-top: none;
+            /* Footer sits on dark teal, so flip the text tokens light-on-dark.
+               Scoped here so every footer rule inherits AA-passing contrast. */
+            --text-primary: #F2F6F6;   /* 12.9:1 on #134040 */
+            --text-secondary: #D6DEDE; /* 8.4:1  on #134040 */
+            --text-tertiary: #A8B6B6;  /* 5.5:1  on #134040 */
+            --apple-blue: #FFFFFF;     /* link hover */
         }
 
         .footer-inner {
@@ -1328,7 +1334,7 @@
 
         .footer-bottom {
             padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.06);
+            border-top: 1px solid rgba(255,255,255,0.16);
             display: flex;
             justify-content: space-between;
             align-items: center;
