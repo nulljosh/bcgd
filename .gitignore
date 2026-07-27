@@ -4,3 +4,6 @@ src/.asc/artifacts/
 src/.asc/runs/
 src/.asc/release/
 src/.asc/reports/
+
+node_modules/
+*.profraw
