@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
-import { getParts, saveParts, addHistory, getSettings, saveSettings, buildReorderMailto, CATEGORIES, getPin, getJobs, saveJobs, JOB_STATUSES, generateId } from './lib/storage';
+import { getParts, saveParts, addHistory, getSettings, saveSettings, buildReorderMailto, CATEGORIES, getJobs, saveJobs, JOB_STATUSES, generateId } from './lib/storage';
+import { supabase, fetchNewLeads, markLeadsImported } from './lib/supabase';
 import Logo from './components/Logo';
-import PinGate from './components/PinGate';
+import AuthGate from './components/AuthGate';
 import PartList from './components/PartList';
 import PartForm from './components/PartForm';
 import JobList from './components/JobList';
@@ -30,7 +31,8 @@ function plural(n, word) {
 }
 
 export default function App() {
-  const [authenticated, setAuthenticated] = useState(!getPin());
+  const [session, setSession] = useState(null);
+  const [authReady, setAuthReady] = useState(false);
   const [parts, setParts] = useState(getParts);
   const [jobs, setJobs] = useState(getJobs);
   const [editingPart, setEditingPart] = useState(null);
@@ -49,6 +51,15 @@ export default function App() {
 
   useEffect(() => { saveParts(parts); }, [parts]);
   useEffect(() => { saveJobs(jobs); }, [jobs]);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => {
+      setSession(data.session);
+      setAuthReady(true);
+    });
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => setSession(s));
+    return () => sub.subscription.unsubscribe();
+  }, []);
 
   useEffect(() => {
     if ('Notification' in window && Notification.permission === 'default') {
@@ -78,6 +89,50 @@ export default function App() {
     setToast(msg);
     setTimeout(() => setToast(null), 2200);
   }, []);
+
+  // ---- Website leads -> Lead jobs ----
+  // The booking form on bcgd.heyitsmejosh.com inserts into bcgd_leads. Pull any
+  // that haven't been turned into a job yet, then flip them to 'Imported' so the
+  // next poll skips them. ponytail: 60s poll, switch to realtime if it matters.
+  useEffect(() => {
+    if (!session) return;
+    let cancelled = false;
+
+    const pull = async () => {
+      try {
+        const leads = await fetchNewLeads();
+        if (cancelled || !leads.length) return;
+        setJobs(prev => {
+          const known = new Set(prev.map(j => j.leadId).filter(Boolean));
+          const fresh = leads.filter(l => !known.has(l.id));
+          if (!fresh.length) return prev;
+          return [
+            ...fresh.map(l => ({
+              id: generateId(),
+              leadId: l.id,
+              client: l.name,
+              phone: l.phone,
+              service: l.service || '',
+              status: 'Lead',
+              value: 0,
+              date: l.created_at.slice(0, 10),
+              notes: l.message || '',
+              parts: [],
+            })),
+            ...prev,
+          ];
+        });
+        await markLeadsImported(leads.map(l => l.id));
+        showToast(`${plural(leads.length, 'new lead')} from the website`);
+      } catch (err) {
+        console.error('Lead sync failed', err);
+      }
+    };
+
+    pull();
+    const timer = setInterval(pull, 60000);
+    return () => { cancelled = true; clearInterval(timer); };
+  }, [session, showToast]);
 
   // ---- Part handlers ----
 
@@ -176,16 +231,27 @@ export default function App() {
   }, [showToast]);
 
   const handleAdvanceJob = useCallback((id) => {
+    let consumed = null;
     setJobs(prev => prev.map(j => {
       if (j.id !== id) return j;
       const idx = JOB_STATUSES.indexOf(j.status);
-      if (idx < JOB_STATUSES.length - 1) {
-        return { ...j, status: JOB_STATUSES[idx + 1] };
+      if (idx >= JOB_STATUSES.length - 1) return j;
+      const next = JOB_STATUSES[idx + 1];
+      // Parts come off the truck once, on the transition into Complete.
+      if (next === 'Complete' && j.parts?.length && !j.partsConsumed) {
+        consumed = j.parts;
+        return { ...j, status: next, partsConsumed: true };
       }
-      return j;
+      return { ...j, status: next };
     }));
-    showToast('Job advanced');
-  }, [showToast]);
+
+    if (consumed) {
+      consumed.forEach(({ partId, qty }) => handleAdjustQty(partId, -qty));
+      showToast(`Job complete -- ${plural(consumed.length, 'part')} deducted`);
+    } else {
+      showToast('Job advanced');
+    }
+  }, [showToast, handleAdjustQty]);
 
   // ---- Derived data ----
 
@@ -213,11 +279,10 @@ export default function App() {
       return 0;
     });
 
-  // ---- PIN gate ----
+  // ---- Auth gate ----
 
-  if (!authenticated) {
-    return <PinGate onAuthenticated={() => setAuthenticated(true)} />;
-  }
+  if (!authReady) return null;
+  if (!session) return <AuthGate />;
 
   return (
     <div className="app">
@@ -229,12 +294,20 @@ export default function App() {
             <span className="app-subtitle">Operations Dashboard</span>
           </div>
         </div>
-        <button
-          className="btn btn-secondary settings-toggle"
-          onClick={() => setShowSettings(s => !s)}
-        >
-          {showSettings ? 'Close Settings' : 'Settings'}
-        </button>
+        <div className="header-actions">
+          <button
+            className="btn btn-secondary settings-toggle"
+            onClick={() => setShowSettings(s => !s)}
+          >
+            {showSettings ? 'Close Settings' : 'Settings'}
+          </button>
+          <button
+            className="btn btn-secondary"
+            onClick={() => supabase.auth.signOut()}
+          >
+            Sign Out
+          </button>
+        </div>
       </header>
 
       <main className="app-main">
@@ -321,6 +394,7 @@ export default function App() {
           {showJobForm && (
             <JobForm
               job={editingJob}
+              parts={parts}
               onSave={handleSaveJob}
               onCancel={() => { setShowJobForm(false); setEditingJob(null); }}
             />

@@ -31,9 +31,57 @@ export default function Dashboard({ parts, lowStockParts, onViewInventory, onEdi
   // Top stocked items
   const topStocked = [...parts].sort((a, b) => b.quantity - a.quantity).slice(0, 5);
 
+  const todayKey = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
+    .toISOString().slice(0, 10);
+  const todayJobs = jobs.filter(j => j.status === 'Scheduled' && j.date === todayKey);
+  const newLeads = jobs.filter(j => j.status === 'Lead');
+
   return (
     <div className="dashboard">
       <div className="last-refreshed">Last refreshed: {now.toLocaleString()}</div>
+
+      {/* What am I doing today, and what goes in the van. */}
+      <div className="section animate__animated animate__fadeInUp">
+        <h2 className="section-title">Today</h2>
+        {newLeads.length > 0 && (
+          <div className="today-leads glass-card">
+            <span className="today-leads-count">{plural(newLeads.length, 'new lead')}</span>
+            <span className="today-leads-names">
+              {newLeads.map(j => j.client).join(', ')}
+            </span>
+          </div>
+        )}
+        {todayJobs.length === 0 ? (
+          <p className="empty-hint">Nothing scheduled for today.</p>
+        ) : (
+          <div className="today-list glass-card">
+            {todayJobs.map(j => (
+              <div key={j.id} className="today-row">
+                <div className="today-row-main">
+                  <span className="today-client">{j.client}</span>
+                  <span className="today-service">{j.service || 'Service call'}</span>
+                  {j.phone && <a className="today-phone" href={`tel:${j.phone.replace(/\D/g, '')}`}>{j.phone}</a>}
+                </div>
+                {j.parts?.length > 0 && (
+                  <div className="today-parts">
+                    {j.parts.map(({ partId, qty }) => {
+                      const part = parts.find(p => p.id === partId);
+                      if (!part) return null;
+                      const short = qty > part.quantity;
+                      return (
+                        <span key={partId} className={`today-part ${short ? 'today-part--short' : ''}`}>
+                          {qty}x {part.name}{short ? ` (only ${part.quantity} in stock)` : ''}
+                        </span>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
       <div className="stats-row animate__animated animate__fadeInUp">
         <div className="stat-card glass-card">
           <span className="stat-label">Total SKUs</span>

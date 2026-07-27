@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { generateId, JOB_STATUSES } from '../lib/storage';
 
-export default function JobForm({ job, onSave, onCancel }) {
+export default function JobForm({ job, parts = [], onSave, onCancel }) {
   const [form, setForm] = useState(job || {
     id: generateId(),
     client: '',
@@ -11,9 +11,19 @@ export default function JobForm({ job, onSave, onCancel }) {
     value: 0,
     date: '',
     notes: '',
+    parts: [],
   });
 
   const update = (field, value) => setForm(prev => ({ ...prev, [field]: value }));
+
+  const jobParts = form.parts || [];
+
+  const setPartQty = (partId, qty) => {
+    setForm(prev => {
+      const rest = (prev.parts || []).filter(p => p.partId !== partId);
+      return { ...prev, parts: qty > 0 ? [...rest, { partId, qty }] : rest };
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,6 +31,7 @@ export default function JobForm({ job, onSave, onCancel }) {
     onSave({
       ...form,
       value: Number(form.value),
+      parts: jobParts,
     });
   };
 
@@ -106,6 +117,42 @@ export default function JobForm({ job, onSave, onCancel }) {
               resize: 'vertical',
             }}
           />
+        </div>
+
+        <div className="form-field" style={{ gridColumn: '1 / -1' }}>
+          <label>Parts Needed</label>
+          <div className="job-parts-picker">
+            <select
+              value=""
+              onChange={e => { if (e.target.value) setPartQty(e.target.value, 1); }}
+            >
+              <option value="">Add a part...</option>
+              {parts
+                .filter(p => !jobParts.some(jp => jp.partId === p.id))
+                .map(p => <option key={p.id} value={p.id}>{p.name} ({p.quantity} in stock)</option>)}
+            </select>
+            {jobParts.map(jp => {
+              const part = parts.find(p => p.id === jp.partId);
+              const short = part && jp.qty > part.quantity;
+              return (
+                <div key={jp.partId} className="job-part-row">
+                  <span className="job-part-name">{part ? part.name : 'Removed part'}</span>
+                  <input
+                    type="number"
+                    min="1"
+                    value={jp.qty}
+                    onChange={e => setPartQty(jp.partId, Number(e.target.value))}
+                    className="job-part-qty"
+                  />
+                  {short && <span className="job-part-short">only {part.quantity} in stock</span>}
+                  <button type="button" className="btn btn-secondary" onClick={() => setPartQty(jp.partId, 0)}>
+                    Remove
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+          <span className="form-hint">Deducted from inventory when the job is marked Complete.</span>
         </div>
       </div>
 

@@ -87,15 +87,6 @@ export function buildReorderMailto(part, alertEmail) {
   return `mailto:${to}?subject=${subject}&body=${body}`;
 }
 
-// ---- PIN ----
-
-export function getPin() { return localStorage.getItem('garage_pin'); }
-export function setPin(pin) {
-  if (!pin) { localStorage.removeItem('garage_pin'); return; }
-  localStorage.setItem('garage_pin', pin);
-}
-export function checkPin(input) { return input === getPin(); }
-
 // ---- Jobs ----
 
 const JOBS_KEY = 'garage_jobs';

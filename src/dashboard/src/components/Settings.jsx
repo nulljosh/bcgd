@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react';
-import { getPin, setPin as savePin, exportAll, importAll } from '../lib/storage';
+import { exportAll, importAll } from '../lib/storage';
+import { supabase } from '../lib/supabase';
 
 export default function Settings({ settings, onSave }) {
   const [form, setForm] = useState(settings);
-  const [pinInput, setPinInput] = useState('');
-  const [pinMsg, setPinMsg] = useState('');
-  const [hasPin, setHasPin] = useState(!!getPin());
+  const [pwInput, setPwInput] = useState('');
+  const [pwMsg, setPwMsg] = useState('');
   const [backupMsg, setBackupMsg] = useState('');
   const fileRef = useRef(null);
 
@@ -14,24 +14,15 @@ export default function Settings({ settings, onSave }) {
     onSave(form);
   };
 
-  const handleSetPin = () => {
-    if (pinInput.length !== 4 || !/^\d{4}$/.test(pinInput)) {
-      setPinMsg('PIN must be exactly 4 digits');
+  const handleChangePassword = async () => {
+    if (pwInput.length < 8) {
+      setPwMsg('Password must be at least 8 characters');
       return;
     }
-    savePin(pinInput);
-    setHasPin(true);
-    setPinInput('');
-    setPinMsg('PIN set');
-    setTimeout(() => setPinMsg(''), 2000);
-  };
-
-  const handleRemovePin = () => {
-    savePin(null);
-    setHasPin(false);
-    setPinInput('');
-    setPinMsg('PIN removed');
-    setTimeout(() => setPinMsg(''), 2000);
+    const { error } = await supabase.auth.updateUser({ password: pwInput });
+    setPwInput('');
+    setPwMsg(error ? `Update failed: ${error.message}` : 'Password updated');
+    setTimeout(() => setPwMsg(''), 3000);
   };
 
   const handleDownloadBackup = () => {
@@ -96,29 +87,22 @@ export default function Settings({ settings, onSave }) {
       <h2 className="section-title" style={{ marginTop: '28px' }}>Security</h2>
       <div className="settings-form glass-card">
         <div className="form-field">
-          <label>{hasPin ? 'Change PIN' : 'Set PIN'}</label>
+          <label>Password</label>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
             <input
               type="password"
-              maxLength={4}
-              value={pinInput}
-              onChange={e => setPinInput(e.target.value.replace(/\D/g, ''))}
-              placeholder="4-digit PIN"
-              inputMode="numeric"
-              pattern="[0-9]*"
-              style={{ maxWidth: '140px' }}
+              value={pwInput}
+              onChange={e => setPwInput(e.target.value)}
+              placeholder="New password"
+              autoComplete="new-password"
+              style={{ maxWidth: '220px' }}
             />
-            <button type="button" className="btn btn-primary" onClick={handleSetPin}>
-              {hasPin ? 'Update' : 'Set PIN'}
+            <button type="button" className="btn btn-primary" onClick={handleChangePassword}>
+              Update
             </button>
-            {hasPin && (
-              <button type="button" className="btn btn-delete" onClick={handleRemovePin}>
-                Remove PIN
-              </button>
-            )}
           </div>
-          {pinMsg && <span className="form-hint" style={{ color: pinMsg.includes('must') ? 'var(--red)' : 'var(--green)' }}>{pinMsg}</span>}
-          <span className="form-hint">When set, a PIN is required to access the dashboard</span>
+          {pwMsg && <span className="form-hint" style={{ color: pwMsg.includes('least') || pwMsg.includes('failed') ? 'var(--red)' : 'var(--green)' }}>{pwMsg}</span>}
+          <span className="form-hint">Sign-in is handled by Supabase auth. Customer leads are only readable once signed in.</span>
         </div>
       </div>
 
