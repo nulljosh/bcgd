@@ -35,12 +35,20 @@ and flipping them to `Imported`.
 - Settings (alert email, PIN, backup)
 
 ## Deploy
+Both sites are **Cloudflare Pages**, not Vercel. `bcgd.heyitsmejosh.com` and
+`bcgd-dashboard.heyitsmejosh.com` are proxied CNAMEs to `bcgd.pages.dev` /
+`bcgd-dashboard.pages.dev`. A `vercel --prod` here deploys to an orphaned
+Vercel project that nothing points at -- it will look like it worked and change
+nothing. Needs `CLOUDFLARE_API_TOKEN` from `~/.config/fish/secrets.fish`.
+
 ```bash
 # Landing page (regenerate sub-pages first if index.html or data/*.json changed)
-cd web && node build.js && npx vercel --prod
+cd web && node build.js
+npx wrangler pages deploy . --project-name=bcgd --branch=main --commit-dirty=true
 
 # Dashboard
-cd dashboard && npm run build && npx vercel --prod
+cd dashboard && npm run build
+npx wrangler pages deploy dist --project-name=bcgd-dashboard --branch=main --commit-dirty=true
 ```
 
 ## Dev

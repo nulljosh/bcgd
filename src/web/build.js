@@ -181,6 +181,20 @@ for (const a of areas) {
   }));
 }
 
+// Cloudflare Pages serves this with a real 404 status. Without it, unknown
+// paths return 200 with the homepage, which reads as a soft-404 to crawlers.
+writeFileSync(join(ROOT, '404.html'), page({
+  path: '/404.html',
+  title: 'Page not found | BC Garage Doors',
+  description: 'That page does not exist. Call (604) 240-0180 for garage door repair in Langley and the Lower Mainland.',
+  h1: 'Page not found',
+  lead: 'That page does not exist, but the door still needs fixing. Call us and we will sort it out.',
+  signs: { heading: 'Try one of these', items: ['Broken spring or cable', 'Noisy or off-track door', 'Opener, remote or keypad trouble', '24/7 emergency repair'] },
+  detail: 'Call (604) 240-0180 any hour, or head back to the homepage to book a service call.',
+  related: { heading: 'Services', links: serviceLinks },
+  jsonLd: { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Page not found' },
+}));
+
 const today = new Date().toISOString().slice(0, 10);
 writeFileSync(join(ROOT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>
