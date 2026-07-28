@@ -34,3 +34,6 @@ Site/dashboard comparison against bcgaragedoors.ca, then the fixes:
 
 ## Ingested 2026-07-25
 - [ ] Compare bcgd.heyitsmejosh.com against source site bcgaragedoors.ca — identify missing components, build a design system synthesizing both. Attempted 2026-07-26: `curl` against `bcgaragedoors.ca` returns empty body (likely bot-protected or JS-rendered) — a static fetch can't do this comparison. Needs a real browser render (confirm before opening Chrome) or a manual pass; genuinely open-ended design work, not a quick diff.
+
+## From App Store.pdf (imported 2026-07-28)
+- [ ] Ship a macOS version of BCGD.
