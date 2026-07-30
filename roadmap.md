@@ -34,3 +34,6 @@ Site/dashboard comparison against bcgaragedoors.ca, then the fixes:
 
 ## Ingested 2026-07-25
 - [ ] Compare bcgd.heyitsmejosh.com against source site bcgaragedoors.ca — identify missing components, build a design system synthesizing both. Attempted 2026-07-26: `curl` against `bcgaragedoors.ca` returns empty body (likely bot-protected or JS-rendered) — a static fetch can't do this comparison. Needs a real browser render (confirm before opening Chrome) or a manual pass; genuinely open-ended design work, not a quick diff.
+
+## From App Store.pdf (imported 2026-07-29)
+- [ ] macOS app still not actually shipped — ASC shows macOS 1.0 Prepare for Submission with no build attached. Native macOS target was scaffolded 2026-07-29 (bcgd/src/macos/project.yml, builds locally) but never archived+uploaded — do that: archive, export, upload, attach build.
