@@ -1,5 +1,8 @@
 # Bcgd Roadmap
 
+## Done 2026-08-02
+Merge doc comparison complete — verified bcgd.heyitsmejosh.com against bcgaragedoors.ca and found all major recommendations already shipped (hero booking form, pricing, stats bar, founder photo/bio, service pages for springs/cable/rollers/keypads/clickers/panels/weather-strips/hinge/maintenance). Only gap: track repair page. Added service entry to web/data/services.json, regenerated all pages via `node build.js`, deployed to Cloudflare Pages, and pushed. Commit e9f5c1c.
+
 ## Done 2026-07-27
 Site/dashboard comparison against bcgaragedoors.ca, then the fixes:
 - Booking form was discarding every lead (`alert()` + reset). Now inserts into
