@@ -72,6 +72,18 @@
     "detail": "Hinges are numbered by position on the door. We carry the common sizes on the truck and replace the failed hinge along with any fasteners that have pulled out of the panel, so the repair holds rather than reopening in a month."
   },
   {
+    "slug": "garage-door-track",
+    "name": "Garage Door Track Repair",
+    "lead": "A bent or misaligned track is why a door jams, grinds, or comes off its rollers mid-travel. It's rarely the track itself that's worn out -- usually something hit it.",
+    "signs": [
+      "Door grinds, sticks or jams partway through travel",
+      "A visible bend, dent or gap in the track",
+      "Rollers popping out of the track",
+      "Door sits crooked or off-level in the opening"
+    ],
+    "detail": "Most bent tracks come from a vehicle bump or a roller that failed and let the door bind. We straighten minor bends on site and replace sections that are creased or torn rather than the full track, re-aligning against the door and checking rollers and hinges at the same time so the same failure doesn't repeat."
+  },
+  {
     "slug": "emergency-garage-door-repair",
     "name": "Emergency Garage Door Repair",
     "lead": "A garage door stuck open is a security problem, and a door stuck closed can trap a vehicle you need. We answer the phone 24/7.",
