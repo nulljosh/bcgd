@@ -32,11 +32,12 @@ Site/dashboard comparison against bcgaragedoors.ca, then the fixes:
 - [ ] Homepage nav is still anchors; only the footer + area tags link to the
       new pages.
 
-## From Bcgd.pdf (imported 2026-07-19)
-- [ ] Identified source site (2026-07-20): **bcgaragedoors.ca** (Best Choice Garage Doors) — confirmed via README.md/WHITEPAPER.md, already the basis for `web/` (landing page). User wants closer 1:1 replication, not just a style reference. Still open: full page-by-page clone pass (content, copy, layout sections) — full scrape/clone not attempted this session, scoped as its own task.
-
-## Ingested 2026-07-25
-- [ ] Compare bcgd.heyitsmejosh.com against source site bcgaragedoors.ca — identify missing components, build a design system synthesizing both. Attempted 2026-07-26: `curl` against `bcgaragedoors.ca` returns empty body (likely bot-protected or JS-rendered) — a static fetch can't do this comparison. Needs a real browser render (confirm before opening Chrome) or a manual pass; genuinely open-ended design work, not a quick diff.
+## Source-site gap audit 2026-08-03
+Rendered bcgaragedoors.ca live in Chrome (static curl is bot-protected/JS-rendered, confirmed dead end). Compared against `src/web/` (12 service pages + 12 service-area pages, already matches the source's city list 1:1 — Langley, Surrey, Vancouver, Burnaby, Coquitlam, New Westminster, Maple Ridge, Richmond, Delta, Abbotsford, North/West Vancouver). Homepage messaging (family-owned/repair-focused/no-pressure, LiftMaster-compatible parts) already carried over per the 2026-08-02 merge. Remaining real gaps, not yet ported:
+- [ ] "Our Seamless Service Process" 5-step section (Thorough System Inspection → Clear Explanation and Service Plan → Precision Service Completion → Safety Testing and Performance Check → Final Review and Clean Completion) — bcgd's process copy is thinner than this on the homepage.
+- [ ] "Practical Benefits" section (Reduced Repeat Issues, Improved Safety and Stability, Smoother and Quieter Operation, Less Strain on Mechanical Components, Clear Expectations and Professional Service) — not present on bcgd homepage.
+- [ ] Source splits Cable/Roller service into separate Repair vs. Replacement pages (and has a standalone Torsion Spring Repair page); bcgd combines these into single `garage-door-cable`/`garage-door-rollers`/`garage-door-springs` pages — a deliberate simplification, not a bug, but flag if 1:1 replication is still the goal.
+- [ ] Source FAQ has 10 specific Q&As (appointment duration, coverage area, emergency availability, booking method, pricing factors, maintenance frequency, spring/cable handling, panel repair, DIY-vs-pro) — bcgd has an FAQ section but content wasn't diffed line-by-line this pass; worth a follow-up check against bcgd's actual FAQ copy.
 
 ## From App Store.pdf (imported 2026-07-29)
 - [x] macOS app build attached 2026-08-02: local build verified (`xcodebuild build` succeeded), archived + exported via `asc xcode archive`/raw `xcodebuild -exportArchive` (asc's export helper rejects .pkg output — known limitation, see talli/roadmap.md). Found an existing VALID unattached build (a1b0219b, version 1, uploaded 2026-07-29) already on ASC for app 6791106082 — attached it to the macOS 1.0 version via `asc versions attach-build` instead of re-uploading (a fresh upload attempt was rejected: bundle version must be higher than previously uploaded). ASC now shows build 1 attached to macOS 1.0 PREPARE_FOR_SUBMISSION. NOT submitted for review — that's Joshua's call.
