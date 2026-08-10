@@ -48,6 +48,7 @@ export default function App() {
   const [toast, setToast] = useState(null);
   const [settings, setSettings] = useState(getSettings);
   const [showSettings, setShowSettings] = useState(false);
+  const [recovering, setRecovering] = useState(false);
 
   useEffect(() => { saveParts(parts); }, [parts]);
   useEffect(() => { saveJobs(jobs); }, [jobs]);
@@ -57,7 +58,12 @@ export default function App() {
       setSession(data.session);
       setAuthReady(true);
     });
-    const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => setSession(s));
+    // A recovery link signs the user in, so without this flag they'd land on the
+    // dashboard and never get asked for the new password they came to set.
+    const { data: sub } = supabase.auth.onAuthStateChange((e, s) => {
+      if (e === 'PASSWORD_RECOVERY') setRecovering(true);
+      setSession(s);
+    });
     return () => sub.subscription.unsubscribe();
   }, []);
 
@@ -288,7 +294,7 @@ export default function App() {
   // ---- Auth gate ----
 
   if (!authReady) return null;
-  if (!session) return <AuthGate />;
+  if (!session || recovering) return <AuthGate recovering={recovering} onRecovered={() => setRecovering(false)} />;
 
   return (
     <div className="app">

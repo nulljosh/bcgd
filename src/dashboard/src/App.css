@@ -1118,6 +1118,20 @@ body {
   width: 140px;
 }
 
+.btn-link {
+  background: none;
+  border: none;
+  padding: 4px;
+  font-size: 0.82rem;
+  color: var(--text-muted, #888);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: inherit;
+}
+
 .pin-shake {
   animation: shake 0.4s ease;
 }
