@@ -1,5 +1,14 @@
 # Bcgd Roadmap
 
+## ASC state VERIFIED 2026-08-12 (`asc versions list`)
+
+**The ASC record exists** — app id `6791106082`, iOS 1.0 and macOS 1.0 both
+`PREPARE_FOR_SUBMISSION`. Notes elsewhere saying "no ASC registration yet" are wrong.
+Nothing is submitted, so nothing is rejected; this is the cleanest app in the fleet.
+
+Submissions frozen until 2026-08-18 (Guideline 5.6 review) — build and stage only, no
+`asc review submit`. Anything below this heading predates this check; trust this block.
+
 ## Done 2026-08-02
 Merge doc comparison complete — verified bcgd.heyitsmejosh.com against bcgaragedoors.ca and found all major recommendations already shipped (hero booking form, pricing, stats bar, founder photo/bio, service pages for springs/cable/rollers/keypads/clickers/panels/weather-strips/hinge/maintenance). Only gap: track repair page. Added service entry to web/data/services.json, regenerated all pages via `node build.js`, deployed to Cloudflare Pages, and pushed. Commit e9f5c1c.
 
