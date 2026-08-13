@@ -41,15 +41,6 @@ Site/dashboard comparison against bcgaragedoors.ca, then the fixes:
       the iOS app needs the same stock.
 - [ ] Reorder is still per-part mailto; grouping by supplier with an
       ordered/received state was planned but not built.
-- [x] Homepage nav is still anchors; only the footer + area tags link to the
-      new pages. **Done 2026-08-13** — the 11 mobile-menu service pills all
-      pointed at `#services` (a same-page anchor), and the three homepage
-      service cards were plain `<div>`s, so the 12 generated service pages were
-      reachable only from the footer. Pills now link to their real pages
-      (+ Track, which was missing entirely since the page was added 08-02);
-      cards are anchors. Because `build.js` slices index.html's header into
-      every generated page, this fixed internal linking on all 25 pages, not
-      just the homepage. Deployed + verified live.
 
 ## Source-site gap audit 2026-08-03
 Rendered bcgaragedoors.ca live in Chrome (static curl is bot-protected/JS-rendered, confirmed dead end). Compared against `src/web/` (12 service pages + 12 service-area pages, already matches the source's city list 1:1 — Langley, Surrey, Vancouver, Burnaby, Coquitlam, New Westminster, Maple Ridge, Richmond, Delta, Abbotsford, North/West Vancouver). Homepage messaging (family-owned/repair-focused/no-pressure, LiftMaster-compatible parts) already carried over per the 2026-08-02 merge. Remaining real gaps, not yet ported:
