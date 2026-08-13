@@ -715,6 +715,14 @@
             transform: translateY(-2px);
         }
 
+        /* Service cards that link to their own page keep the card look, not the
+           default link look. */
+        a.service-card {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
         .service-card h3 {
             font-size: 19px;
             font-weight: 600;
@@ -2208,17 +2216,18 @@
         </button>
         <a href="#services" onclick="closeMobileMenu()">Services</a>
         <div style="padding: 0 0 8px 16px; display: flex; flex-wrap: wrap; gap: 6px;">
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Repair</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Springs</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Cables</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Maintenance</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Emergency</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Hinges</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Keypads</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Remotes</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Panels</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Weather Strips</a>
-            <a href="#services" onclick="closeMobileMenu()" class="mobile-service-pill">Rollers</a>
+            <a href="/garage-door-repair/" onclick="closeMobileMenu()" class="mobile-service-pill">Repair</a>
+            <a href="/garage-door-springs/" onclick="closeMobileMenu()" class="mobile-service-pill">Springs</a>
+            <a href="/garage-door-cable/" onclick="closeMobileMenu()" class="mobile-service-pill">Cables</a>
+            <a href="/garage-door-maintenance/" onclick="closeMobileMenu()" class="mobile-service-pill">Maintenance</a>
+            <a href="/emergency-garage-door-repair/" onclick="closeMobileMenu()" class="mobile-service-pill">Emergency</a>
+            <a href="/garage-door-hinge/" onclick="closeMobileMenu()" class="mobile-service-pill">Hinges</a>
+            <a href="/garage-door-track/" onclick="closeMobileMenu()" class="mobile-service-pill">Track</a>
+            <a href="/garage-door-keypads/" onclick="closeMobileMenu()" class="mobile-service-pill">Keypads</a>
+            <a href="/garage-door-clickers/" onclick="closeMobileMenu()" class="mobile-service-pill">Remotes</a>
+            <a href="/garage-door-panel-and-section-repair/" onclick="closeMobileMenu()" class="mobile-service-pill">Panels</a>
+            <a href="/garage-door-bottom-weather-strips/" onclick="closeMobileMenu()" class="mobile-service-pill">Weather Strips</a>
+            <a href="/garage-door-rollers/" onclick="closeMobileMenu()" class="mobile-service-pill">Rollers</a>
         </div>
         <a href="#about" onclick="closeMobileMenu()">About</a>
         <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
@@ -2390,21 +2399,21 @@
                 Free safety check with every visit
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <a class="service-card" href="/garage-door-repair/">
                     <h3>Garage Door Repair</h3>
                     <p>Jammed, grinding, or broken? We diagnose and fix it in one visit. Fully stocked truck.</p>
                     <span class="service-tag">Most Common</span>
-                </div>
-                <div class="service-card">
+                </a>
+                <a class="service-card" href="/garage-door-springs/">
                     <h3>Springs</h3>
                     <p>Torsion and extension spring replacement. Signs: door slamming, sagging, or heavy. Do not DIY.</p>
                     <span class="service-tag">Do Not DIY</span>
-                </div>
-                <div class="service-card">
+                </a>
+                <a class="service-card" href="/emergency-garage-door-repair/">
                     <h3>Emergency Repair</h3>
                     <p>Door stuck or won't close? Call anytime, day or night. We handle springs, cables, and off-track emergencies 24/7.</p>
                     <span class="service-tag">24/7 Available</span>
-                </div>
+                </a>
             </div>
 
             <!-- Service Call Image -->
