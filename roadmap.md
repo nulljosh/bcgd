@@ -1,12 +1,16 @@
 # Bcgd Roadmap
 
-## Submit attempt 2026-08-18 — BLOCKED on 2 gaps (both platforms)
+## Submit attempt 2026-08-18 — now BLOCKED on App Privacy only (both platforms)
 
 The Guideline 5.6 date freeze expired 2026-08-18 and BCGD was never one of the four
 suspended apps, so it is clear to ship. Attempted iOS 1.0 submission
 (`asc review submit --app 6791106082 --version 1.0 --platform IOS --build 798bbe86-b5f5-46e4-bb3d-633a74307236 --confirm`).
-**It failed.** Two blockers remain — neither is visible to `asc validate` on iOS, which
-reports 0 errors / 0 warnings and is misleading here. Trust the real submit call, not validate.
+**It failed.** Three blockers were found; **two are now closed** (pricing, screenshots) and
+**one remains: App Privacy, which needs Joshua.** Caution that still applies: `asc validate` on
+iOS reported 0 errors / 0 warnings even while the submit call was failing on all three, so it
+under-reports. Trust the real submit call, not validate. As of 2026-08-18 the only *known*
+remaining blocker is App Privacy — but that has not been proven by a submit call, because no
+third App Store submission should be queued until Curvely or Wiretext clears review.
 
 - [x] **Pricing — FIXED 2026-08-18.** Was `App is not eligible for submission until pricing has
       been set`. Closed with `asc pricing schedule create --app 6791106082 --free --base-territory "CAN" --start-date "2026-08-18"`.
@@ -17,13 +21,45 @@ reports 0 errors / 0 warnings and is misleading here. Trust the real submit call
       https://appstoreconnect.apple.com/apps/6791106082/appPrivacy
       The app is a fully local SwiftUI inventory/jobs tracker — `Store` persists to UserDefaults,
       no network calls, no accounts, no analytics — so the correct answer is **DATA_NOT_COLLECTED**.
-- [ ] **iPhone 6.5" screenshots missing (iOS)** — `A screenshot with type iphone65 is required but
-      was not provided`. None exist in the repo. `src/ios/` is xcodegen-based, so the
-      `appstore-screenshots` skill applies. Seed data means the app has real content on first
-      launch (15 parts), so screenshots are straightforward: Dashboard / Inventory / Jobs.
-- [ ] **macOS 1.0 additionally blocked on screenshots** — `asc validate --platform MAC_OS` returns
-      1 blocking error, `screenshots.required.any` / "no screenshot sets found". Needs 1280x800 or
-      2880x1800. macOS build 1 (`a1b0219b-bc65-49b0-9e0c-af51bd1243b1`) is VALID and attached.
+- [x] **iPhone 6.5" screenshots — DONE 2026-08-18.** 3 shots (Dashboard / Inventory / Jobs) at
+      1242x2688 captured on a dedicated `BCGD-Shots` sim (iPhone 11 Pro Max, iOS 26.5) and
+      uploaded to en-US, all `COMPLETE`. Files: `src/ios/screenshots/appstore/iphone65/en-US/`.
+      Method (no fastlane/UITest target needed — the app has no auth gate): build Release for
+      `generic/platform=iOS Simulator`, install, seed `UserDefaults` key `bcgd.store` with a
+      JSON `{parts,jobs}` blob via `simctl spawn <udid> defaults write ... -data <hex>`, then
+      `axe tap` the tab bar (points: y=844, x=162/251/339) + `simctl io screenshot`.
+      **Why seeding is required:** `Store.init()` assigns `parts`/`jobs` directly, and Swift
+      `didSet` does not fire during init — so a fresh install writes no plist at all, and `jobs`
+      is `[]`, giving a dashboard reading "Open jobs 0 / Jobs paid 0". Seed blob kept at
+      `/tmp/bcgd_store.json` during the run; regenerate it if these need re-shooting.
+      Settings tab was deliberately **not** shipped: it renders `Version 0.1.0` (from
+      `src/ios/project.yml` `MARKETING_VERSION`) against an ASC version of 1.0, which is a bad
+      look in a store listing. Fixing that means bumping the yml **and** re-uploading the binary,
+      so it was left alone — see the open item below.
+- [x] **macOS screenshots — UNBLOCKED 2026-08-18.** `screenshots.required.any` is cleared;
+      `asc validate --platform MAC_OS --version 1.0` now returns 0 errors / 0 warnings / 1 info.
+      1 shot uploaded (Dashboard, exactly 1280x800, `COMPLETE`), at
+      `src/macos/screenshots/appstore/mac/en-US/`. macOS build 1
+      (`a1b0219b-bc65-49b0-9e0c-af51bd1243b1`) is VALID and attached.
+      Method, fully headless and **without** any synthetic clicks/keystrokes (which per the
+      standing preference are off-limits, and per wordroot's notes don't reach the window anyway):
+      build Release unsigned, launch once so the app writes its prefs, then set the window size by
+      writing the `NSWindow Frame …` key in `~/Library/Preferences/com.joshuatrommel.bcgd.plist`
+      to `"100 150 1280 800 0 0 1920 1050 "`, `killall cfprefsd`, relaunch, resolve the window id
+      with a 6-line CoreGraphics Swift script (`CGWindowListCopyWindowInfo`, filter
+      `kCGWindowOwnerName == "BCGD"`), and `screencapture -l<id> -o -x`. The window frame trick is
+      the reusable part — it makes the capture land on an Apple-accepted size with no resizing or
+      rescaling. Note the Mac build runs unsandboxed when built unsigned, so its defaults live in
+      the normal domain, not a container.
+- [ ] **More macOS screenshots (Inventory / Jobs / Settings) — only Dashboard shipped.** One shot
+      satisfies Apple's minimum and unblocks submission, but the listing is thin. Blocked on the
+      same thing as always: switching tabs needs a real click, and `TabView` here has no selection
+      binding to persist, so there is no defaults-only way to land on another tab. Cheapest honest
+      options if this matters: add a `@SceneStorage`/`selection` binding to the macOS `TabView`
+      (then each tab is one defaults write + relaunch + capture), or accept a click-driven pass.
+      Also worth knowing: the Dashboard shot is very whitespace-heavy at 1280x800 — the Mac layout
+      genuinely looks like that, so richer screenshots probably want a design pass, not a capture
+      trick.
 
 Notes for whoever picks this up:
 - iOS build `798bbe86-b5f5-46e4-bb3d-633a74307236` (build 1, uploaded 2026-07-15) is VALID,
@@ -35,6 +71,15 @@ Notes for whoever picks this up:
 - Not acted on: the iOS app uses `bcgdTeal` (#1B5959) as its tint, which conflicts with the
   standing "no teal" colour rule. It is the client's brand colour, so this is Joshua's call,
   not a lint fix.
+- Not acted on: `src/ios/project.yml` has `MARKETING_VERSION: 0.1.0` while the ASC version is
+  1.0, so the app's own Settings screen reports 0.1.0. Harmless to reviewers (they see the ASC
+  version), but it kept the Settings tab out of the screenshot set. `src/macos/project.yml` is
+  already correct at "1.0". Fixing means a yml bump + rebuild + re-upload of the iOS binary,
+  which would replace the currently VALID attached build — deliberately not done mid-submission.
+- Superseded: `src/ios/screenshots/*.png` (dashboard/inventory/jobs/settings, 1206x2622) are
+  iPhone 6.3" captures, not an Apple 6.5" size. They are already uploaded to ASC under a
+  different display type and were left alone; the 6.5" set is the new
+  `src/ios/screenshots/appstore/` tree.
 
 ## ASC state VERIFIED 2026-08-12 (`asc versions list`)
 
