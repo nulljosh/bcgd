@@ -164,7 +164,7 @@ struct SettingsView: View {
                     }
                 }
                 Section("About") {
-                    LabeledContent("Version", value: "0.1.0")
+                    LabeledContent("Version", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
                     LabeledContent("Phone", value: "(604) 240-0180")
                     Link("bcgd.heyitsmejosh.com", destination: URL(string: "https://bcgd.heyitsmejosh.com")!)
                         .tint(.bcgdTeal)
