@@ -84,3 +84,22 @@ Rendered bcgaragedoors.ca live in Chrome (static curl is bot-protected/JS-render
 - [ ] "Practical Benefits" section (Reduced Repeat Issues, Improved Safety and Stability, Smoother and Quieter Operation, Less Strain on Mechanical Components, Clear Expectations and Professional Service) — not present on bcgd homepage.
 - [ ] Source splits Cable/Roller service into separate Repair vs. Replacement pages (and has a standalone Torsion Spring Repair page); bcgd combines these into single `garage-door-cable`/`garage-door-rollers`/`garage-door-springs` pages — a deliberate simplification, not a bug, but flag if 1:1 replication is still the goal.
 - [ ] Source FAQ has 10 specific Q&As (appointment duration, coverage area, emergency availability, booking method, pricing factors, maintenance frequency, spring/cable handling, panel repair, DIY-vs-pro) — bcgd has an FAQ section but content wasn't diffed line-by-line this pass; worth a follow-up check against bcgd's actual FAQ copy.
+
+## App Privacy PUBLISHED — 2026-08-18
+
+Closed with a live 2FA web session (Joshua supplied the code). The declaration existed locally but
+had never been applied remotely, so `asc web privacy publish` returned
+`409 STATE_ERROR.APP_DATA_USAGES_REQUIRED`. Correct sequence is **apply, then publish** — a bare
+publish on an app that has no remote data-usage tuples always 409s:
+
+```
+asc web privacy plan   --app 6791106082 --file privacy.json   # adds: ||DATA_NOT_COLLECTED
+asc web privacy apply  --app 6791106082 --file privacy.json
+asc web privacy publish --app 6791106082 --confirm
+```
+
+where `privacy.json` is `{"schemaVersion":1,"dataUsages":[{"dataProtections":["DATA_NOT_COLLECTED"]}]}`
+(identical to Wordroot's published declaration). Verified: `published: true`.
+
+- [x] App Privacy published (DATA_NOT_COLLECTED) — the app is fully local, no network/accounts/analytics
+- [x] Pricing schedule set (free, base territory CAN)
