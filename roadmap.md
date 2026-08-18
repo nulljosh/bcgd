@@ -12,45 +12,12 @@ under-reports. Trust the real submit call, not validate. As of 2026-08-18 the on
 remaining blocker is App Privacy — but that has not been proven by a submit call, because no
 third App Store submission should be queued until Curvely or Wiretext clears review.
 
-- [x] **Pricing — FIXED 2026-08-18.** Was `App is not eligible for submission until pricing has
-      been set`. Closed with `asc pricing schedule create --app 6791106082 --free --base-territory "CAN" --start-date "2026-08-18"`.
-      Verified free/CAD via `asc pricing current`. Availability was already all-territories.
 - [ ] **App Privacy data usages not published** — `You must have published answers to your app's
       data usages`. Public API cannot do this. Needs `asc web privacy pull|plan|apply|publish --app 6791106082`,
       which needs a live `asc web auth login` (interactive 2FA — **Joshua only**). Web fallback:
       https://appstoreconnect.apple.com/apps/6791106082/appPrivacy
       The app is a fully local SwiftUI inventory/jobs tracker — `Store` persists to UserDefaults,
       no network calls, no accounts, no analytics — so the correct answer is **DATA_NOT_COLLECTED**.
-- [x] **iPhone 6.5" screenshots — DONE 2026-08-18.** 3 shots (Dashboard / Inventory / Jobs) at
-      1242x2688 captured on a dedicated `BCGD-Shots` sim (iPhone 11 Pro Max, iOS 26.5) and
-      uploaded to en-US, all `COMPLETE`. Files: `src/ios/screenshots/appstore/iphone65/en-US/`.
-      Method (no fastlane/UITest target needed — the app has no auth gate): build Release for
-      `generic/platform=iOS Simulator`, install, seed `UserDefaults` key `bcgd.store` with a
-      JSON `{parts,jobs}` blob via `simctl spawn <udid> defaults write ... -data <hex>`, then
-      `axe tap` the tab bar (points: y=844, x=162/251/339) + `simctl io screenshot`.
-      **Why seeding is required:** `Store.init()` assigns `parts`/`jobs` directly, and Swift
-      `didSet` does not fire during init — so a fresh install writes no plist at all, and `jobs`
-      is `[]`, giving a dashboard reading "Open jobs 0 / Jobs paid 0". Seed blob kept at
-      `/tmp/bcgd_store.json` during the run; regenerate it if these need re-shooting.
-      Settings tab was deliberately **not** shipped: it renders `Version 0.1.0` (from
-      `src/ios/project.yml` `MARKETING_VERSION`) against an ASC version of 1.0, which is a bad
-      look in a store listing. Fixing that means bumping the yml **and** re-uploading the binary,
-      so it was left alone — see the open item below.
-- [x] **macOS screenshots — UNBLOCKED 2026-08-18.** `screenshots.required.any` is cleared;
-      `asc validate --platform MAC_OS --version 1.0` now returns 0 errors / 0 warnings / 1 info.
-      1 shot uploaded (Dashboard, exactly 1280x800, `COMPLETE`), at
-      `src/macos/screenshots/appstore/mac/en-US/`. macOS build 1
-      (`a1b0219b-bc65-49b0-9e0c-af51bd1243b1`) is VALID and attached.
-      Method, fully headless and **without** any synthetic clicks/keystrokes (which per the
-      standing preference are off-limits, and per wordroot's notes don't reach the window anyway):
-      build Release unsigned, launch once so the app writes its prefs, then set the window size by
-      writing the `NSWindow Frame …` key in `~/Library/Preferences/com.joshuatrommel.bcgd.plist`
-      to `"100 150 1280 800 0 0 1920 1050 "`, `killall cfprefsd`, relaunch, resolve the window id
-      with a 6-line CoreGraphics Swift script (`CGWindowListCopyWindowInfo`, filter
-      `kCGWindowOwnerName == "BCGD"`), and `screencapture -l<id> -o -x`. The window frame trick is
-      the reusable part — it makes the capture land on an Apple-accepted size with no resizing or
-      rescaling. Note the Mac build runs unsandboxed when built unsigned, so its defaults live in
-      the normal domain, not a container.
 - [ ] **More macOS screenshots (Inventory / Jobs / Settings) — only Dashboard shipped.** One shot
       satisfies Apple's minimum and unblocks submission, but the listing is thin. Blocked on the
       same thing as always: switching tabs needs a real click, and `TabView` here has no selection
@@ -145,9 +112,6 @@ asc web privacy publish --app 6791106082 --confirm
 
 where `privacy.json` is `{"schemaVersion":1,"dataUsages":[{"dataProtections":["DATA_NOT_COLLECTED"]}]}`
 (identical to Wordroot's published declaration). Verified: `published: true`.
-
-- [x] App Privacy published (DATA_NOT_COLLECTED) — the app is fully local, no network/accounts/analytics
-- [x] Pricing schedule set (free, base territory CAN)
 
 ## Submit decision 2026-08-18 — HOLD, with one real defect to fix first
 
