@@ -1,5 +1,41 @@
 # Bcgd Roadmap
 
+## Submit attempt 2026-08-18 — BLOCKED on 2 gaps (both platforms)
+
+The Guideline 5.6 date freeze expired 2026-08-18 and BCGD was never one of the four
+suspended apps, so it is clear to ship. Attempted iOS 1.0 submission
+(`asc review submit --app 6791106082 --version 1.0 --platform IOS --build 798bbe86-b5f5-46e4-bb3d-633a74307236 --confirm`).
+**It failed.** Two blockers remain — neither is visible to `asc validate` on iOS, which
+reports 0 errors / 0 warnings and is misleading here. Trust the real submit call, not validate.
+
+- [x] **Pricing — FIXED 2026-08-18.** Was `App is not eligible for submission until pricing has
+      been set`. Closed with `asc pricing schedule create --app 6791106082 --free --base-territory "CAN" --start-date "2026-08-18"`.
+      Verified free/CAD via `asc pricing current`. Availability was already all-territories.
+- [ ] **App Privacy data usages not published** — `You must have published answers to your app's
+      data usages`. Public API cannot do this. Needs `asc web privacy pull|plan|apply|publish --app 6791106082`,
+      which needs a live `asc web auth login` (interactive 2FA — **Joshua only**). Web fallback:
+      https://appstoreconnect.apple.com/apps/6791106082/appPrivacy
+      The app is a fully local SwiftUI inventory/jobs tracker — `Store` persists to UserDefaults,
+      no network calls, no accounts, no analytics — so the correct answer is **DATA_NOT_COLLECTED**.
+- [ ] **iPhone 6.5" screenshots missing (iOS)** — `A screenshot with type iphone65 is required but
+      was not provided`. None exist in the repo. `src/ios/` is xcodegen-based, so the
+      `appstore-screenshots` skill applies. Seed data means the app has real content on first
+      launch (15 parts), so screenshots are straightforward: Dashboard / Inventory / Jobs.
+- [ ] **macOS 1.0 additionally blocked on screenshots** — `asc validate --platform MAC_OS` returns
+      1 blocking error, `screenshots.required.any` / "no screenshot sets found". Needs 1280x800 or
+      2880x1800. macOS build 1 (`a1b0219b-bc65-49b0-9e0c-af51bd1243b1`) is VALID and attached.
+
+Notes for whoever picks this up:
+- iOS build `798bbe86-b5f5-46e4-bb3d-633a74307236` (build 1, uploaded 2026-07-15) is VALID,
+  attached, encryption-exempt, and **expires 2026-10-13** — re-upload if that date passes.
+- A stray empty review submission `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b` (READY_FOR_REVIEW,
+  0 items) now exists from the failed attempt. Harmless — `asc review submit` reuses it. Same
+  litter pattern as Curvely's stray. Verify items with `asc review items list --submission ID`;
+  `asc review submissions-list` misreports the Items count as 0.
+- Not acted on: the iOS app uses `bcgdTeal` (#1B5959) as its tint, which conflicts with the
+  standing "no teal" colour rule. It is the client's brand colour, so this is Joshua's call,
+  not a lint fix.
+
 ## ASC state VERIFIED 2026-08-12 (`asc versions list`)
 
 **The ASC record exists** — app id `6791106082`, iOS 1.0 and macOS 1.0 both
