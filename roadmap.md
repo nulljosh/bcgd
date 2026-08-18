@@ -134,3 +134,60 @@ screenshot. Adding a selection binding to the `TabView` would allow capturing th
 
 **Note:** the earlier "App Privacy is the only remaining blocker" line above is superseded — it was
 published 2026-08-18, see the section above it.
+
+## Version defect fixed + both platforms rebuilt and uploaded — 2026-08-18
+
+**The recorded diagnosis was half the story.** `MARKETING_VERSION: 0.1.0` in `src/ios/project.yml`
+was real, but fixing it alone would NOT have fixed the Settings tab: the version was **hardcoded**
+as a string literal in `Views.swift:167`, on **both** platforms:
+
+```swift
+LabeledContent("Version", value: "0.1.0")     // ios AND macos
+```
+
+So macOS displayed `0.1.0` too, despite its yml having always said `1.0` — the earlier note that
+"`src/macos/project.yml` is already correct" was true and still left the Mac app showing the wrong
+version. Both now read the bundle, so the displayed version tracks `MARKETING_VERSION` and cannot
+drift again:
+
+```swift
+LabeledContent("Version", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
+```
+
+- [x] `MARKETING_VERSION` corrected to `1.0` (iOS yml) and version display de-hardcoded (both platforms)
+- [x] Both platforms rebuilt and uploaded as build `202608181253`, both verified `VALID`
+      (iOS build `e4da322e-…`, macOS build `29b59afc-…`), both attached to version 1.0
+- [x] Versions deliberately left in `PREPARE_FOR_SUBMISSION` — **not submitted**, per the
+      one-app-at-a-time queue rule while Curvely / Wiretext / Wordroot iOS are in review
+
+### macOS ITMS-90242 was present here too, and is now fixed
+BCGD's Mac archive had the **same defect that blocked Wordroot's Mac build three times**: automatic
+signing signed the `.app` with `Apple Development` while the installer was correctly signed with
+`3rd Party Mac Developer Installer`. Verified with `codesign -dvvv` on the archive before uploading,
+which is worth doing every time — the upload would otherwise have failed on Apple's side.
+
+Fix was export-side only, no manual signing style and no provisioning profile juggling. Added to
+`src/macos/ExportOptions.plist`:
+
+```xml
+<key>signingCertificate</key><string>3rd Party Mac Developer Application</string>
+<key>installerSigningCertificate</key><string>3rd Party Mac Developer Installer</string>
+```
+
+Confirmed by expanding the exported `.pkg` (`pkgutil --expand-full`) and re-running `codesign -dvvv`
+on the app inside: now `3rd Party Mac Developer Application: Joshua Trommel`. **This same fix should
+unblock wordroot's macOS build** — it is the identical failure.
+
+### Trap waiting for whoever submits this
+- [ ] BCGD has a **stray empty review submission** `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b`
+      (`READY_FOR_REVIEW`, IOS, **0 items**), not created by this session. This is the same trap
+      that hijacked Wordroot's submit earlier today: `asc review submit` reuses the existing empty
+      submission and then fails its own validation with *"does not contain target version"*.
+      Workaround that worked for Wordroot: `asc review submissions-submit --id <id> --confirm`.
+      Also note `asc review submissions-list` misreports `Items 0` even when items exist — use
+      `asc review items list --submission <id>` for the true count.
+
+Not done, deliberately: no Settings screenshot was added. The uploaded set is Dashboard / Inventory /
+Jobs, which already meets Apple's requirement, and there was no stale Settings shot to replace — a
+settings screen is weak listing material. The Mac listing still carries only the one Dashboard shot;
+capturing more still needs a selection binding on the `TabView`.
