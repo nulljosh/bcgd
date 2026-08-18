@@ -148,3 +148,25 @@ where `privacy.json` is `{"schemaVersion":1,"dataUsages":[{"dataProtections":["D
 
 - [x] App Privacy published (DATA_NOT_COLLECTED) — the app is fully local, no network/accounts/analytics
 - [x] Pricing schedule set (free, base territory CAN)
+
+## Submit decision 2026-08-18 — HOLD, with one real defect to fix first
+
+Both platforms are otherwise ready: App Privacy published, pricing set (free/CAN), iPhone 6.5" ×3
+and Mac 1280×800 ×1 uploaded, `asc validate` 0 errors / 0 warnings / 1 info on each. Versions sit at
+`PREPARE_FOR_SUBMISSION`.
+
+Not submitted today, for two reasons:
+
+- [ ] **`MARKETING_VERSION` is 0.1.0 in `src/ios/project.yml`** — the in-app Settings tab renders
+      "Version 0.1.0" while the App Store listing says 1.0. That contradiction is the exact class of
+      unpolished detail Apple cited under Guideline 5.6 across this account. Fix the yml, rebuild,
+      re-upload (this replaces the currently VALID attached build), then submit.
+      `src/macos/project.yml` is already correct.
+- Queue discipline: `wiki/pages/ship-plan.md` § "Order of operations" step 5 — one app at a time.
+  Wordroot went in today, and Curvely + Wiretext are already in review. Adding BCGD makes four.
+
+Also worth doing before the macOS submit, not blocking: the Mac listing carries a single Dashboard
+screenshot. Adding a selection binding to the `TabView` would allow capturing the other tabs.
+
+**Note:** the earlier "App Privacy is the only remaining blocker" line above is superseded — it was
+published 2026-08-18, see the section above it.
