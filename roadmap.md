@@ -1,5 +1,17 @@
 # Bcgd Roadmap
 
+
+## Done 2026-08-18 — submit-ready
+`asc validate` clean on **both** iOS 1.0 (`df882260-865d-4f33-9735-dc9f8137bcde`) and macOS 1.0
+(`ef1421dd-4c4b-4592-a8be-a4fc0db4c149`): 0 errors, 0 warnings, 0 blocking.
+
+Fixed today: both builds were missing the encryption declaration (`build.encryption.missing`, the
+only blocking error on either row). Set `usesNonExemptEncryption=false` on builds
+`e4da322e-12a0-4720-b914-6d9019f4a3af` (iOS) and `29b59afc-47fb-4a3a-8365-43b73dbcddb4` (macOS),
+matching every sibling app in the fleet — HTTPS-only traffic is exempt.
+
+Held for the four in-flight verdicts, not for any missing work.
+
 ## Submit attempt 2026-08-18 — now BLOCKED on App Privacy only (both platforms)
 
 The Guideline 5.6 date freeze expired 2026-08-18 and BCGD was never one of the four
@@ -54,8 +66,11 @@ Notes for whoever picks this up:
 `PREPARE_FOR_SUBMISSION`. Notes elsewhere saying "no ASC registration yet" are wrong.
 Nothing is submitted, so nothing is rejected; this is the cleanest app in the fleet.
 
-Submissions frozen until 2026-08-18 (Guideline 5.6 review) — build and stage only, no
-`asc review submit`. Anything below this heading predates this check; trust this block.
+Freeze lifted 2026-08-18 (Guideline 5.6 suspension expired). Submitted that day and now
+WAITING_FOR_REVIEW: Curvely iOS 1.2.0, Wiretext iOS 1.1.0, Wordroot iOS 1.0, Healstack iOS 2.3.4.
+**Held pending those four verdicts — never a batch:** Sparkjar iOS+Mac, BCGD iOS+Mac, Wordroot Mac,
+Lexly Mac. All six are `asc validate` clean (0 errors, 0 blocking) with a VALID build attached, so
+each is one `asc review submit` away. Do not submit until the in-flight verdicts land.
 
 ## Done 2026-08-02
 Merge doc comparison complete — verified bcgd.heyitsmejosh.com against bcgaragedoors.ca and found all major recommendations already shipped (hero booking form, pricing, stats bar, founder photo/bio, service pages for springs/cable/rollers/keypads/clickers/panels/weather-strips/hinge/maintenance). Only gap: track repair page. Added service entry to web/data/services.json, regenerated all pages via `node build.js`, deployed to Cloudflare Pages, and pushed. Commit e9f5c1c.
