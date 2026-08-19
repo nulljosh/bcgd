@@ -200,7 +200,7 @@ on the app inside: now `3rd Party Mac Developer Application: Joshua Trommel`. **
 unblock wordroot's macOS build** — it is the identical failure.
 
 ### Trap waiting for whoever submits this
-- [ ] BCGD has a **stray empty review submission** `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b`
+- [x] DONE 2026-08-18: stray submission `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b` deleted via the ASC dashboard (a zero-item draft submission started by the API). BCGD now has **zero** review submissions — clean for its first real submit.
       (`READY_FOR_REVIEW`, IOS, **0 items**), not created by this session. This is the same trap
       that hijacked Wordroot's submit earlier today: `asc review submit` reuses the existing empty
       submission and then fails its own validation with *"does not contain target version"*.
