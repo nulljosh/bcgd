@@ -12,6 +12,12 @@ matching every sibling app in the fleet — HTTPS-only traffic is exempt.
 
 Held for the four in-flight verdicts, not for any missing work.
 
+- [ ] **Blocked on Joshua (dashboard only), do before the first submit.** BCGD carries a stray empty
+  review submission `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b` (IOS, READY_FOR_REVIEW, no submittedDate,
+  zero items). `asc review submissions-cancel --confirm` refuses it: "Resource is not in cancellable
+  state." Same defect Curvely has. Clear it in App Store Connect before submitting 1.0, or the real
+  submission may collide with it.
+
 ## Submit attempt 2026-08-18 — now BLOCKED on App Privacy only (both platforms)
 
 The Guideline 5.6 date freeze expired 2026-08-18 and BCGD was never one of the four
