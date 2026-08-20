@@ -1,6 +1,5 @@
 # Bcgd Roadmap
 
-
 ## Done 2026-08-18 — submit-ready
 `asc validate` clean on **both** iOS 1.0 (`df882260-865d-4f33-9735-dc9f8137bcde`) and macOS 1.0
 (`ef1421dd-4c4b-4592-a8be-a4fc0db4c149`): 0 errors, 0 warnings, 0 blocking.
@@ -175,12 +174,6 @@ drift again:
 LabeledContent("Version", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
 ```
 
-- [x] `MARKETING_VERSION` corrected to `1.0` (iOS yml) and version display de-hardcoded (both platforms)
-- [x] Both platforms rebuilt and uploaded as build `202608181253`, both verified `VALID`
-      (iOS build `e4da322e-…`, macOS build `29b59afc-…`), both attached to version 1.0
-- [x] Versions deliberately left in `PREPARE_FOR_SUBMISSION` — **not submitted**, per the
-      one-app-at-a-time queue rule while Curvely / Wiretext / Wordroot iOS are in review
-
 ### macOS ITMS-90242 was present here too, and is now fixed
 BCGD's Mac archive had the **same defect that blocked Wordroot's Mac build three times**: automatic
 signing signed the `.app` with `Apple Development` while the installer was correctly signed with
@@ -200,13 +193,6 @@ on the app inside: now `3rd Party Mac Developer Application: Joshua Trommel`. **
 unblock wordroot's macOS build** — it is the identical failure.
 
 ### Trap waiting for whoever submits this
-- [x] DONE 2026-08-18: stray submission `59cef0f7-188d-4ab8-bb6b-6c4c3f37239b` deleted via the ASC dashboard (a zero-item draft submission started by the API). BCGD now has **zero** review submissions — clean for its first real submit.
-      (`READY_FOR_REVIEW`, IOS, **0 items**), not created by this session. This is the same trap
-      that hijacked Wordroot's submit earlier today: `asc review submit` reuses the existing empty
-      submission and then fails its own validation with *"does not contain target version"*.
-      Workaround that worked for Wordroot: `asc review submissions-submit --id <id> --confirm`.
-      Also note `asc review submissions-list` misreports `Items 0` even when items exist — use
-      `asc review items list --submission <id>` for the true count.
 
 Not done, deliberately: no Settings screenshot was added. The uploaded set is Dashboard / Inventory /
 Jobs, which already meets Apple's requirement, and there was no stale Settings shot to replace — a
