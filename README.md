@@ -16,3 +16,7 @@ Customer-facing website and operations dashboard for Best Choice Garage Doors (b
 ## License
 
 MIT 2026, Joshua Trommel
+
+## Whitepaper
+
+[Technical whitepaper](WHITEPAPER.md)
