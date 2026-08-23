@@ -205,3 +205,11 @@ since the 5.6 freeze lifted 2026-08-18 and were deliberately held back rather th
 the other submissions. That hold has no reason to continue.
 - [ ] asc review submit for iOS 1.0.
 - [ ] asc review submit for macOS 1.0.
+
+### 2026-08-23 — BOTH PLATFORMS SUBMITTED
+iOS 1.0 submission f1e5b07b and macOS 1.0 submission 3f07f62f, both WAITING_FOR_REVIEW ~10:19 UTC.
+Builds 202608181253 (one per platform; `asc builds list` reports platform null, so filter with
+`--platform`). Nothing was ever wrong with these — they validated clean and were simply never submitted.
+`--version 1.0` resolves to the iOS record for both platforms, so the macOS submit needs
+`--version-id ef1421dd-4c4b-4592-a8be-a4fc0db4c149`. Both hit the known false-negative
+"does not contain target version" and were completed with `asc review submissions-submit --id ... --confirm`.
