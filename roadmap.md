@@ -198,3 +198,10 @@ Not done, deliberately: no Settings screenshot was added. The uploaded set is Da
 Jobs, which already meets Apple's requirement, and there was no stale Settings shot to replace — a
 settings screen is weak listing material. The Mac listing still carries only the one Dashboard shot;
 capturing more still needs a selection binding on the `TabView`.
+
+## 2026-08-23 — nothing has ever been submitted
+Both iOS 1.0 and macOS 1.0 are Prepare for Submission. Both rows have been asc validate clean
+since the 5.6 freeze lifted 2026-08-18 and were deliberately held back rather than batched with
+the other submissions. That hold has no reason to continue.
+- [ ] asc review submit for iOS 1.0.
+- [ ] asc review submit for macOS 1.0.
