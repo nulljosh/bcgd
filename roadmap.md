@@ -203,8 +203,8 @@ capturing more still needs a selection binding on the `TabView`.
 Both iOS 1.0 and macOS 1.0 are Prepare for Submission. Both rows have been asc validate clean
 since the 5.6 freeze lifted 2026-08-18 and were deliberately held back rather than batched with
 the other submissions. That hold has no reason to continue.
-- [ ] asc review submit for iOS 1.0.
-- [ ] asc review submit for macOS 1.0.
+- [x] asc review submit for iOS 1.0. — submitted, WAITING_FOR_REVIEW as of 2026-08-24.
+- [x] asc review submit for macOS 1.0. — submitted, WAITING_FOR_REVIEW as of 2026-08-24.
 
 ### 2026-08-23 — BOTH PLATFORMS SUBMITTED
 iOS 1.0 submission f1e5b07b and macOS 1.0 submission 3f07f62f, both WAITING_FOR_REVIEW ~10:19 UTC.
