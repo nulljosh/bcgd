@@ -211,3 +211,7 @@ Builds 202608181253 (one per platform; `asc builds list` reports platform null, 
 `--version 1.0` resolves to the iOS record for both platforms, so the macOS submit needs
 `--version-id ef1421dd-4c4b-4592-a8be-a4fc0db4c149`. Both hit the known false-negative
 "does not contain target version" and were completed with `asc review submissions-submit --id ... --confirm`.
+
+## Ingested 2026-08-24
+
+- [ ] **Icon bump** (Notes 2026-08-24). Josh: "I love the icon. Any way to bump it? Use the website brand colors too. Green etc." Keep the existing mark's identity — this is a refinement, not a redesign — and pull the green from the bcgaragedoors.ca brand palette.
