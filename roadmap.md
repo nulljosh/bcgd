@@ -214,7 +214,7 @@ Builds 202608181253 (one per platform; `asc builds list` reports platform null, 
 
 ## Ingested 2026-08-24
 
-- [ ] **Icon bump — repalette to the site's brand.** Josh: "I love the icon. Any way to bump it?
+- [x] **Icon bump — repalette to the site's brand.** DONE 2026-08-24: ground swapped to the brand `#134040`/`#1B5959`, panels warmed to cream and stepped darker downward with shadow lines for depth, window panes now `#1B5959`. All five copies synced; macOS appiconset keeps its rounded alpha, iOS 1024 rendered square and flattened opaque (Apple masks it and rejects alpha). Not uploaded to ASC. Josh: "I love the icon. Any way to bump it?
       Use the website brand colors too. Green etc." Researched 2026-08-24, not built (budget).
       The current mark is orange `#e87722` behind a dark garage with white/grey door panels
       (`src/icon.svg`); the website's actual palette is `#134040` / `#1B5959` / `#8DA6A6`
