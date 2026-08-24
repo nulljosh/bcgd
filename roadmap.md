@@ -214,4 +214,14 @@ Builds 202608181253 (one per platform; `asc builds list` reports platform null, 
 
 ## Ingested 2026-08-24
 
-- [ ] **Icon bump** (Notes 2026-08-24). Josh: "I love the icon. Any way to bump it? Use the website brand colors too. Green etc." Keep the existing mark's identity — this is a refinement, not a redesign — and pull the green from the bcgaragedoors.ca brand palette.
+- [ ] **Icon bump — repalette to the site's brand.** Josh: "I love the icon. Any way to bump it?
+      Use the website brand colors too. Green etc." Researched 2026-08-24, not built (budget).
+      The current mark is orange `#e87722` behind a dark garage with white/grey door panels
+      (`src/icon.svg`); the website's actual palette is `#134040` / `#1B5959` / `#8DA6A6`
+      (`src/web/index.html`), so the icon currently clashes with the site it represents. Plan:
+      keep the garage-door mark, swap the background to `#134040`, warm the panels, add depth.
+      Note the brand green reads teal, which brushes the standing no-teal rule — treating the
+      client's real identity as the deliberate exception. Copies to update together:
+      `src/icon.svg`, `src/web/icon.svg`, `src/dashboard/public/icon.svg`,
+      `src/dashboard/dist/icon.svg`, and `src/macos/Assets.xcassets/AppIcon.appiconset`.
+      **Do not upload to ASC** — iOS and macOS 1.0 are both in review as of 2026-08-24.
