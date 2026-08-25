@@ -214,17 +214,3 @@ Builds 202608181253 (one per platform; `asc builds list` reports platform null, 
 `--version 1.0` resolves to the iOS record for both platforms, so the macOS submit needs
 `--version-id ef1421dd-4c4b-4592-a8be-a4fc0db4c149`. Both hit the known false-negative
 "does not contain target version" and were completed with `asc review submissions-submit --id ... --confirm`.
-
-## Ingested 2026-08-24
-
-- [x] **Icon bump — repalette to the site's brand.** DONE 2026-08-24: ground swapped to the brand `#134040`/`#1B5959`, panels warmed to cream and stepped darker downward with shadow lines for depth, window panes now `#1B5959`. All five copies synced; macOS appiconset keeps its rounded alpha, iOS 1024 rendered square and flattened opaque (Apple masks it and rejects alpha). Not uploaded to ASC. Josh: "I love the icon. Any way to bump it?
-      Use the website brand colors too. Green etc." Researched 2026-08-24, not built (budget).
-      The current mark is orange `#e87722` behind a dark garage with white/grey door panels
-      (`src/icon.svg`); the website's actual palette is `#134040` / `#1B5959` / `#8DA6A6`
-      (`src/web/index.html`), so the icon currently clashes with the site it represents. Plan:
-      keep the garage-door mark, swap the background to `#134040`, warm the panels, add depth.
-      Note the brand green reads teal, which brushes the standing no-teal rule — treating the
-      client's real identity as the deliberate exception. Copies to update together:
-      `src/icon.svg`, `src/web/icon.svg`, `src/dashboard/public/icon.svg`,
-      `src/dashboard/dist/icon.svg`, and `src/macos/Assets.xcassets/AppIcon.appiconset`.
-      **Do not upload to ASC** — iOS and macOS 1.0 are both in review as of 2026-08-24.
