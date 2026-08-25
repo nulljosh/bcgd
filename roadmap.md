@@ -17,6 +17,9 @@ Held for the four in-flight verdicts, not for any missing work.
   state." Same defect Curvely has. Clear it in App Store Connect before submitting 1.0, or the real
   submission may collide with it.
 
+## OAuth rollout (2026-08-24)
+- [ ] **EXCLUDED — Supabase signInWithOAuth auto-creates users on first sign-in.** Dashboard has no signUp (accounts are hand-provisioned by admin only). Adding a GitHub auth button would let any GitHub account self-provision admin access, a security risk. Blocker: email allowlist gate needed in auth.js before any OAuth button ships.
+
 ## Submit attempt 2026-08-18 — now BLOCKED on App Privacy only (both platforms)
 
 The Guideline 5.6 date freeze expired 2026-08-18 and BCGD was never one of the four
