@@ -144,11 +144,15 @@ and Mac 1280×800 ×1 uploaded, `asc validate` 0 errors / 0 warnings / 1 info on
 
 Not submitted today, for two reasons:
 
-- [ ] **`MARKETING_VERSION` is 0.1.0 in `src/ios/project.yml`** — the in-app Settings tab renders
-      "Version 0.1.0" while the App Store listing says 1.0. That contradiction is the exact class of
-      unpolished detail Apple cited under Guideline 5.6 across this account. Fix the yml, rebuild,
-      re-upload (this replaces the currently VALID attached build), then submit.
-      `src/macos/project.yml` is already correct.
+- [ ] **`MARKETING_VERSION`: source is FIXED, the attached build is NOT.** Re-checked 2026-08-24.
+      `src/ios/project.yml:16` now reads `MARKETING_VERSION: "1.0"` (commit `8b74c5d`, 2026-08-18
+      12:55:50 -0700, "read version from bundle instead of hardcoding"). But the attached build is
+      `202608181253` — cut at 12:53, **two minutes before that commit** — so the uploaded binary
+      still renders "Version 0.1.0" in the Settings tab. Do NOT close this item just because the yml
+      looks right. Remaining work is only: rebuild, re-upload (replaces the currently VALID build),
+      then submit. `src/macos/project.yml` was already correct.
+      Ordering: per `wiki/pages/ship-plan.md`, do not submit BCGD while the Healstack verdict is
+      outstanding — never a batch.
 - Queue discipline: `wiki/pages/ship-plan.md` § "Order of operations" step 5 — one app at a time.
   Wordroot went in today, and Curvely + Wiretext are already in review. Adding BCGD makes four.
 
