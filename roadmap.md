@@ -235,3 +235,40 @@ Pick one before resubmitting — this is a positioning decision, not a code fix:
       tracker. Real work: name (use asc-name-creator), icon, screenshots, metadata.
 - [ ] **Move off public distribution.** Apple Business Manager custom app or TestFlight-only.
       Right answer if this only ever serves Best Choice Garage Doors.
+
+## 2026-08-27 — de-branded to Doorstock, iOS resubmit in flight
+
+Root cause of the 3.2 rejection was the **listing**, not the app. The pushed en-US description
+opened with "Internal operations app for Best Choice Garage Doors" and marketingUrl pointed at
+`bcgaragedoors.ca`. The Swift was already generic: local-only inventory/jobs, no network, no auth,
+no client data, only three business strings in the whole app.
+
+Chose **de-brand and resubmit** over appealing. Appealing meant arguing "this is really a public
+app" while the listing said the opposite, and both platforms share one app record
+(`com.joshuatrommel.bcgd`, Universal Purchase) — escalating 3.2 risked the live macOS listing.
+
+Done:
+- Name **Doorstock** (verified free, claimed). Applied to the REJECTED appInfo
+  `390b0de9-9a6f-4264-b5b4-725e4a44a1e8` only. The live macOS appInfo
+  `b3fd3c7c-0236-46e5-99d8-ed4cf6a2af73` still reads "BC Garage Doors" and was never touched.
+- Both Swift trees de-branded and still byte-identical. Business phone row deleted.
+- `INFOPLIST_KEY_CFBundleDisplayName: Doorstock`, build `202608271310`. Bundle ID unchanged —
+  changing it would mean a new app record and forfeiting the live macOS listing.
+- Support/marketing URL now `doorstock.heyitsmejosh.com` (new Cloudflare Pages project `doorstock`
+  + proxied CNAME). The old URLs both led back to the single-business context.
+- Canonical `metadata/en-US/` added; listing copy rewritten for a public audience.
+- Review notes written — they were **completely empty** before, so the reviewer had only the name
+  and description to judge intent by. That is half of why 3.2 landed.
+- Screenshots regenerated on a `Doorstock-Shots` sim. Stale branded 6.1" set deleted outright.
+
+Verified on device: low-stock flagging, full Lead → Quote → Scheduled → Complete → Paid pipeline,
+and UserDefaults persistence across a relaunch.
+
+- [ ] **Submit iOS 1.0.** Build `202608271310` uploaded 13:19 and was still PROCESSING at Apple
+      when the session ended. When it goes VALID: set `usesNonExemptEncryption=false`, attach it to
+      version `df882260-865d-4f33-9735-dc9f8137bcde`, then submit. If `asc review submit` says
+      "does not contain target version", that is the known false negative — check the items list
+      and use `asc review submissions-submit --id`.
+- [ ] **Align the macOS name on its next version bump.** Deliberately deferred: renaming macOS now
+      needs a new version and a fresh trip through review, risking an approved listing for cosmetics.
+- [ ] `whatsNew` cannot be set on a 1.0 initial release (ASC returns 409). Write it at 1.0.1.
