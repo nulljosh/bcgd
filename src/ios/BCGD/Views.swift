@@ -28,7 +28,7 @@ struct DashboardView: View {
                     }
                 }
             }
-            .navigationTitle("BC Garage Doors")
+            .navigationTitle("Doorstock")
         }
     }
 
@@ -165,8 +165,7 @@ struct SettingsView: View {
                 }
                 Section("About") {
                     LabeledContent("Version", value: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
-                    LabeledContent("Phone", value: "(604) 240-0180")
-                    Link("bcgd.heyitsmejosh.com", destination: URL(string: "https://bcgd.heyitsmejosh.com")!)
+                    Link("doorstock.heyitsmejosh.com", destination: URL(string: "https://doorstock.heyitsmejosh.com")!)
                         .tint(.bcgdTeal)
                 }
             }
