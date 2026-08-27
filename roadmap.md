@@ -264,11 +264,21 @@ Done:
 Verified on device: low-stock flagging, full Lead → Quote → Scheduled → Complete → Paid pipeline,
 and UserDefaults persistence across a relaunch.
 
-- [ ] **Submit iOS 1.0.** Build `202608271310` uploaded 13:19 and was still PROCESSING at Apple
-      when the session ended. When it goes VALID: set `usesNonExemptEncryption=false`, attach it to
-      version `df882260-865d-4f33-9735-dc9f8137bcde`, then submit. If `asc review submit` says
-      "does not contain target version", that is the known false negative — check the items list
-      and use `asc review submissions-submit --id`.
+**iOS 1.0 SUBMITTED 2026-08-27 20:22 UTC — WAITING_FOR_REVIEW**, build `202608271310` attached,
+`asc validate` clean (0 errors, 0 blocking).
+
+Two gotchas hit on the way, both worth remembering:
+- `asc validate` blocked on "screenshot set APP_IPHONE_61 has no screenshots" after the stale
+  branded 6.1" shots were deleted. An **empty** set is an error where **no set at all** is fine —
+  DELETE the `appScreenshotSets` resource, don't just empty it.
+- `asc review submit` refused with "review submission f1e5b07b is in state UNRESOLVED_ISSUES" and
+  spawned a stray empty draft each attempt. The fix is not to create a new submission: mark the
+  rejected submission's item resolved (`asc review items update --id <ITEM> --resolved true`),
+  then `asc review submissions-submit --id f1e5b07b… --confirm` re-submits the original.
+
+- [ ] Stray empty submission `c26a1e13-bcc4-4a08-9f80-d2421e7c35ea` (IOS, READY_FOR_REVIEW, zero
+      items) left behind by the failed submit attempts. Not cancellable via CLI — same defect as the
+      old `59cef0f7` one. **Blocked on Joshua:** clear it in the dashboard.
 - [ ] **Align the macOS name on its next version bump.** Deliberately deferred: renaming macOS now
       needs a new version and a fresh trip through review, risking an approved listing for cosmetics.
 - [ ] `whatsNew` cannot be set on a 1.0 initial release (ASC returns 409). Write it at 1.0.1.
