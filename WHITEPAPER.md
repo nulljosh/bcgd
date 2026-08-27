@@ -1,6 +1,6 @@
 # BC Garage Doors Technical Whitepaper
 
-**v3.0.0** | July 2026
+**v3.0.0** | August 2026
 
 BCGD is the customer-facing website and operations dashboard for Best Choice
 Garage Doors (bcgaragedoors.ca): a conversion landing page at
@@ -22,8 +22,8 @@ order.
 
 ## Companion iOS App
 
-A SwiftUI iOS app exists (verified in simulator 2026-07-10, screenshots in
-README) but has no App Store Connect registration yet.
+SwiftUI iOS and macOS apps exist under ASC record 6791106082, both in
+`PREPARE_FOR_SUBMISSION` — registered but not yet submitted for review.
 
 ## Status
 
