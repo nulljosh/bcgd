@@ -218,3 +218,20 @@ Builds 202608181253 (one per platform; `asc builds list` reports platform null, 
 `--version 1.0` resolves to the iOS record for both platforms, so the macOS submit needs
 `--version-id ef1421dd-4c4b-4592-a8be-a4fc0db4c149`. Both hit the known false-negative
 "does not contain target version" and were completed with `asc review submissions-submit --id ... --confirm`.
+
+## 2026-08-26 — iOS 1.0 REJECTED, Guideline 3.2 (Business)
+Submission `f1e5b07b-e414-4fb4-b484-780d25a18f90`, build 202608181253, reviewed on iPad Air 11".
+Apple read the app as an internal tool for one business (name is literally "BC Garage Doors")
+and says public App Store distribution is the wrong channel.
+
+macOS 1.0 (`ef1421dd-...`) was APPROVED and is READY_FOR_SALE from the same codebase, so this is
+a reviewer-judgment call, not a hard rule.
+
+Pick one before resubmitting — this is a positioning decision, not a code fix:
+- [ ] **Reply and appeal** (cheapest). Argue in the ASC reply that the app is a generic garage-door
+      inventory/jobs tracker usable by any contractor, and cite the approved macOS build. Weak while
+      the app name and branding say otherwise.
+- [ ] **Rename + degeneralize.** Drop "BC" branding, ship as a generic garage-door/contractor job
+      tracker. Real work: name (use asc-name-creator), icon, screenshots, metadata.
+- [ ] **Move off public distribution.** Apple Business Manager custom app or TestFlight-only.
+      Right answer if this only ever serves Best Choice Garage Doors.
