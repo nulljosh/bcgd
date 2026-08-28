@@ -1,16 +1,16 @@
-Doorstock is a small, offline inventory and job tracker for garage-door installers, repair techs, and other small trade contractors — anyone who needs to know what's on the truck and what's booked this week without running a whole field-service platform to find out.
+What's on the truck, and what's booked this week. Two questions, and most field-service platforms make you sit through a login and a sync before answering either one.
+
+Doorstock answers them on the drive over.
 
 INVENTORY
-Track parts by category — springs, rollers, hinges, openers, weather seal — with quick quantity controls. Set a low-stock threshold on any part and see everything that needs reordering in one list. Search and filter as your parts list grows.
+Springs, rollers, hinges, openers, weather seal — tracked by category with quick quantity controls. Put a low-stock threshold on any part and everything due for reorder collects itself into one list. Search and filter once the parts list outgrows a single screen.
 
 JOBS
-Move work through a simple pipeline: Lead, Quote, Scheduled, Complete, Paid. Add a customer and address, advance a job with one tap, and swipe away what's done.
+Lead, Quote, Scheduled, Complete, Paid. Add a customer and an address, move a job forward with one tap, swipe away what's finished.
 
-AT A GLANCE
-The dashboard puts your stock count, low-stock warnings, and open job totals on one screen, so a morning check takes seconds.
+THE MORNING CHECK
+Stock count, low-stock warnings and open job totals sit on one screen, so looking over the day takes about ten seconds.
 
-STARTS READY
-Doorstock ships seeded with industry-standard part types so you're not staring at an empty list on day one. Edit, add to, or reset it to make the catalog your own.
+Doorstock ships with a starter catalog of industry-standard part types, so day one isn't an empty list staring back at you. Edit it, add to it, or clear it out and build the catalog your own way.
 
-PRIVATE BY DESIGN
-No account. No sign-in. No network requests of any kind. Everything you enter stays on your device, and nothing is ever transmitted or collected.
+Your parts list and your customers' names live on your own phone and go nowhere else. Nothing syncs, nothing uploads, and nothing here is tied to a subscription that could lapse and lock you out of your own stock list.

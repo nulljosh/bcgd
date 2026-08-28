@@ -1,1 +1,1 @@
-garage door,inventory,jobs,contractor,field service,trade,stock
+garage door inventory,contractor job tracker,trade parts,field service,small business stock
