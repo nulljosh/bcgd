@@ -1,5 +1,17 @@
 # Bcgd Roadmap
 
+## Blocked on Joshua — file the 4.3(a) appeal (needs a browser)
+
+Resolution Center is web-only; `asc web review` is read-only, so there is no CLI path.
+Reply text is written and verified: `notes/appeal-4-3-spam.md`. Paste it by hand at
+appstoreconnect.com. Order: Talli first (strongest — 3.5.7 through 3.5.12 were each
+approved, 3.5.13 is maintenance only), then Curvely, then Doorstock (answer 3.2's
+numbered questions literally as well).
+
+Do NOT resubmit any rejected build before the appeal gets a verdict.
+Do NOT open a second developer account — Apple's letter names multi-account submission
+as a spam factor.
+
 ## Rejected 2026-08-27 — iOS 1.0 rejected (4.3a Spam + earlier 3.2), appeals filed
 
 iOS rejected on TWO separate violations. First: Guideline 3.2 Business Model (2026-08-27 review noted the app is for "Best Choice Garage Doors" internal use, not public distribution). Chose to de-brand as "Doorstock" public contractor tool; resubmitted same day. Second rejection received same day: Guideline 4.3(a) Design: Spam (account-level pattern with four other apps: Sparkjar, NYC Survive, Talli, Curvely — all submitted 2026-08-26). Two separate appeals filed 2026-08-27 via Resolution Center. macOS 1.0 remains READY_FOR_SALE unaffected (de-branding was iOS-only to preserve the approved macOS listing). Do not attempt resubmit; monitor appeal verdicts only.
