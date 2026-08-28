@@ -7,24 +7,30 @@
 <meta name="description" content="Doorstock is an offline inventory and job tracker for garage-door and small trade contractors. No account, no cloud, nothing leaves your device.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..500&family=Newsreader:ital,opsz,wght@1,6..72,400..500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fdfdfc;--text:#111;--muted:#5b5b58;--rule:#e4e4e0}
+/* Brand tokens mirror bcgaragedoors.ca (Elementor global palette + type) */
+:root{--bg:#F2F2F2;--surface:#ffffff;--text:#3A3E40;--muted:#5c6266;
+  --rule:rgba(0,0,0,0.08);--brand:#1B5959;--brand-deep:#134040;
+  --font-head:'Barlow Condensed','Open Sans',sans-serif;
+  --font-body:'Open Sans',-apple-system,BlinkMacSystemFont,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
-  font-family:Inter,-apple-system,system-ui,sans-serif;font-size:14px;font-weight:460;
-  line-height:1.7;letter-spacing:-0.09px;-webkit-font-smoothing:antialiased}
-main{max-width:582px;margin:0 auto;padding:80px 20px 96px}
-h1{font-size:14px;font-weight:460;margin:0}
-h2{font-size:14px;font-weight:460;margin:40px 0 8px}
+  font-family:var(--font-body);font-size:16px;
+  line-height:1.6;-webkit-font-smoothing:antialiased}
+main{max-width:640px;margin:0 auto;padding:64px 20px 96px}
+h1{font-family:var(--font-head);font-size:40px;font-weight:700;letter-spacing:0.5px;
+  color:var(--brand);margin:0 0 4px}
+h2{font-family:var(--font-head);font-size:24px;font-weight:600;letter-spacing:0.3px;
+  color:var(--brand-deep);margin:36px 0 8px}
 p{margin:0 0 16px;color:var(--muted)}
-em{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif;font-style:italic;color:var(--text)}
-a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
-ul{margin:0 0 16px;padding-left:18px;color:var(--muted)}
-li{margin-bottom:4px}
+em{font-style:italic;color:var(--text)}
+a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+ul{margin:0 0 16px;padding-left:20px;color:var(--muted)}
+li{margin-bottom:6px}
 hr{border:0;border-top:1px solid var(--rule);margin:40px 0}
-.lede{color:var(--text)}
-footer{color:var(--muted);margin-top:40px}
+.lede{color:var(--text);font-size:18px}
+footer{color:var(--muted);margin-top:40px;font-size:14px}
 </style>
 </head>
 <body>

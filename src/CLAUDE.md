@@ -56,9 +56,29 @@ npx wrangler pages deploy dist --project-name=bcgd-dashboard --branch=main --com
 cd dashboard && npm install && npm run dev    # Vite on :5180
 ```
 
+## Brand (matches the source site, bcgaragedoors.ca)
+Every public page must match the client's real site. Verified against its Elementor
+global palette 2026-08-28 -- do not substitute the personal portfolio look
+(`portfolio-tokens.css` at the repo root is a reference for heyitsmejosh.com, NOT
+for this client; applying it here is what made `support/index.html` drift onto
+Inter + Newsreader, a serif, until it was fixed).
+
+| Token | Value | Role |
+|-------|-------|------|
+| primary | `#1B5959` | header, links, h1 |
+| secondary | `#134040` | h2, deep accent |
+| text | `#3A3E40` | body copy |
+| sage | `#8DA6A6` | muted accent |
+| page bg | `#F2F2F2` | page background |
+
+Fonts: **Barlow Condensed** (500/600/700) for headings, **Open Sans** (400/600/700)
+for body. Both must be loaded via the Google Fonts link -- naming Open Sans in a
+`font-family` without the `<link>` silently falls back to the system font.
+
 ## Rules
 - No emojis
 - No gradients or drop shadows
+- Sans-serif only, never a serif face
 - Spring physics on interactive elements: cubic-bezier(0.34, 1.56, 0.64, 1)
 - Mobile-first, Apple Liquid Glass design system
 
