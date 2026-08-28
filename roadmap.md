@@ -1,5 +1,9 @@
 # Bcgd Roadmap
 
+## Rejected 2026-08-27 — iOS 1.0 rejected (4.3a Spam + earlier 3.2), appeals filed
+
+iOS rejected on TWO separate violations. First: Guideline 3.2 Business Model (2026-08-27 review noted the app is for "Best Choice Garage Doors" internal use, not public distribution). Chose to de-brand as "Doorstock" public contractor tool; resubmitted same day. Second rejection received same day: Guideline 4.3(a) Design: Spam (account-level pattern with four other apps: Sparkjar, NYC Survive, Talli, Curvely — all submitted 2026-08-26). Two separate appeals filed 2026-08-27 via Resolution Center. macOS 1.0 remains READY_FOR_SALE unaffected (de-branding was iOS-only to preserve the approved macOS listing). Do not attempt resubmit; monitor appeal verdicts only.
+
 ## Done 2026-08-18 — submit-ready
 `asc validate` clean on **both** iOS 1.0 (`df882260-865d-4f33-9735-dc9f8137bcde`) and macOS 1.0
 (`ef1421dd-4c4b-4592-a8be-a4fc0db4c149`): 0 errors, 0 warnings, 0 blocking.
@@ -282,3 +286,4 @@ Two gotchas hit on the way, both worth remembering:
 - [ ] **Align the macOS name on its next version bump.** Deliberately deferred: renaming macOS now
       needs a new version and a fresh trip through review, risking an approved listing for cosmetics.
 - [ ] `whatsNew` cannot be set on a 1.0 initial release (ASC returns 409). Write it at 1.0.1.
+- [ ] iOS rejected 4.3(a) Spam 2026-08-26. Appeal draft: notes/appeal-4-3-spam.md (Resolution Center, web only).
