@@ -12,7 +12,7 @@
     --vibe-headings: #111111;
     --vibe-link: #111111;               /* underline, offset 3px */
     --vibe-font: Inter, -apple-system, system-ui, sans-serif;
-    --vibe-accent-font: 'Newsreader', serif; /* italic */
+    --vibe-accent-font: -apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif; /* italic */
     --vibe-font-size: 14px;
     --vibe-font-weight: 460;
     --vibe-line-height: 1.7;
