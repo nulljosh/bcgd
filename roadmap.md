@@ -302,8 +302,6 @@ Two gotchas hit on the way, both worth remembering:
 
 ## From Notes (imported 2026-08-27)
 - [ ] App Review flagged **Doorstock 1.0 for iOS** (submitted Aug 27 2026 01:22 PM PDT, submission `f1e5b07b-e414-4fb4-b484-780d25a18f90`). Get the reason via `asc web review show`, fix, resubmit.
-- [ ] Doesn't match the vibe of the source project — align on the shared Jaybulb `tokens.css` design system.
-bcgd/roadmap.md
 
 ### 4.3(a) status — verified 2026-08-27
   - Doorstock iOS 1.0 REJECTED on **two separate violations**: Guideline 3.2 (Business — reviewed as an internal app for one garage-door company), then **Guideline 4.3(a) Design: Spam** on the same-day resubmit after the de-brand to "Doorstock". Two appeals, both unfiled.
