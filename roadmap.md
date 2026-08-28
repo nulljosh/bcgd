@@ -3,7 +3,7 @@
 ## Blocked on Joshua — file the 4.3(a) appeal (needs a browser)
 
 Resolution Center is web-only; `asc web review` is read-only, so there is no CLI path.
-Reply text is written and verified: `notes/appeal-4-3-spam.md`. Paste it by hand at
+Reply text is written and verified: `~/Documents/Code/notes/appeal-4-3-spam.md`. Paste it by hand at
 appstoreconnect.com. Order: Talli first (strongest — 3.5.7 through 3.5.12 were each
 approved, 3.5.13 is maintenance only), then Curvely, then Doorstock (answer 3.2's
 numbered questions literally as well).
@@ -298,7 +298,7 @@ Two gotchas hit on the way, both worth remembering:
 - [ ] **Align the macOS name on its next version bump.** Deliberately deferred: renaming macOS now
       needs a new version and a fresh trip through review, risking an approved listing for cosmetics.
 - [ ] `whatsNew` cannot be set on a 1.0 initial release (ASC returns 409). Write it at 1.0.1.
-- [ ] iOS rejected 4.3(a) Spam 2026-08-26. Appeal draft: notes/appeal-4-3-spam.md (Resolution Center, web only).
+- [ ] iOS rejected 4.3(a) Spam 2026-08-26. Appeal draft: ~/Documents/Code/notes/appeal-4-3-spam.md (Resolution Center, web only).
 
 ## From Notes (imported 2026-08-27)
 - [ ] App Review flagged **Doorstock 1.0 for iOS** (submitted Aug 27 2026 01:22 PM PDT, submission `f1e5b07b-e414-4fb4-b484-780d25a18f90`). Get the reason via `asc web review show`, fix, resubmit.
@@ -310,6 +310,6 @@ bcgd/roadmap.md
   - **Doorstock has never shipped on iOS**; macOS 1.0 remains READY_FOR_SALE as BC Garage Doors and is unaffected (the de-brand was iOS-only, deliberately, to preserve the approved macOS listing).
   - [ ] A stray submission `c26a1e13-bcc4-4a08-9f80-d2421e7c35ea` is sitting in READY_FOR_REVIEW with no submitted date — an API-started draft. Drafts are not cancellable via CLI; delete it in the ASC dashboard before any future submit.
   - **This is not a per-app content problem — do not fix code and do not resubmit.** Apple's letter is byte-identical boilerplate across all five with no named comparison app. Resubmitting the same build will fail again and adds to the pattern.
-  - **The appeal draft is at `~/Documents/Code/notes/appeal-4-3-spam.md` (repo root, 113 lines) — NOT at `<repo>/notes/appeal-4-3-spam.md`.** Several roadmap lines point at the per-repo path; that file does not exist in any of the five repos. Fix the pointer, do not write a second draft.
+  - **The appeal draft is at `~/Documents/Code/notes/appeal-4-3-spam.md` (repo root, 113 lines) — NOT at `<repo>/~/Documents/Code/notes/appeal-4-3-spam.md`.** Several roadmap lines point at the per-repo path; that file does not exist in any of the five repos. Fix the pointer, do not write a second draft.
   - **Status: DRAFTED, NOT FILED.** Filing is Resolution Center, which is browser-only (`asc web review` is read-only). Blocked on Joshua. Reply order in the draft is Talli, Curvely, Doorstock; hold Sparkjar and NYC Survive.
   - Verified via API 2026-08-27: submission is UNRESOLVED_ISSUES with a single appStoreVersion item REJECTED — no phantom-IAP item, so the "mislabeled inAppPurchaseVersion" trap does not apply. `asc validate` and `asc review doctor` are otherwise clean, confirming this is a guideline call and not a readiness gap.
