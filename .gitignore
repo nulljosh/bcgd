@@ -18,3 +18,5 @@ node_modules/
 **/.asc/runs/
 **/.asc/reports/
 .wrangler/
+.vercel/
+.DS_Store
