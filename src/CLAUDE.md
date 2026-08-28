@@ -39,7 +39,10 @@ Both sites are **Cloudflare Pages**, not Vercel. `bcgd.heyitsmejosh.com` and
 `bcgd-dashboard.heyitsmejosh.com` are proxied CNAMEs to `bcgd.pages.dev` /
 `bcgd-dashboard.pages.dev`. A `vercel --prod` here deploys to an orphaned
 Vercel project that nothing points at -- it will look like it worked and change
-nothing. Needs `CLOUDFLARE_API_TOKEN` from `~/.config/fish/secrets.fish`.
+nothing. Deploys off wrangler's cached OAuth session -- run `npx wrangler login` if it
+has expired. There is no `CLOUDFLARE_API_TOKEN` in `~/.config/fish/secrets.fish`;
+the only token there is `CLOUDFLARE_DNS_TOKEN`, which is deliberately DNS-scoped
+and cannot deploy Pages.
 
 ```bash
 # Landing page (regenerate sub-pages first if index.html or data/*.json changed)
@@ -60,7 +63,7 @@ cd dashboard && npm install && npm run dev    # Vite on :5180
 Every public page must match the client's real site. Verified against its Elementor
 global palette 2026-08-28 -- do not substitute the personal portfolio look
 (`portfolio-tokens.css` at the repo root is a reference for heyitsmejosh.com, NOT
-for this client; applying it here is what made `support/index.html` drift onto
+for this client; applying it here is what made `web/support/index.html` drift onto
 Inter + Newsreader, a serif, until it was fixed).
 
 | Token | Value | Role |
