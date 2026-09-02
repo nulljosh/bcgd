@@ -4,7 +4,7 @@
 
 ![version](https://img.shields.io/badge/version-v3.0.0-blue)
 
-Customer-facing website and operations dashboard for Best Choice Garage Doors (bcgaragedoors.ca).
+A website and a stock dashboard for Best Choice Garage Doors (bcgaragedoors.ca). One brings customers in. The other tells the shop what's on the shelf.
 
 ## Projects
 
