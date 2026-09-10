@@ -4,7 +4,9 @@ const SEED_VERSION = 'garage_seed_v3';
 
 export function getParts() {
   try {
-    // Force re-seed when version changes (clears old demo data)
+    // Force re-seed when version changes (clears old demo data).
+    // Bump SEED_VERSION's suffix (v3 -> v4) to push a REAL_INVENTORY edit out
+    // to every dashboard that already has stale parts in localStorage.
     if (!localStorage.getItem(SEED_VERSION)) {
       localStorage.removeItem(PARTS_KEY);
       localStorage.removeItem(HISTORY_KEY);
