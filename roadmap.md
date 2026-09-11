@@ -61,15 +61,6 @@ third App Store submission should be queued until Curvely or Wiretext clears rev
       https://appstoreconnect.apple.com/apps/6791106082/appPrivacy
       The app is a fully local SwiftUI inventory/jobs tracker, `Store` persists to UserDefaults,
       no network calls, no accounts, no analytics, so the correct answer is **DATA_NOT_COLLECTED**.
-- [ ] **More macOS screenshots (Inventory / Jobs / Settings), only Dashboard shipped.** One shot
-      satisfies Apple's minimum and unblocks submission, but the listing is thin. Blocked on the
-      same thing as always: switching tabs needs a real click, and `TabView` here has no selection
-      binding to persist, so there is no defaults-only way to land on another tab. Cheapest honest
-      options if this matters: add a `@SceneStorage`/`selection` binding to the macOS `TabView`
-      (then each tab is one defaults write + relaunch + capture), or accept a click-driven pass.
-      Also worth knowing: the Dashboard shot is very whitespace-heavy at 1280x800, the Mac layout
-      genuinely looks like that, so richer screenshots probably want a design pass, not a capture
-      trick.
 
 Notes for whoever picks this up:
 - iOS build `798bbe86-b5f5-46e4-bb3d-633a74307236` (build 1, uploaded 2026-07-15) is VALID,
