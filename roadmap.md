@@ -1,5 +1,11 @@
 # Bcgd Roadmap
 
+## 2026-09-11, Face ID lock and Sign in with Apple/Google added
+
+Added LocalAuthentication-based Face ID and device-passcode protection on launch with LockScreen fallback. Added Sign in with Apple and Google via the shared Spark Supabase project (Auth.swift, AuthStore + AccountGateView, pattern from co-stanza). Gate order: sign in → Face ID unlock → main TabView. Inventory remains fully local per device (UserDefaults, no server sync). iOS build verified green. Commit 2bc0ec8.
+
+- Multi-device inventory sync deferred as future work (not a blocker, design decision stands as offline-first)
+
 ## 2026-09-10, appeal status check retries failed
 
 Attempted multiple retries of `asc web review show --app 6791106082` to check Doorstock iOS appeal status. First attempt: session expired. Subsequent retries: 404 "failed to fetch auth service key" errors. No verdict obtained. Still blocked pending Joshua's manual login to asc web console.
