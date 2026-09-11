@@ -1,0 +1,3 @@
+Show HN: Doorstock – offline inventory and job tracking for garage door techs
+
+Built for a real garage door shop that just needed to know what's on the truck and what's booked this week, without a subscription or a login. Doorstock has no account, no sign-in, and makes no network requests at all, everything you enter stays on the device. It tracks parts by category with a low-stock threshold per part, and moves jobs through a simple Lead to Quote to Scheduled to Complete to Paid pipeline. Ships seeded with industry-standard part types. Mac is live on the Mac App Store, iOS is under appeal after an App Review rejection. Free.
