@@ -350,6 +350,16 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            animation: hero-pan 24s ease-in-out infinite alternate;
+        }
+
+        @keyframes hero-pan {
+            from { transform: scale(1.08) translate(0, 0); }
+            to { transform: scale(1.16) translate(-1.5%, -1.5%); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-bg img { animation: none; }
         }
 
         .hero-bg::after {
@@ -1045,6 +1055,9 @@
         }
 
         .blog-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
             background: var(--glass-bg);
             backdrop-filter: var(--blur);
             -webkit-backdrop-filter: var(--blur);
@@ -2099,7 +2112,8 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-    </style>
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
 </head>
 <body>
 <!-- READING PROGRESS BAR -->
@@ -2216,6 +2230,9 @@
                 <a href="/service-areas/vancouver/">Vancouver</a>
                 <a href="/service-areas/north-vancouver/">North Vancouver</a>
                 <a href="/service-areas/west-vancouver/">West Vancouver</a>
+                <a href="/service-areas/port-coquitlam/">Port Coquitlam</a>
+                <a href="/service-areas/pitt-meadows/">Pitt Meadows</a>
+                <a href="/service-areas/mission/">Mission</a>
             </div>
         </div>
     </section>
