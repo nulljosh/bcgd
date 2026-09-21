@@ -7,6 +7,8 @@
 
 A website and a stock dashboard for Best Choice Garage Doors (bcgaragedoors.ca). One brings customers in. The other tells the shop what's on the shelf.
 
+<img src="progress.svg" width="460">
+
 ## Screenshots
 
 <p>
