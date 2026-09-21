@@ -1,6 +1,6 @@
 # Architecture
 
-A garage-door business management tool shipping as Doorstock. Tracks parts inventory, job quotes, and customer leads. Web site for customers to book/inquire, React dashboard for business ops, and native apps (iOS/macOS) for on-site technicians. All auth via Supabase Apple/Google sign-in.
+Doorstock helps a garage door repair business run day to day. It tracks parts on the shelf, job quotes, and customer leads, and lets customers book a job online. There is a public website for customers, a dashboard app for the office, and iOS/macOS apps for technicians out on a job. Everyone signs in through Supabase using Apple or Google.
 
 ## How it runs
 
