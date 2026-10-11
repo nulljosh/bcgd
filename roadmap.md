@@ -1,5 +1,9 @@
 # Bcgd Roadmap
 
+## 2026-10-11, marketing folder added
+
+Brought the Instagram ad work into `marketing/`. Four finished ads, the palette, the plan. Next: real job photos from Dad, one real review, then the sample batch of 10 posts and 2-3 video ads.
+
 ## 2026-09-11, Face ID lock and Sign in with Apple/Google added
 
 Added LocalAuthentication-based Face ID and device-passcode protection on launch with LockScreen fallback. Added Sign in with Apple and Google via the shared Spark Supabase project (Auth.swift, AuthStore + AccountGateView, pattern from co-stanza). Gate order: sign in → Face ID unlock → main TabView. Inventory remains fully local per device (UserDefaults, no server sync). iOS build verified green. Commit 2bc0ec8.

@@ -6,3 +6,4 @@ Two things in one repo for Best Choice Garage Doors. `src/web` is the customer s
 - Ship: `asc workflow run ship-ios VERSION:x.y.z`
 - iOS 1.0 is REJECTED under the 4.3(a) wave with appeals filed. Never resubmit into it. macOS 1.0 is live
 - Tests: `node --test` in `src/web`
+- `marketing/` holds the Instagram and Google ad work for the business (plan, palette, finished ads). It ships nothing. Start at `marketing/README.md`
