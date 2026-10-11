@@ -16,8 +16,11 @@ Never invent reviews, prices or promos. AI images are never passed off as Dad's 
 ## Palette
 Teal #16494c, orange #f47216, charcoal #303437, cream #f6f4ee. The logo is a charcoal oval reading "Best Choice Garage Door Repairs".
 
+## Pulled from the site
+`site/` holds real photos from bcgaragedoors.ca: Brian with the truck, a portrait, Brian holding two worn hinges, the logo, and the six review cards. `reviews.md` has the six reviews as text. The Specials page offers a free garage door safety check and a downloadable coupon. The Tips page has four safety tips and the 1991 photo-eye fact.
+
 ## Still needed
-Real job photos from Dad, one real 5-star review, and the Reviews, Specials and Tips pages of the site, which wouldn't load.
+Job photos of finished repairs (springs, cables, rollers), Google and Yelp reviews, and the Instagram feed.
 
 ## Video
 Higgsfield turns real photos into 5-second vertical clips. The free tier has no commercial use. Paid runs about $19-59 a month, and the first three videos cost about $15-30.
