@@ -37,7 +37,7 @@ test('services list the symptoms the page renders', () => {
 
 test('the site uses the brand kit colours', () => {
   const fs = require('node:fs');
-  const tokens = fs.readFileSync(__dirname + '/../../brand/tokens.css', 'utf8');
+  const tokens = fs.readFileSync(__dirname + '/brand/tokens.css', 'utf8');
   const page = fs.readFileSync(__dirname + '/index.html', 'utf8');
   const bc = [...tokens.matchAll(/(--bc-[a-z-]+):\s*([^;]+);/g)];
   assert.ok(bc.length > 0, 'brand/tokens.css has no --bc-* tokens');
